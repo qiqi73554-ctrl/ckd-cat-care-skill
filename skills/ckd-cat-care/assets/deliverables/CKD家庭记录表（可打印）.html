@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CKD 家庭记录表（可打印）</title>
+<style>
+:root{--ink:#1f2937;--ink2:#4b5563;--line:#cbd5e1;--teal:#0f766e;--teal-bg:#e6f4f1;--red:#991b1b;--red-bg:#fdeaea;--amber:#b45309;--amber-bg:#fdf3e3;}
+body{margin:0;padding:26px 18px 40px;background:#fff;color:var(--ink);
+ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+ font-size:13px;line-height:1.6;}
+.wrap{max-width:1000px;margin:0 auto;}
+h1{font-size:21px;margin:0 0 4px;color:var(--teal);letter-spacing:-.3px;}
+.sub{color:var(--ink2);font-size:12.5px;margin-bottom:18px;}
+.card{border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-bottom:16px;break-inside:avoid;}
+.card>h2{font-size:15px;margin:0 0 10px;color:var(--teal);display:flex;align-items:center;gap:8px;}
+.card>h2 .n{background:var(--teal);color:#fff;font-size:11px;font-weight:800;padding:2px 8px;border-radius:5px;}
+table{width:100%;border-collapse:collapse;font-size:12px;}
+th,td{border:1px solid var(--line);padding:5px 6px;text-align:center;}
+th{background:var(--teal);color:#fff;font-weight:700;font-size:11.5px;}
+th:first-child,td:first-child{text-align:left;background:#f8faf9;font-weight:600;}
+td.blank{height:24px;}
+.note{font-size:11.5px;color:var(--ink2);margin-top:7px;line-height:1.65;}
+.top{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.fld{border:1px solid var(--line);border-radius:7px;padding:8px 10px;}
+.fld label{display:block;font-size:11px;color:var(--teal);font-weight:700;margin-bottom:2px;}
+.fld .v{font-size:13px;min-height:20px;border-bottom:1px dashed var(--line);}
+.alert{background:var(--red-bg);border:1px solid #f0aaaa;border-left:5px solid #dc2626;border-radius:8px;padding:12px 15px;}
+.alert b{color:var(--red);font-size:13.5px;display:block;margin-bottom:6px;}
+.alert ul{margin:0;padding-left:18px;font-size:12.5px;color:#7f1d1d;}
+.alert li{margin-bottom:3px;}
+.tip{background:var(--teal-bg);border:1px solid #99d4cb;border-radius:8px;padding:10px 14px;font-size:12.5px;color:#134e4a;}
+.med{width:100%;border-collapse:collapse;font-size:12px;}
+.med th{background:#475569;}
+.med td{height:26px;}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.wk td{height:26px;}
+@media print{
+  body{padding:0;font-size:11pt;}
+  .card{break-inside:avoid;page-break-inside:avoid;}
+  .noprint{display:none;}
+  th{background:var(--teal) !important;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+}
+@media (max-width:700px){.top{grid-template-columns:1fr 1fr;}.grid2{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>猫慢性肾病（CKD）家庭记录表</h1>
+<div class="sub">建议打印后贴在冰箱或猫用品柜旁。复诊时整张带去医院，比口头描述准确得多。</div>
+
+<div class="card">
+  <h2><span class="n">档案</span>我家猫的方案（由兽医填写）</h2>
+  <div class="top">
+    <div class="fld"><label>名字 / 年龄</label><div class="v"></div></div>
+    <div class="fld"><label>IRIS 分期 · UPC · SBP</label><div class="v"></div></div>
+    <div class="fld"><label>血磷目标（mmol/l）</label><div class="v"></div></div>
+    <div class="fld"><label>基线体重（kg）</label><div class="v"></div></div>
+    <div class="fld"><label>饮食 · 磷 mg/100kcal</label><div class="v"></div></div>
+    <div class="fld"><label>补液：起始分期 / 液体 / 每次 mL / 间隔</label><div class="v"></div></div>
+    <div class="fld"><label>下次复诊日期</label><div class="v"></div></div>
+    <div class="fld"><label>急诊医院电话</label><div class="v"></div></div>
+  </div>
+</div>
+
+<div class="card">
+  <h2><span class="n">补液</span>分期速查（由兽医勾选我家方案）</h2>
+  <table class="med" style="font-size:11.5px">
+    <thead><tr><th style="width:16%">IRIS 分期</th><th style="width:16%">频率</th><th style="width:18%">单次量（4kg 猫）</th><th>液体 / 备注</th><th style="width:9%">✔</th></tr></thead>
+    <tbody>
+      <tr><td><b>1–2 期</b></td><td>不常规补</td><td>—</td><td>随时清洁饮水；生病失液时由兽医纠正</td><td></td></tr>
+      <tr><td><b>2 期末 / 3 期初</b></td><td>每周 2–3 次</td><td>50–75 mL</td><td>乳酸林格液，从下限起步</td><td></td></tr>
+      <tr><td><b>3 期</b></td><td>每 2–3 天</td><td>75–100 mL</td><td>有高血压/心脏病 → 换低钠液</td><td></td></tr>
+      <tr><td><b>3 期末 / 4 期</b></td><td>每 1–2 天</td><td>100–150 mL</td><td>低钠维持液 ± KCl；量大分两处</td><td></td></tr>
+      <tr><td><b>4 期（丢失量大）</b></td><td>每天</td><td>100–150 mL</td><td>考虑改用喂食管（既补水又喂食）</td><td></td></tr>
+    </tbody>
+  </table>
+  <div class="note" style="margin-top:6px">用量随分期与脱水程度定期复评。过量信号：鼓包 &gt;12–24h 不消 / 腹下四肢水肿 / 呼吸变快费力 → 减量并联系兽医。</div>
+</div>
+
+<div class="card">
+  <h2><span class="n">用药</span>每日给药清单</h2>
+  <table class="med">
+    <thead><tr><th style="width:22%">药物</th><th style="width:16%">剂量</th><th style="width:14%">时间</th><th>关键说明（随餐？透皮？）</th><th style="width:8%">一</th><th style="width:8%">二</th><th style="width:8%">三</th><th style="width:8%">四</th><th style="width:8%">五</th><th style="width:8%">六</th><th style="width:8%">日</th></tr></thead>
+    <tbody>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    </tbody>
+  </table>
+  <div class="note">⚠️ <b>磷结合剂必须随餐混入食物</b>，空腹服无效。若这顿只吃一半饭，结合剂也减半。</div>
+</div>
+
+<div class="card">
+  <h2><span class="n">每日</span>观察记录（每天 1 分钟）</h2>
+  <table>
+    <thead><tr><th style="width:11%">日期</th><th style="width:11%">体重 (kg)</th><th style="width:11%">进食（成）</th><th style="width:10%">饮水</th><th style="width:10%">呕吐次数</th><th style="width:12%">排便（次/性状）</th><th style="width:11%">尿团数</th><th style="width:12%">精神 1–5</th><th>备注（补液 ml / 异常）</th></tr></thead>
+    <tbody>
+      <tr><td class="blank"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="blank"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="blank"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="blank"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="blank"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="blank"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td class="blank"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    </tbody>
+  </table>
+  <div class="note">
+    <b>体重</b>：同一台秤、同一时间（建议早上喂食前），精确到 10 g。1 个月掉 &gt;5% → 复诊，掉 &gt;10% → 尽快复诊。<br>
+    <b>精神 1–5</b>：1=极度沉郁不动，3=尚可，5=正常活泼。<b>排便性状</b>：干硬 / 正常 / 软 / 稀。<b>尿团</b>：用结团砂才数得准。
+  </div>
+</div>
+
+<div class="grid2">
+  <div class="card">
+    <h2><span class="n">每周</span>体重与 HHHHHMM</h2>
+    <table class="wk">
+      <thead><tr><th style="width:26%">周次</th><th>体重 kg</th><th>较基线 %</th><th>好日子 / 7 天</th></tr></thead>
+      <tbody>
+        <tr><td>第 1 周</td><td></td><td></td><td></td></tr>
+        <tr><td>第 2 周</td><td></td><td></td><td></td></tr>
+        <tr><td>第 3 周</td><td></td><td></td><td></td></tr>
+        <tr><td>第 4 周</td><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+    <div class="note"><b>HHHHHMM</b>：疼痛 / 饥饿 / 水合 / 卫生 / 快乐 / 活动 / <b>好日子是否多于坏日子</b>（0–10 分）。总分 &gt;35 尚可；<b>坏日子 &gt; 好日子就该和兽医谈下一步</b>。</div>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">复查</span>时间表</h2>
+    <table class="wk">
+      <thead><tr><th>项目</th><th>频率</th><th>完成</th></tr></thead>
+      <tbody>
+        <tr><td style="text-align:left">新诊断 / 进展期</td><td>每 2–4 周</td><td></td></tr>
+        <tr><td style="text-align:left">病情稳定</td><td>每 3–6 个月</td><td></td></tr>
+        <tr><td style="text-align:left">开始/调整降压药</td><td>1–2 周后</td><td></td></tr>
+        <tr><td style="text-align:left">开始贝那普利/替米沙坦</td><td>1–2 周 → 4 周 → 每 3 月</td><td></td></tr>
+        <tr><td style="text-align:left">磷结合剂 / 换肾脏粮</td><td>4–6 周后</td><td></td></tr>
+        <tr><td style="text-align:left">达贝泊汀诱导期</td><td>每次注射前（血压+PCV）</td><td></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <h2><span class="n">泌尿</span>肾与膀胱，一起看</h2>
+  <div class="note" style="margin-bottom:8px">CKD 猫尿路感染患病率 <b>15–30%</b>，其中 <b>&gt;70% 没有症状</b>。真正细菌感染在年轻猫中仅约 <b>2%</b>——<b>别自己给抗生素。</b></div>
+  <table class="wk" style="font-size:11.5px">
+    <thead><tr><th style="width:26%">每天看</th><th style="width:37%">猫砂盆（最有证据的一条）</th><th>什么时候要就医</th></tr></thead>
+    <tbody>
+      <tr>
+        <td style="text-align:left">· 尿团<b>数量与大小</b><br>· 有没有<b>血尿</b><br>· 频繁舔肚子/生殖器<br>· 有没有在盆外尿</td>
+        <td style="text-align:left">· 数量 = <b>猫数 + 1</b><br>· <b>结块砂</b>，每天铲<br>· 放<b>安静处</b>，远离食水<br>· 多猫家庭要<b>分散</b>放</td>
+        <td style="text-align:left">· <b>尿不出来</b>（急症！）<br>· 尿血 + 排尿痛苦<br>· 复查尿检见<b>脓尿</b>（&gt;5 WBC/hpf）<br>· 肾功能<b>无法解释地恶化</b></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="note" style="margin-top:6px"><b>对肾和膀胱，解法是同一个：</b>湿粮 + 多个水源 + 管好猫砂盆 + 别乱用药。</div>
+</div>
+
+<div class="card">
+  <h2><span class="n">急救</span>立刻去医院的信号</h2>
+  <div class="alert">
+    <b>🚨 出现以下任一情况，不要等，立刻联系兽医</b>
+    <ul>
+      <li><b>想尿尿不出来</b>（反复进砂盆、蹲很久、只滴几滴、叫痛）— 尤其公猫，24 小时内可致命</li>
+      <li><b>抽搐</b> / <b>突然失明</b>、瞳孔散大、眼睛出血</li>
+      <li><b>呼吸急促</b>（静息 &gt;40 次/分）、张口呼吸、端坐伸颈</li>
+      <li><b>完全不吃超过 24–48 小时</b>（猫 &gt;3 天不食有脂肪肝风险）</li>
+      <li><b>持续呕吐</b>，连水都留不住</li>
+      <li>口腔溃疡剧痛、明显尿臭口气</li>
+      <li>极度虚弱、站不起来、体温过低、意识模糊</li>
+      <li>皮下补液后呼吸变快变费力（可能过量）</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <h2><span class="n">禁忌</span>绝对不能给的东西</h2>
+  <table class="wk">
+    <thead><tr><th style="width:30%">禁用</th><th>原因</th></tr></thead>
+    <tbody>
+      <tr><td style="text-align:left"><b>含磷酸钠的灌肠剂（人用开塞露/Fleet）</b></td><td style="text-align:left">可致严重高磷血症、低钙抽搐、死亡</td></tr>
+      <tr><td style="text-align:left"><b>美洛昔康等 NSAID</b></td><td style="text-align:left">肾毒性。脱水、4 期、不稳定期禁用</td></tr>
+      <tr><td style="text-align:left"><b>对乙酰氨基酚（人用感冒止痛药）</b></td><td style="text-align:left">对猫任何剂量都是剧毒</td></tr>
+      <tr><td style="text-align:left"><b>奶酪、奶制品、骨头、骨粉、鱼干虾干、内脏、大部分零食条</b></td><td style="text-align:left">磷极高</td></tr>
+      <tr><td style="text-align:left"><b>来路不明的"补肾"保健品、含马兜铃酸中草药</b></td><td style="text-align:left">肾毒性</td></tr>
+      <tr><td style="text-align:left"><b>恩诺沙星</b>（未经兽医评估）</td><td style="text-align:left">CKD 猫标准剂量下视网膜病变风险增加</td></tr>
+      <tr><td style="text-align:left"><b>自行叠加泌尿处方粮</b></td><td style="text-align:left">酸化尿促草酸钙、部分产品含钠高；已有品牌把 CKD 列为禁忌</td></tr>
+    </tbody>
+  </table>
+  <div class="tip" style="margin-top:10px">
+    <b>本记录表是《猫慢性肾病新手家长照护手册》的配套工具。</b>剂量、选粮、补液操作、便秘处理等详细内容见主手册。所有用药请以主治兽医处方为准。
+  </div>
+</div>
+
+</div>
+</body>
+</html>

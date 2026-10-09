@@ -1,0 +1,972 @@
+<!DOCTYPE html><html lang='zh-CN'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>猫 CKD 用药清单（家长速查）</title><style>
+:root{--bg:#f6f7f9;--card:#ffffff;--ink:#1f2328;--muted:#5b6570;--line:#e3e7eb;
+--brand:#1f6feb;--warn:#c0392b;--tipbg:#fff8e6;--tipbd:#f0c36d;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;line-height:1.7;font-size:15px}
+.wrap{max-width:1080px;margin:0 auto;padding:28px 18px 80px}
+h1{font-size:28px;margin:0 0 6px}
+h2{font-size:21px;margin:38px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--line)}
+h3{font-size:17px;margin:22px 0 10px;color:#243447}
+.sub{color:var(--muted);font-size:14px}
+.disc{background:#fdecea;border-left:4px solid var(--warn);padding:12px 14px;border-radius:6px;margin:16px 0;font-size:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0}
+.legend{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 4px}
+.legend span{font-size:13px;padding:4px 10px;border-radius:20px;color:#fff}
+.toc{columns:2;column-gap:28px}
+.toc a{display:block;padding:3px 0;color:var(--brand);text-decoration:none;font-size:14px}
+.toc a:hover{text-decoration:underline}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:14px;background:#fff}
+th,td{border:1px solid var(--line);padding:8px 10px;vertical-align:top;text-align:left}
+th{background:#eef2f6;font-weight:600}
+.badge{display:inline-block;font-size:12px;color:#fff;border-radius:4px;padding:2px 7px;margin-right:6px;vertical-align:2px}
+.drug{border-left:4px solid var(--brand)}
+.drug.warn{border-left-color:var(--warn)}
+.dname{font-weight:700;font-size:16px;margin:0 0 4px}
+.kv{display:grid;grid-template-columns:92px 1fr;gap:4px 10px;font-size:14px;margin:8px 0}
+.kv b{color:#4b5563;font-weight:600}
+ul.notes{margin:6px 0 0 0;padding-left:20px}
+ul.notes li{margin:2px 0}
+.tip{background:var(--tipbg);border:1px solid var(--tipbd);border-radius:6px;padding:9px 12px;margin-top:10px;font-size:13.5px}
+.tip b{color:#8a5a00}
+.search{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font-size:15px;margin:10px 0}
+.stage{background:#eaf2ff;border:1px solid #c7dbff}
+blockquote{margin:0;color:var(--muted)}
+footer{margin-top:40px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:14px}
+@media print{
+ body{background:#fff;font-size:11.5pt}
+ .wrap{max-width:100%;padding:0}
+ .card{break-inside:avoid;page-break-inside:avoid}
+ h2{page-break-after:avoid}
+ .search{display:none}
+}
+</style></head><body><div class='wrap'>
+<h1>猫 CKD 用药清单（家长速查）</h1>
+<div class='sub'>数据源：金山文档《CKD 用药清单_by肘肉菲妈》· 整理与增补：本工作区 · 生成日期：2026-09-12</div>
+<div class='disc'><b>重要声明：</b>本表由猫家长社群共同整理，属于<b>经验型清单</b>，不是处方。原表已明确「对用药结果一概不负责，各位家长遵医嘱」。本清单在此基础上补充了证据等级与风险提示（黄色区块为整理者补充，非原表内容）。<b>任何药物开始、加量、联用前，请与你的主治兽医确认，尤其是注射剂、促红素、降压药与骨化三醇。</b></div>
+<h2 id='legend'>怎么读这张表</h2><div class='legend'>
+<span style='background:#0f8a5f'>A 指南/强推荐</span>
+<span style='background:#2166ac'>B 常规用药（有临床共识）</span>
+<span style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>
+<span style='background:#c0392b'>⚠ 高危/需监测</span></div>
+<div class='card'><b>四个用法要点：</b><ul><li><b>先分期、再选药</b>：原表标注了「建议使用分期」，1–2 期与 4 期的用药重点完全不同。</li><li><b>随餐 / 空腹决定了有没有效</b>：磷结合剂必须餐中吃，硫糖铝必须空腹，这两个搞反了等于白吃。</li><li><b>叠加前先查间隔</b>：活性炭、磷结合剂、硫糖铝都会「吸附」其他药，见「服药时机与冲突」。</li><li><b>黄色区块是整理者补充</b>：包含循证提示与风险提醒，帮助你判断「这个药到底值不值得上」。</li></ul></div>
+<h2 id='toc'>目录</h2><div class='toc'>
+<a href='#quick'>① 按症状倒查：我家猫现在这个情况该用什么</a>
+<a href='#cat0'>②.1 延缓进程</a>
+<a href='#cat1'>②.2 益生菌 / 肠道透析</a>
+<a href='#cat2'>②.3 贫血</a>
+<a href='#cat3'>②.4 降磷</a>
+<a href='#cat4'>②.5 降氮 / 肾毒素</a>
+<a href='#cat5'>②.6 蛋白尿 / 高血压</a>
+<a href='#cat6'>②.7 血气 / 离子紊乱</a>
+<a href='#cat7'>②.8 神经症状</a>
+<a href='#cat8'>②.9 消化道症状</a>
+<a href='#cat9'>②.10 口腔症状</a>
+<a href='#cat10'>②.11 食欲</a>
+<a href='#cat11'>②.12 肝胆与其他</a>
+<a href='#timing'>③ 服药时机与冲突间隔</a>
+<a href='#recheck'>④ 复查节奏</a>
+<a href='#risk'>⑤ 风险红榜</a>
+<a href='#stage'>⑥ 按 IRIS 分期的用药阶梯</a>
+</div>
+<h2 id='quick'>① 按症状倒查</h2>
+<table><tr><th style='width:30%'>现在的问题</th><th>先考虑这些（顺序=优先级）</th></tr>
+<tr><td><b>不吃东西 / 厌食</b></td><td>米氮平（透皮） ｜ 赛庚啶 ｜ 赛瑞宁（先排除恶心） ｜ 检查口腔疼痛与尿毒症胃炎</td></tr>
+<tr><td><b>呕吐 / 干呕 / 流口水</b></td><td>赛瑞宁 ｜ 奥美拉唑 ｜ 硫糖铝（空腹） ｜ 排查：脱水、梗阻、胰腺炎、尿毒症</td></tr>
+<tr><td><b>黑便 / 呕血 / 胃溃疡</b></td><td>硫糖铝（空腹 1h 前） ｜ 奥美拉唑 ｜ 急诊评估 + 查血压与血磷</td></tr>
+<tr><td><b>便秘 / 大便干硬</b></td><td>乳果糖 3ml 起 ｜ 拜耳 3350 ｜ 西沙比利 / 莫沙必利 ｜ 先补足液与饮水</td></tr>
+<tr><td><b>口臭 / 口腔溃疡 / 口炎</b></td><td>口腔护理（碘甘油、康复新液、可鲁等） ｜ 同步降氮 + 镇痛 ｜ 排查牙结石/齿吸收</td></tr>
+<tr><td><b>贫血（HCT 低、牙龈发白）</b></td><td>轻度：B12、叶酸、硫酸亚铁、补血肝精 ｜ 重度：富血力、兽用 VB/B12 注射 ｜ HCT&lt;25%：DPO / EPO（需兽医）</td></tr>
+<tr><td><b>血磷高</b></td><td>碳酸镧（餐中） ｜ 维福瑞（餐中） ｜ 氢氧化铝（短期） ｜ 根本：低磷饮食</td></tr>
+<tr><td><b>肌酐 / BUN 高</b></td><td>先排查脱水与梗阻 ｜ 皮下补液 ｜ 益生菌 / 吸附剂（辅助） ｜ 别指望单靠补充剂降</td></tr>
+<tr><td><b>高血压（&gt;160）</b></td><td>氨氯地平 1/8 片起 ｜ 目标<b>理想 &lt;140、否则 &lt;160</b> mmHg ｜ 查甲亢与眼底/心脏靶器官</td></tr>
+<tr><td><b>蛋白尿（UPC 高）</b></td><td>替米沙坦 2 mg/kg q24h ｜ 贝那普利 0.5–1.0 mg/kg（进阶） ｜ <b>替米沙坦与氨氯地平联用时须从 ≤1 mg/kg 起</b></td></tr>
+<tr><td><b>血钾低</b></td><td>葡钾片 ｜ 潘南金 ｜ 查饮食与补液配方</td></tr>
+<tr><td><b>血钾高（≥6.5）</b></td><td>急诊处理 ｜ 利倍卓（专科指导） ｜ 48h 复查血气</td></tr>
+<tr><td><b>代谢性酸中毒</b></td><td>碳酸氢钠（按血气算量） ｜ 柠檬酸钾（低钾时）</td></tr>
+<tr><td><b>抽搐 / 癫痫</b></td><td>急性：左乙拉西坦（急诊） ｜ 长期：苯巴比妥 ｜ 查血压与尿毒症脑病</td></tr>
+<tr><td><b>后肢无力</b></td><td>先查血钾 ｜ 兽用 VB / B12 注射 1 支/周</td></tr>
+<tr><td><b>多囊肾 PKD</b></td><td>灵芝孢子油 ｜ 百令 / DHF（辅助） ｜ 重点：血压 + 感染监控</td></tr>
+</table>
+<h2 id='detail'>② 分类明细</h2>
+<input class='search' id='q' placeholder='搜索药名 / 分类 / 关键词（如：磷、呕吐、贫血）' oninput='filterCards()'>
+<div id='drugs'>
+<h3 id='cat0'>②.1 延缓进程</h3>
+<div class='card drug' data-txt='延缓进程  胺肾 ckd 1–4 可以用狗的，便宜实惠，用胃溶分装即可 tips：2 号胶囊 + 25 孔胶囊架，7 粒半狗胺肾，分出 25 粒 300mg 的猫胺肾 营养补充剂，不是药。吃了它不等于已经治疗，饮食控磷 + 血压 + 蛋白尿管理才是主线。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>胺肾</p>
+<div class='kv'>
+<b>建议分期</b><div>CKD 1–4</div>
+<b>规格</b><div>猫 300mg / 狗 1000mg</div>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>详见官网（按体重）</div>
+<b>狗用量</b><div>详见官网</div>
+</div>
+<ul class='notes'>
+<li>可以用狗的，便宜实惠，用胃溶分装即可</li>
+<li>tips：2 号胶囊 + 25 孔胶囊架，7 粒半狗胺肾，分出 25 粒 300mg 的猫胺肾</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>营养补充剂，不是药。吃了它不等于已经治疗，饮食控磷 + 血压 + 蛋白尿管理才是主线。</div>
+</div>
+<div class='card drug warn' data-txt='延缓进程  骨化三醇 / 丰兹欧 / 鱼油（三选一组合） ckd 1–4 1. 体重轻且离子钙正常：直接用丰兹欧 2. 体重大（＞7kg）且离子钙正常：骨化三醇 + 鱼油 3. 离子钙高、折耳猫、高血钙、肾结石：只用普通鱼油 4. 骨化三醇分装需用肠溶胶囊，分装方法咨询群 5. 用骨化三醇/丰兹欧期间：其他含钙补剂和药要停 与骨化三醇同服需谨慎：含钙磷结合剂、巴比妥类、皮质类固醇、含镁抗酸剂、噻嗪利尿剂 骨化三醇是活性维 d，用前必查「离子钙 + 总钙 + 磷」，用药后 1–2 周复查；钙磷乘积过高会加速肾与软组织钙化，绝不能凭感觉加量。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>骨化三醇 / 丰兹欧 / 鱼油（三选一组合） <span style='color:#c0392b'>⚠</span></p>
+<div class='kv'>
+<b>建议分期</b><div>CKD 1–4</div>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>1. 骨化三醇用量：询问（按体重与离子钙）<br>2. 丰兹欧：1 粒/天<br>3. 鱼油（EPA）：4kg 以下 120mg/天；5kg 180mg/天；6kg 以上 300mg/天</div>
+<b>狗用量</b><div>骨化三醇暂无参考；7kg 以上大狗若用骨化三醇可叠加鱼油（EPA 摄入量无数据）</div>
+</div>
+<ul class='notes'>
+<li>1. 体重轻且离子钙正常：直接用丰兹欧</li>
+<li>2. 体重大（＞7kg）且离子钙正常：骨化三醇 + 鱼油</li>
+<li>3. 离子钙高、折耳猫、高血钙、肾结石：只用普通鱼油</li>
+<li>4. 骨化三醇分装需用肠溶胶囊，分装方法咨询群</li>
+<li>5. 用骨化三醇/丰兹欧期间：其他含钙补剂和药要停</li>
+<li>与骨化三醇同服需谨慎：含钙磷结合剂、巴比妥类、皮质类固醇、含镁抗酸剂、噻嗪利尿剂</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>骨化三醇是活性维 D，用前必查「离子钙 + 总钙 + 磷」，用药后 1–2 周复查；钙磷乘积过高会加速肾与软组织钙化，绝不能凭感觉加量。</div>
+</div>
+<div class='card drug warn' data-txt='延缓进程  贝前列素钠 rapros ckd 1–3 1. 监控血压 2. 可能升肌酐、升氮 3. 吃两周复查指标 扩血管药，可能让肌酐/尿素氮短期上升，别一看到指标涨就慌，也别不看指标一直吃。低血压猫慎用。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>贝前列素钠 RAPROS <span style='color:#c0392b'>⚠</span></p>
+<div class='kv'>
+<b>建议分期</b><div>CKD 1–3</div>
+<b>给药方式</b><div>餐后口服</div>
+<b>猫用量</b><div>1 粒/次，2 次/天</div>
+</div>
+<ul class='notes'>
+<li>1. 监控血压</li>
+<li>2. 可能升肌酐、升氮</li>
+<li>3. 吃两周复查指标</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>扩血管药，可能让肌酐/尿素氮短期上升，别一看到指标涨就慌，也别不看指标一直吃。低血压猫慎用。</div>
+</div>
+<div class='card drug warn' data-txt='延缓进程 控制蛋白尿 替米沙坦 ckd 1–3 针对蛋白尿！！！ 每两周复查肝肾生化 → 正常则再两周复查 → 正常则一个月后复查 猫 arb 单药指南口径 2 mg/kg q24h（社区常用 1 mg/kg 每日一次），原表给的 0.25 ml/kg 是某浓度溶液体积，务必按你手上那瓶的浓度换算，别照抄体积。<b>与氨氯地平联用时，须从 ≤1 mg/kg q24h 起</b>（减半起量，防低血压）。监测血压、血钾、肌酐。'>
+<p class='dname'><span class='badge' style='background:#0f8a5f'>A 指南/强推荐</span>替米沙坦 <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：控制蛋白尿</div>
+<div class='kv'>
+<b>建议分期</b><div>CKD 1–3</div>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>0.25 ml/kg（按药品浓度换算）<br><b>指南口径：2 mg/kg q24h</b></div>
+</div>
+<ul class='notes'>
+<li>针对蛋白尿！！！</li>
+<li>每两周复查肝肾生化 → 正常则再两周复查 → 正常则一个月后复查</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>猫 ARB 单药指南口径 2 mg/kg q24h（社区常用 1 mg/kg 每日一次），原表给的 0.25 ml/kg 是某浓度溶液体积，务必按你手上那瓶的浓度换算，别照抄体积。<b>与氨氯地平联用时，须从 ≤1 mg/kg q24h 起</b>（减半起量，防低血压）。监测血压、血钾、肌酐。</div>
+</div>
+<div class='card drug' data-txt='延缓进程 三萜类化合物（二选一） dhf kidney korrect ckd 1–3 / pkd 1–3  植物提取物类辅助品，与百令/灵芝孢子油属同类思路，不必叠加多种。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>DHF KIDNEY KORRECT</p>
+<div class='sub'>子类：三萜类化合物（二选一）</div>
+<div class='kv'>
+<b>建议分期</b><div>CKD 1–3 / PKD 1–3</div>
+<b>给药方式</b><div>餐后口服</div>
+<b>猫用量</b><div>1 粒/天</div>
+<b>狗用量</b><div>1 粒/天</div>
+</div>
+<div class='tip'><b>整理者补充：</b>植物提取物类辅助品，与百令/灵芝孢子油属同类思路，不必叠加多种。</div>
+</div>
+<div class='card drug' data-txt='延缓进程 三萜类化合物（二选一） 百令胶囊 ckd 1–3 / pkd 1–3 1. 可以拌饭，但有味道，有的宝儿不吃 2. 不能与抗凝血、抗生素、免疫抑制类、温补类（人参）等药同时服用 人用中成药，猫的临床数据缺乏。与抗凝/抗生素同用时至少间隔 1–2 小时。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>百令胶囊</p>
+<div class='sub'>子类：三萜类化合物（二选一）</div>
+<div class='kv'>
+<b>建议分期</b><div>CKD 1–3 / PKD 1–3</div>
+<b>给药方式</b><div>餐后口服</div>
+<b>猫用量</b><div>参考用量：3kg 两天一颗</div>
+</div>
+<ul class='notes'>
+<li>1. 可以拌饭，但有味道，有的宝儿不吃</li>
+<li>2. 不能与抗凝血、抗生素、免疫抑制类、温补类（人参）等药同时服用</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>人用中成药，猫的临床数据缺乏。与抗凝/抗生素同用时至少间隔 1–2 小时。</div>
+</div>
+<div class='card drug warn' data-txt='延缓进程 三萜类化合物 灵芝孢子油 ckd 1–3 / pkd 1–3 1. 国产买灵芝三萜 / 灵芝酸 a 含量高的即可 2. 与抗凝的药品间隔两小时 3. 与其余的药间隔一小时 多囊肾有条件就加；退一步用灵芝孢子粉（野生赤灵芝） 有抗血小板作用，手术前、与抗凝药/术前后需停用，务必间隔给药。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>灵芝孢子油 <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：三萜类化合物</div>
+<div class='kv'>
+<b>建议分期</b><div>CKD 1–3 / PKD 1–3</div>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>1. CKD：1 粒/天<br>2. PKD：1–2 粒/天（囊泡中重度大，如 2cm 上下：2 粒/天）</div>
+</div>
+<ul class='notes'>
+<li>1. 国产买灵芝三萜 / 灵芝酸 A 含量高的即可</li>
+<li>2. 与抗凝的药品间隔两小时</li>
+<li>3. 与其余的药间隔一小时</li>
+<li>多囊肾有条件就加；退一步用灵芝孢子粉（野生赤灵芝）</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>有抗血小板作用，手术前、与抗凝药/术前后需停用，务必间隔给药。</div>
+</div>
+<h3 id='cat1'>②.2 益生菌 / 肠道透析</h3>
+<div class='card drug' data-txt='益生菌 / 肠道透析  肾透 ckd 2–4（2 期氮高使用） 注意不是摩登狗，要冷藏保存，确认商家发货带不带冰袋 益生菌不建议和抗生素同时服用 「肠道透析」概念对猫的降氮效果研究结论并不一致（多数研究未显示肌酐/bun 显著下降），安全性尚可，但别把它当降肌酐主力。冷藏链断了活菌基本白吃。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>肾透</p>
+<div class='kv'>
+<b>建议分期</b><div>CKD 2–4（2 期氮高使用）</div>
+<b>给药方式</b><div>可拆开拌饭</div>
+<b>猫用量</b><div>1. 2.2kg 以下：1 粒/天<br>2. 2.2–5kg：早晚各 1 粒<br>3. 5kg 以上：早 2 晚 1 粒</div>
+</div>
+<ul class='notes'>
+<li>注意不是摩登狗，要冷藏保存，确认商家发货带不带冰袋</li>
+<li>益生菌不建议和抗生素同时服用</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>「肠道透析」概念对猫的降氮效果研究结论并不一致（多数研究未显示肌酐/BUN 显著下降），安全性尚可，但别把它当降肌酐主力。冷藏链断了活菌基本白吃。</div>
+</div>
+<div class='card drug' data-txt='益生菌 / 肠道透析  now  无需冷藏运输 可拆开拌饭 益生菌不建议和抗生素同时服用 「肠道透析」概念对猫的降氮效果研究结论并不一致（多数研究未显示肌酐/bun 显著下降），安全性尚可，但别把它当降肌酐主力。冷藏链断了活菌基本白吃。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>NOW</p>
+<div class='kv'>
+<b>规格</b><div>规格1：250 亿 / 规格2：500 亿 / 规格3：1000 亿</div>
+<b>给药方式</b><div>可拆开拌饭</div>
+<b>猫用量</b><div>1. 2 期氮高可用，咨询客服<br>2. 100B：BUN&gt;30 可从每天 2–3 颗试，看便便微软不拉稀即可</div>
+</div>
+<ul class='notes'>
+<li>无需冷藏运输</li>
+<li>可拆开拌饭</li>
+<li>益生菌不建议和抗生素同时服用</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>「肠道透析」概念对猫的降氮效果研究结论并不一致（多数研究未显示肌酐/BUN 显著下降），安全性尚可，但别把它当降肌酐主力。冷藏链断了活菌基本白吃。</div>
+</div>
+<div class='card drug' data-txt='益生菌 / 肠道透析  visbiome  1. 含牛奶，注意耐受 2. 必须冷藏运输与储存（2–8℃） 3. 室温仅可存放一周 可拆开拌饭 「肠道透析」概念对猫的降氮效果研究结论并不一致（多数研究未显示肌酐/bun 显著下降），安全性尚可，但别把它当降肌酐主力。冷藏链断了活菌基本白吃。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>VISBIOME</p>
+<div class='kv'>
+<b>规格</b><div>112.5 billion</div>
+<b>给药方式</b><div>可拆开拌饭</div>
+<b>猫用量</b><div>1–4 粒/天</div>
+</div>
+<ul class='notes'>
+<li>1. 含牛奶，注意耐受</li>
+<li>2. 必须冷藏运输与储存（2–8℃）</li>
+<li>3. 室温仅可存放一周</li>
+<li>可拆开拌饭</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>「肠道透析」概念对猫的降氮效果研究结论并不一致（多数研究未显示肌酐/BUN 显著下降），安全性尚可，但别把它当降肌酐主力。冷藏链断了活菌基本白吃。</div>
+</div>
+<div class='card drug' data-txt='益生菌 / 肠道透析  visbiome vet  同上（冷藏 2–8℃） 可拆开拌饭 益生菌不建议和抗生素同时服用 「肠道透析」概念对猫的降氮效果研究结论并不一致（多数研究未显示肌酐/bun 显著下降），安全性尚可，但别把它当降肌酐主力。冷藏链断了活菌基本白吃。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>VISBIOME VET</p>
+<div class='kv'>
+<b>规格</b><div>112.5 billion</div>
+<b>给药方式</b><div>可拆开拌饭</div>
+<b>猫用量</b><div>&lt;20lbs/9kg：1–2 粒/天<br>9–27kg：2–3 粒/天<br>&gt;27kg：4 粒/天</div>
+</div>
+<ul class='notes'>
+<li>同上（冷藏 2–8℃）</li>
+<li>可拆开拌饭</li>
+<li>益生菌不建议和抗生素同时服用</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>「肠道透析」概念对猫的降氮效果研究结论并不一致（多数研究未显示肌酐/BUN 显著下降），安全性尚可，但别把它当降肌酐主力。冷藏链断了活菌基本白吃。</div>
+</div>
+<div class='card drug' data-txt='益生菌 / 肠道透析  vetbiome plus  无需冷藏 可拆开拌饭 「肠道透析」概念对猫的降氮效果研究结论并不一致（多数研究未显示肌酐/bun 显著下降），安全性尚可，但别把它当降肌酐主力。冷藏链断了活菌基本白吃。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>VETBIOME PLUS</p>
+<div class='kv'>
+<b>规格</b><div>120 b</div>
+<b>给药方式</b><div>可拆开拌饭</div>
+<b>猫用量</b><div>&lt;9kg：1–2 粒/天<br>9–27kg：3–4 粒/天</div>
+</div>
+<ul class='notes'>
+<li>无需冷藏</li>
+<li>可拆开拌饭</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>「肠道透析」概念对猫的降氮效果研究结论并不一致（多数研究未显示肌酐/BUN 显著下降），安全性尚可，但别把它当降肌酐主力。冷藏链断了活菌基本白吃。</div>
+</div>
+<div class='card drug' data-txt='益生菌 / 肠道透析  nephromax  无需冷藏 可拆开拌饭 「肠道透析」概念对猫的降氮效果研究结论并不一致（多数研究未显示肌酐/bun 显著下降），安全性尚可，但别把它当降肌酐主力。冷藏链断了活菌基本白吃。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>NEPHROMAX</p>
+<div class='kv'>
+<b>规格</b><div>36 b</div>
+<b>给药方式</b><div>可拆开拌饭</div>
+<b>猫用量</b><div>&lt;4.54kg：1 粒/天<br>&gt;4.54kg：早晚各 1 粒/天</div>
+</div>
+<ul class='notes'>
+<li>无需冷藏</li>
+<li>可拆开拌饭</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>「肠道透析」概念对猫的降氮效果研究结论并不一致（多数研究未显示肌酐/BUN 显著下降），安全性尚可，但别把它当降肌酐主力。冷藏链断了活菌基本白吃。</div>
+</div>
+<div class='card drug' data-txt='益生菌 / 肠道透析  azovast plus（美 az）  无需冷藏 可拆开拌饭 「肠道透析」概念对猫的降氮效果研究结论并不一致（多数研究未显示肌酐/bun 显著下降），安全性尚可，但别把它当降肌酐主力。冷藏链断了活菌基本白吃。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>AZOVAST PLUS（美 AZ）</p>
+<div class='kv'>
+<b>规格</b><div>24 b</div>
+<b>给药方式</b><div>空腹服用</div>
+<b>猫用量</b><div>&lt;2.5kg：1 粒/天<br>2.5–4.5kg：早晚各 1 粒/天<br>&gt;4.5kg：早 2 晚 1 粒/天</div>
+</div>
+<ul class='notes'>
+<li>无需冷藏</li>
+<li>可拆开拌饭</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>「肠道透析」概念对猫的降氮效果研究结论并不一致（多数研究未显示肌酐/BUN 显著下降），安全性尚可，但别把它当降肌酐主力。冷藏链断了活菌基本白吃。</div>
+</div>
+<div class='card drug' data-txt='益生菌 / 肠道透析  azodyl（法 az）  必须冷藏运输与储存 益生菌不建议和抗生素同时服用 「肠道透析」概念对猫的降氮效果研究结论并不一致（多数研究未显示肌酐/bun 显著下降），安全性尚可，但别把它当降肌酐主力。冷藏链断了活菌基本白吃。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>AZODYL（法 AZ）</p>
+<div class='kv'>
+<b>规格</b><div>15 b</div>
+<b>给药方式</b><div>空腹服用</div>
+<b>猫用量</b><div>同美 AZ</div>
+</div>
+<ul class='notes'>
+<li>必须冷藏运输与储存</li>
+<li>益生菌不建议和抗生素同时服用</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>「肠道透析」概念对猫的降氮效果研究结论并不一致（多数研究未显示肌酐/BUN 显著下降），安全性尚可，但别把它当降肌酐主力。冷藏链断了活菌基本白吃。</div>
+</div>
+<h3 id='cat2'>②.3 贫血</h3>
+<div class='card drug warn' data-txt='贫血 轻度贫血 硫酸亚铁  若口服碳酸镧不建议用此药 判断标准：以爱德士血常规为准，看硫酸亚铁后黑底图片 2–3 周复查血常规 先确认真的缺铁（看网织红细胞血红蛋白量 / 血清铁 + tsat）再补。ckd 猫更多是「功能性缺铁」，盲目长期口服铁会便秘、影响其它药吸收，还可能加重氧化损伤。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>硫酸亚铁 <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：轻度贫血</div>
+<div class='kv'>
+<b>规格</b><div>0.3 g/粒</div>
+<b>给药方式</b><div>随餐 / 餐后口服</div>
+<b>猫用量</b><div>1/3 粒/天</div>
+<b>狗用量</b><div>1 粒/天</div>
+</div>
+<ul class='notes'>
+<li>若口服碳酸镧不建议用此药</li>
+<li>判断标准：以爱德士血常规为准，看硫酸亚铁后黑底图片</li>
+<li>2–3 周复查血常规</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>先确认真的缺铁（看网织红细胞血红蛋白量 / 血清铁 + TSAT）再补。CKD 猫更多是「功能性缺铁」，盲目长期口服铁会便秘、影响其它药吸收，还可能加重氧化损伤。</div>
+</div>
+<div class='card drug' data-txt='贫血 轻度贫血 维生素 b12  若 b12 用 wonderlabs 则无需单加叶酸片 猫 ckd 常见低 b12，口服补充安全、性价比高，是少数值得长期做的辅助项。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>维生素 B12</p>
+<div class='sub'>子类：轻度贫血</div>
+<div class='kv'>
+<b>规格</b><div>叶酸 400mcg/粒（Wonderlabs 复合）；B12 1000mcg/粒</div>
+<b>给药方式</b><div>随餐 / 餐后口服</div>
+<b>猫用量</b><div>250 mcg/次（约 1/4 粒），2 次/天</div>
+<b>狗用量</b><div>250 mcg/次，2 次/天</div>
+</div>
+<ul class='notes'>
+<li>若 B12 用 Wonderlabs 则无需单加叶酸片</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>猫 CKD 常见低 B12，口服补充安全、性价比高，是少数值得长期做的辅助项。</div>
+</div>
+<div class='card drug' data-txt='贫血 轻度贫血 复合维生素 b  natureplus（with rice bran） '>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>复合维生素 B</p>
+<div class='sub'>子类：轻度贫血</div>
+<div class='kv'>
+<b>给药方式</b><div>随餐 / 餐后口服</div>
+<b>猫用量</b><div>1/3 粒/天，1 次/天</div>
+<b>狗用量</b><div>1/3 粒/天，1 次/天</div>
+</div>
+<ul class='notes'>
+<li>natureplus（with rice bran）</li>
+</ul>
+</div>
+<div class='card drug warn' data-txt='贫血 轻度贫血 人用叶酸  不要选含木糖醇的 木糖醇对犬致低血糖、对猫也有风险，看一眼辅料表。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>人用叶酸 <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：轻度贫血</div>
+<div class='kv'>
+<b>规格</b><div>0.4 mg/粒</div>
+<b>给药方式</b><div>随餐 / 餐后口服</div>
+<b>猫用量</b><div>1/4 粒/天，1 次/天</div>
+<b>狗用量</b><div>1/4 粒/天，1 次/天</div>
+</div>
+<ul class='notes'>
+<li>不要选含木糖醇的</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>木糖醇对犬致低血糖、对猫也有风险，看一眼辅料表。</div>
+</div>
+<div class='card drug' data-txt='贫血 轻度贫血 补血肝精   肝精类含铁与动物肝成分，磷/铜含量不低，肾功能晚期别大量长期用。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>补血肝精</p>
+<div class='sub'>子类：轻度贫血</div>
+<div class='kv'>
+<b>给药方式</b><div>餐后口服</div>
+<b>猫用量</b><div>2 次/天，5 ml/次</div>
+</div>
+<div class='tip'><b>整理者补充：</b>肝精类含铁与动物肝成分，磷/铜含量不低，肾功能晚期别大量长期用。</div>
+</div>
+<div class='card drug warn' data-txt='贫血 轻度贫血 骨化三醇 / 丰兹欧  折耳猫、高血钙、肾结石不适用，其它含钙的补剂和药要停 见「延缓进程」条目：必须先查离子钙，用后复查。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>骨化三醇 / 丰兹欧 <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：轻度贫血</div>
+<div class='kv'>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>1 次/天</div>
+</div>
+<ul class='notes'>
+<li>折耳猫、高血钙、肾结石不适用，其它含钙的补剂和药要停</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>见「延缓进程」条目：必须先查离子钙，用后复查。</div>
+</div>
+<div class='card drug warn' data-txt='贫血 重度贫血 富血力  1. u40/1ml 针，一格正好 0.025 ml 2. 若口服碳酸镧可用此药 3. 无需冷藏保存 铁注射剂（右旋糖酐铁类）有过敏/休克风险，首次应由兽医操作并留观；铁剂也会干扰口服药吸收，与磷结合剂、抗生素错开。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>富血力 <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：重度贫血</div>
+<div class='kv'>
+<b>规格</b><div>2 ml/瓶</div>
+<b>给药方式</b><div>推荐肌肉注射；实在无条件再考虑皮下注射</div>
+<b>猫用量</b><div>0.5 ml/次，1 次/天</div>
+<b>狗用量</b><div>1 ml/次，1 次/天</div>
+</div>
+<ul class='notes'>
+<li>1. U40/1ml 针，一格正好 0.025 ml</li>
+<li>2. 若口服碳酸镧可用此药</li>
+<li>3. 无需冷藏保存</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>铁注射剂（右旋糖酐铁类）有过敏/休克风险，首次应由兽医操作并留观；铁剂也会干扰口服药吸收，与磷结合剂、抗生素错开。</div>
+</div>
+<div class='card drug' data-txt='贫血 重度贫血 兽用 vb  以升血为目的的注射：不建议与补液混合，会稀释 vb + b12 可以用 5ml 注射器一起抽，换 2.5ml 注射器针头打皮下 与皮下补液同一天时分开部位、分开时间打，不要在补液袋里混。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>兽用 VB</p>
+<div class='sub'>子类：重度贫血</div>
+<div class='kv'>
+<b>规格</b><div>1–2 ml</div>
+<b>给药方式</b><div>皮下注射</div>
+<b>猫用量</b><div>1 支/天，1 次/天</div>
+<b>狗用量</b><div>1 支/天，1 次/天</div>
+</div>
+<ul class='notes'>
+<li>以升血为目的的注射：不建议与补液混合，会稀释</li>
+<li>VB + B12 可以用 5ml 注射器一起抽，换 2.5ml 注射器针头打皮下</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>与皮下补液同一天时分开部位、分开时间打，不要在补液袋里混。</div>
+</div>
+<div class='card drug' data-txt='贫血 重度贫血 兽用 b12  以升血为目的的注射：不建议与补液混合，会稀释 '>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>兽用 B12</p>
+<div class='sub'>子类：重度贫血</div>
+<div class='kv'>
+<b>规格</b><div>规格1：1ml:0.25mg / 规格2：1ml:0.5mg / 规格3：1ml:1mg</div>
+<b>给药方式</b><div>皮下注射</div>
+<b>猫用量</b><div>规格1：1 支/天；规格2：1 支/天或分两次；规格3：0.25 ml/天</div>
+</div>
+<ul class='notes'>
+<li>以升血为目的的注射：不建议与补液混合，会稀释</li>
+</ul>
+</div>
+<div class='card drug' data-txt='贫血 重度贫血 人用叶酸   '>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>人用叶酸</p>
+<div class='sub'>子类：重度贫血</div>
+<div class='kv'>
+<b>规格</b><div>0.4 mg/粒</div>
+<b>给药方式</b><div>随餐 / 餐后口服</div>
+<b>猫用量</b><div>1/4 粒/天，1 次/天</div>
+<b>狗用量</b><div>1/4 粒/天，1 次/天</div>
+</div>
+</div>
+<div class='card drug warn' data-txt='贫血 重度贫血 dpo（达依泊汀）  重度贫血判断：排除再生性贫血后，用药三天再看指标，rbc / hct / hgb 不降就继续用 2–3 周复查血常规 iris：hct＜25%（或 25–28% 且持续/有症状）才考虑，起始 0.45–1 μg/kg 每周，目标 hct 抬到 30–35% 就减量/停。最大风险是产生抗促红素抗体导致纯红再障（prca），一旦发生贫血反而不可逆。'>
+<p class='dname'><span class='badge' style='background:#0f8a5f'>A 指南/强推荐</span>DPO（达依泊汀） <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：重度贫血</div>
+<div class='kv'>
+<b>给药方式</b><div>皮下注射</div>
+<b>猫用量</b><div>每周一次；20 单位一支打 0.025 ml/kg</div>
+</div>
+<ul class='notes'>
+<li>重度贫血判断：排除再生性贫血后，用药三天再看指标，RBC / HCT / HGB 不降就继续用</li>
+<li>2–3 周复查血常规</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>IRIS：HCT＜25%（或 25–28% 且持续/有症状）才考虑，起始 0.45–1 μg/kg 每周，目标 HCT 抬到 30–35% 就减量/停。最大风险是产生抗促红素抗体导致纯红再障（PRCA），一旦发生贫血反而不可逆。</div>
+</div>
+<div class='card drug warn' data-txt='贫血 重度贫血 epo（人重组促红素）   人用 epo 对猫免疫原性高，产生抗体的概率比 dpo 更高，且抗体可与人/猫 epo 交叉反应。能用 dpo 就别用 epo。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>EPO（人重组促红素） <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：重度贫血</div>
+<div class='kv'>
+<b>给药方式</b><div>皮下注射</div>
+<b>猫用量</b><div>150 iu/kg，三天一次（买人用的即可）</div>
+</div>
+<div class='tip'><b>整理者补充：</b>人用 EPO 对猫免疫原性高，产生抗体的概率比 DPO 更高，且抗体可与人/猫 EPO 交叉反应。能用 DPO 就别用 EPO。</div>
+</div>
+<h3 id='cat3'>②.4 降磷</h3>
+<div class='card drug' data-txt='降磷  福利斯诺碳酸镧  不能和铁、抗生素、抑酸制剂、ace 抑制剂、激素一起吃，要隔开 2–3 小时 不含钙、不含铝，是 ckd 猫较理想的磷结合剂。必须随餐（餐中或餐后立刻），空腹吃基本白吃。'>
+<p class='dname'><span class='badge' style='background:#0f8a5f'>A 指南/强推荐</span>福利斯诺碳酸镧</p>
+<div class='kv'>
+<b>给药方式</b><div>餐中 / 餐后马上给</div>
+<b>猫用量</b><div>按分期与血磷调整：<br>血磷＜1.9：30 mg/kg/天<br>血磷 1.9–2.25：60 mg/kg/天<br>血磷＞2.25：90 mg/kg/天<br>（可从 30–60 mg/kg 起步）</div>
+</div>
+<ul class='notes'>
+<li>不能和铁、抗生素、抑酸制剂、ACE 抑制剂、激素一起吃，要隔开 2–3 小时</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>不含钙、不含铝，是 CKD 猫较理想的磷结合剂。必须随餐（餐中或餐后立刻），空腹吃基本白吃。</div>
+</div>
+<div class='card drug warn' data-txt='降磷  氢氧化铝  如果磷水平 4 周内没达标：可增加到最高 90 mg/kg/天 理论上长期高剂量铝毒性（神经症状、小细胞性贫血）可能，但猫临床非常罕见 有效但含铝，长期蓄积有神经/骨骼/贫血风险，尽量短期、低剂量，优先碳酸镧或铁基结合剂。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>氢氧化铝 <span style='color:#c0392b'>⚠</span></p>
+<div class='kv'>
+<b>给药方式</b><div>分餐服用</div>
+<b>猫用量</b><div>起始 30 mg/kg/天，最高 90 mg/kg/天</div>
+</div>
+<ul class='notes'>
+<li>如果磷水平 4 周内没达标：可增加到最高 90 mg/kg/天</li>
+<li>理论上长期高剂量铝毒性（神经症状、小细胞性贫血）可能，但猫临床非常罕见</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>有效但含铝，长期蓄积有神经/骨骼/贫血风险，尽量短期、低剂量，优先碳酸镧或铁基结合剂。</div>
+</div>
+<div class='card drug warn' data-txt='降磷  维福瑞  糯米纸包着，或用速溶胃溶胶囊，餐中或餐后马上喂 铁基磷结合剂（velphoro 类）。一定要磨粉随餐，整片吞服无效；会与左甲状腺素、部分抗生素结合，同样要错开 2–3 小时。买之前确认有效成分。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>维福瑞 <span style='color:#c0392b'>⚠</span></p>
+<div class='kv'>
+<b>给药方式</b><div>餐中 / 餐后马上给</div>
+<b>猫用量</b><div>参考：血磷 3+：1.5 粒磨粉均分到每餐<br>血磷 4–5：2 粒磨粉均分到每餐</div>
+</div>
+<ul class='notes'>
+<li>糯米纸包着，或用速溶胃溶胶囊，餐中或餐后马上喂</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>铁基磷结合剂（Velphoro 类）。一定要磨粉随餐，整片吞服无效；会与左甲状腺素、部分抗生素结合，同样要错开 2–3 小时。买之前确认有效成分。</div>
+</div>
+<h3 id='cat4'>②.5 降氮 / 肾毒素</h3>
+<div class='card drug warn' data-txt='降氮 / 肾毒素 吸附类 尿毒清  胃溶胶囊分装；副作用拉稀、过敏 肝指标异常的不能用！持续监测肝指标 '>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>尿毒清 <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：吸附类</div>
+<div class='kv'>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>0.5 包/天，最多 1 包/天</div>
+</div>
+<ul class='notes'>
+<li>胃溶胶囊分装；副作用拉稀、过敏</li>
+<li>肝指标异常的不能用！持续监测肝指标</li>
+</ul>
+</div>
+<div class='card drug' data-txt='降氮 / 肾毒素 吸附类 包醛氧淀粉   '>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>包醛氧淀粉</p>
+<div class='sub'>子类：吸附类</div>
+<div class='kv'>
+<b>给药方式</b><div>口服</div>
+</div>
+</div>
+<div class='card drug warn' data-txt='降氮 / 肾毒素 吸附类 壳聚糖  买食品级、高纯度水溶即可 1. 氮爆表可以加次数 2. 副作用：腹胀、腹痛、便秘或腹泻 '>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>壳聚糖 <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：吸附类</div>
+<div class='kv'>
+<b>给药方式</b><div>随餐口服</div>
+<b>猫用量</b><div>50 mg/次，2 次/天</div>
+</div>
+<ul class='notes'>
+<li>买食品级、高纯度水溶即可</li>
+<li>1. 氮爆表可以加次数</li>
+<li>2. 副作用：腹胀、腹痛、便秘或腹泻</li>
+</ul>
+</div>
+<div class='card drug warn' data-txt='降氮 / 肾毒素 活性炭类（选一种即可） 活性炭类：爱西特 / 克里美净 / porus one / 共立 / qs  间隔任何入口的食物/药物 2 小时 可能引起呕吐、便秘 克里美净：掰成小块塞，千万不要磨成粉末，只能分块；开袋后易受潮需密封 porus one（有钱买这个） 共立（钙高不要用） 活性炭选一种即可！ 活性炭是非选择性吸附剂——它连磷结合剂、抗生素、维生素一起吸走。所有药必须错开 2 小时，且它会加重便秘与脱水，便秘的肾猫要慎用。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>活性炭类：爱西特 / 克里美净 / Porus One / 共立 / QS <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：活性炭类（选一种即可）</div>
+<div class='kv'>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>1. 爱西特：4kg 1/3–1/2 片；5kg 1/2–2/3 片；6kg 2/3–1 片（喂前建议询问）<br>2. 克里美净：100–150 mg/kg，2 次/天<br>3. Porus One：问药商<br>4. 共立：问药商<br>5. QS：睡前空腹 1 粒或半粒</div>
+</div>
+<ul class='notes'>
+<li>间隔任何入口的食物/药物 2 小时</li>
+<li>可能引起呕吐、便秘</li>
+<li>克里美净：掰成小块塞，千万不要磨成粉末，只能分块；开袋后易受潮需密封</li>
+<li>Porus One（有钱买这个）</li>
+<li>共立（钙高不要用）</li>
+<li>活性炭选一种即可！</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>活性炭是非选择性吸附剂——它连磷结合剂、抗生素、维生素一起吸走。所有药必须错开 2 小时，且它会加重便秘与脱水，便秘的肾猫要慎用。</div>
+</div>
+<h3 id='cat5'>②.6 蛋白尿 / 高血压</h3> <div class='tip'><b>ARB / ACE 抑制剂用药监测表（iCatCare 2026 期刊版 Table 5）：</b><table><tr><th>自开始治疗以来</th><th>检查</th><th>目标</th></tr><tr><td><b>1–2 周</b></td><td>临床症状、SBP、血清肌酐、血钾</td><td>评估耐受性；<b>肌酐升高 &gt;25–30% 可能需调整剂量</b></td></tr><tr><td><b>4 周</b>（开始或调量后）</td><td>临床症状、SBP、UPC</td><td>评估降低 UPC 的疗效</td></tr><tr><td><b>每 3 个月</b></td><td>临床症状、SBP、UPC</td><td>长期监测</td></tr></table><br><b>降压目标：</b>理想 SBP &lt;140 mmHg，否则 &lt;160 mmHg。RAAS 抑制仅考虑用于<b>未脱水且 CKD 稳定</b>的猫；联合用药时密切监测低血压。</div>
+<div class='card drug warn' data-txt='蛋白尿 / 高血压 蛋白尿 盐酸贝那普利  1. 替米沙坦不够用可叠加贝那普利 2. 不与促红素一起用，会影响促红效果 acei + arb 联用会放大高钾与肾灌注下降风险，属进阶操作，必须有血压与血钾监测，不要自己叠。<b>贝那普利可与氨氯地平联用；替米沙坦与氨氯地平联用时须从 ≤1 mg/kg q24h 起。</b>'>
+<p class='dname'><span class='badge' style='background:#0f8a5f'>A 指南/强推荐</span>盐酸贝那普利 <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：蛋白尿</div>
+<div class='kv'>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>0.5–1.0 mg/kg</div>
+</div>
+<ul class='notes'>
+<li>1. 替米沙坦不够用可叠加贝那普利</li>
+<li>2. 不与促红素一起用，会影响促红效果</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>ACEI + ARB 联用会放大高钾与肾灌注下降风险，属进阶操作，必须有血压与血钾监测，不要自己叠。<b>贝那普利可与氨氯地平联用；替米沙坦与氨氯地平联用时须从 ≤1 mg/kg q24h 起。</b></div>
+</div>
+<div class='card drug warn' data-txt='蛋白尿 / 高血压 高血压 氨氯地平  只要吃药维持在 150 上下就保持剂量每天吃 猫高血压一线用药，通常 0.625 mg（5mg 片的 1/8）起步、每日一次。目标收缩压理想＜140 mmhg、否则＜160 mmhg（有靶器官损伤者更严）。指南口径 0.125–0.25 mg/kg q24h。不能血压一正常就停，反弹很凶；同时排查甲亢与 ckd。'>
+<p class='dname'><span class='badge' style='background:#0f8a5f'>A 指南/强推荐</span>氨氯地平 <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：高血压</div>
+<div class='kv'>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>1. 收缩压 170–180：吃 1/8 片<br>2. 高于 200：吃 1/6 片<br>3. 降到 150 以下继续服用并减量至 1/8 片</div>
+</div>
+<ul class='notes'>
+<li>只要吃药维持在 150 上下就保持剂量每天吃</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>猫高血压一线用药，通常 0.625 mg（5mg 片的 1/8）起步、每日一次。目标收缩压<b>理想＜140 mmHg、否则＜160 mmHg</b>（有靶器官损伤者更严）。<b>指南口径 0.125–0.25 mg/kg q24h</b>（通常 0.625 或 1.25 mg/猫），严重高血压可至 0.5 mg/kg；经皮给药效果不如口服。不能血压一正常就停，反弹很凶；同时排查甲亢与 CKD。</div>
+</div>
+<h3 id='cat6'>②.7 血气 / 离子紊乱</h3>
+<div class='card drug warn' data-txt='血气 / 离子紊乱 低钾 葡钾片（葡萄糖酸钾）   补钾前必须有血气/生化依据，边补边复查；过量高钾会心脏骤停。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>葡钾片（葡萄糖酸钾） <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：低钾</div>
+<div class='kv'>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>具体用量咨询</div>
+<b>狗用量</b><div>具体用量咨询</div>
+</div>
+<div class='tip'><b>整理者补充：</b>补钾前必须有血气/生化依据，边补边复查；过量高钾会心脏骤停。</div>
+</div>
+<div class='card drug warn' data-txt='血气 / 离子紊乱 低镁低钾 潘南金（门冬氨酸钾镁片）   同时补钾镁，必须监测血钾，肾晚期排钾能力差。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>潘南金（门冬氨酸钾镁片） <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：低镁低钾</div>
+<div class='kv'>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>具体用量咨询</div>
+<b>狗用量</b><div>具体用量咨询</div>
+</div>
+<div class='tip'><b>整理者补充：</b>同时补钾镁，必须监测血钾，肾晚期排钾能力差。</div>
+</div>
+<div class='card drug warn' data-txt='血气 / 离子紊乱 高钾 利倍卓（环硅酸锆钠）  1. 兑水成悬混液口服，或拌湿粮 2. 血钾 ≥6.5–7 使用（雅培血气结果） 3. 使用后 48 小时复查血气调整剂量 4. 关注钠水平及全身水肿、便秘情况 人用新型降钾药，猫的使用经验极少。血钾 ≥6.5 是急症，优先急诊处理（胰岛素+糖、钙稳心、输液），不要只靠口服降钾药拖。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>利倍卓（环硅酸锆钠） <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：高钾</div>
+<div class='kv'>
+<b>给药方式</b><div>随餐服用</div>
+<b>猫用量</b><div>具体用量咨询</div>
+<b>狗用量</b><div>具体用量咨询</div>
+</div>
+<ul class='notes'>
+<li>1. 兑水成悬混液口服，或拌湿粮</li>
+<li>2. 血钾 ≥6.5–7 使用（雅培血气结果）</li>
+<li>3. 使用后 48 小时复查血气调整剂量</li>
+<li>4. 关注钠水平及全身水肿、便秘情况</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>人用新型降钾药，猫的使用经验极少。血钾 ≥6.5 是急症，优先急诊处理（胰岛素+糖、钙稳心、输液），不要只靠口服降钾药拖。</div>
+</div>
+<div class='card drug warn' data-txt='血气 / 离子紊乱 高钙 奇亚籽  用法：1:10 倍＜40℃ 温水，浸泡 10–20 分钟，泡出滑溜溜一层凝胶即可 观察便便预防便秘，增加饮水量 ⚠ 本清单不建议用：奇亚籽磷含量不低（约 800–900 mg/100g），对需要控磷的 ckd 猫是反向操作。高钙应先查离子钙，再处理病因（骨化三醇？含钙磷结合剂？肿瘤？），而不是靠膳食纤维「吸附」。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>奇亚籽 <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：高钙</div>
+<div class='kv'>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>具体用量咨询</div>
+<b>狗用量</b><div>具体用量咨询</div>
+</div>
+<ul class='notes'>
+<li>用法：1:10 倍＜40℃ 温水，浸泡 10–20 分钟，泡出滑溜溜一层凝胶即可</li>
+<li>观察便便预防便秘，增加饮水量</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>⚠ 本清单不建议用：奇亚籽磷含量不低（约 800–900 mg/100g），对需要控磷的 CKD 猫是反向操作。高钙应先查离子钙，再处理病因（骨化三醇？含钙磷结合剂？肿瘤？），而不是靠膳食纤维「吸附」。</div>
+</div>
+<div class='card drug warn' data-txt='血气 / 离子紊乱 低碳酸氢根（代谢性酸中毒） 碳酸氢钠  纠正目标（雅培血气）：狗 18–24 mmol/l；猫 16–24 mmol/l 必须按血气结果算量，过量会引起代谢性碱中毒、低钾与钠负荷（加重水肿/高血压）。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>碳酸氢钠 <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：低碳酸氢根（代谢性酸中毒）</div>
+<div class='kv'>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>具体用量咨询</div>
+</div>
+<ul class='notes'>
+<li>纠正目标（雅培血气）：狗 18–24 mmol/L；猫 16–24 mmol/L</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>必须按血气结果算量，过量会引起代谢性碱中毒、低钾与钠负荷（加重水肿/高血压）。</div>
+</div>
+<div class='card drug warn' data-txt='血气 / 离子紊乱 低碳酸氢根 / 低钾 柠檬酸钾  监控血钾，血钾高不用 纠正目标（雅培血气）：狗 18–24 mmol/l；猫 16–24 mmol/l 原表把它列在神经症状下，本清单按药理归入离子紊乱。含钾，高钾禁用。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>柠檬酸钾 <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：低碳酸氢根 / 低钾</div>
+<div class='kv'>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>具体用量咨询</div>
+</div>
+<ul class='notes'>
+<li>监控血钾，血钾高不用</li>
+<li>纠正目标（雅培血气）：狗 18–24 mmol/L；猫 16–24 mmol/L</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>原表把它列在神经症状下，本清单按药理归入离子紊乱。含钾，高钾禁用。</div>
+</div>
+<h3 id='cat7'>②.8 神经症状</h3>
+<div class='card drug' data-txt='神经症状 后肢无力 兽用 vb（注射）  症状消失停药 增加活性炭和 100b 益生菌用量 '>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>兽用 VB（注射）</p>
+<div class='sub'>子类：后肢无力</div>
+<div class='kv'>
+<b>规格</b><div>1–2 ml</div>
+<b>给药方式</b><div>口服 / 皮下注射</div>
+<b>猫用量</b><div>1 支/周</div>
+</div>
+<ul class='notes'>
+<li>症状消失停药</li>
+<li>增加活性炭和 100B 益生菌用量</li>
+</ul>
+</div>
+<div class='card drug' data-txt='神经症状 后肢无力 兽用 b12（注射）  症状消失停药 增加活性炭和 100b 益生菌用量 后肢无力先查血钾（低钾是肾猫常见且能快速纠正的原因），再考虑 b 族缺乏或尿毒症神经病变。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>兽用 B12（注射）</p>
+<div class='sub'>子类：后肢无力</div>
+<div class='kv'>
+<b>规格</b><div>1ml:0.25mg / 0.5mg / 1mg</div>
+<b>给药方式</b><div>皮下注射</div>
+<b>猫用量</b><div>1 支/周</div>
+</div>
+<ul class='notes'>
+<li>症状消失停药</li>
+<li>增加活性炭和 100B 益生菌用量</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>后肢无力先查血钾（低钾是肾猫常见且能快速纠正的原因），再考虑 B 族缺乏或尿毒症神经病变。</div>
+</div>
+<div class='card drug warn' data-txt='神经症状 抽搐 / 癫痫（急性） 左乙拉西坦  急性抽搐 / 癫痫用 急性发作属急诊，先稳定气道与体温，静脉通路给药；同时排查尿毒症脑病、高血压性脑病。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>左乙拉西坦 <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：抽搐 / 癫痫（急性）</div>
+<div class='kv'>
+<b>给药方式</b><div>注射</div>
+<b>猫用量</b><div>具体用量咨询</div>
+<b>狗用量</b><div>具体用量咨询</div>
+</div>
+<ul class='notes'>
+<li>急性抽搐 / 癫痫用</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>急性发作属急诊，先稳定气道与体温，静脉通路给药；同时排查尿毒症脑病、高血压性脑病。</div>
+</div>
+<div class='card drug warn' data-txt='神经症状 抽搐 / 癫痫（长期维护） 苯巴比妥（癫安舒）  非急性抽搐 / 癫痫，长期维护用 需定期查血药浓度与肝功；与骨化三醇同属需谨慎合用的药物（巴比妥类影响维 d 代谢）。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>苯巴比妥（癫安舒） <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：抽搐 / 癫痫（长期维护）</div>
+<div class='kv'>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>具体用量咨询</div>
+<b>狗用量</b><div>具体用量咨询</div>
+</div>
+<ul class='notes'>
+<li>非急性抽搐 / 癫痫，长期维护用</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>需定期查血药浓度与肝功；与骨化三醇同属需谨慎合用的药物（巴比妥类影响维 D 代谢）。</div>
+</div>
+<h3 id='cat8'>②.9 消化道症状</h3>
+<div class='card drug warn' data-txt='消化道症状 呕吐 / 出血 赛瑞宁（马罗匹坦）  根据自家孩子的量买不同规格即可 指南口径 <b>1 mg/kg q24h</b>；原表 2 mg/kg 更接近犬止吐剂量，用于猫请与兽医确认。是止吐不是治因——连吃 5 天还在吐，必须回去查病因（尿毒症胃炎、梗阻、胰腺炎）。'>
+<p class='dname'><span class='badge' style='background:#0f8a5f'>A 指南/强推荐</span>赛瑞宁（马罗匹坦） <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：呕吐 / 出血</div>
+<div class='kv'>
+<b>规格</b><div>注射液 / 16mg / 24mg / 60mg</div>
+<b>给药方式</b><div>口服（也有针剂）</div>
+<b>猫用量</b><div>原表 2 mg/kg<br><b>指南口径：1 mg/kg SC/IV/PO q24h</b></div>
+</div>
+<ul class='notes'>
+<li>根据自家孩子的量买不同规格即可</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>指南口径 <b>1 mg/kg q24h</b>；原表 2 mg/kg 更接近犬止吐剂量，用于猫请与兽医确认。是止吐不是治因——连吃 5 天还在吐，必须回去查病因（尿毒症胃炎、梗阻、胰腺炎）。</div>
+</div>
+<div class='card drug warn' data-txt='消化道症状 呕吐 / 出血 硫糖铝（片剂）  用兽用那个 含铝，肾猫长期大量用有铝蓄积顾虑；且会吸附几乎所有同服药物，与其他药间隔 ≥2 小时。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>硫糖铝（片剂） <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：呕吐 / 出血</div>
+<div class='kv'>
+<b>规格</b><div>片剂</div>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>50 mg/kg</div>
+</div>
+<ul class='notes'>
+<li>用兽用那个</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>含铝，肾猫长期大量用有铝蓄积顾虑；且会吸附几乎所有同服药物，与其他药间隔 ≥2 小时。</div>
+</div>
+<div class='card drug warn' data-txt='消化道症状 呕吐 / 出血 硫糖铝（悬浮液）  饭前空腹 1 小时 溃疡严重可以加量、加次数 空腹给药才有效，饭后吃等于白吃。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>硫糖铝（悬浮液） <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：呕吐 / 出血</div>
+<div class='kv'>
+<b>规格</b><div>悬浮液</div>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>5 ml/次，2 次/天</div>
+</div>
+<ul class='notes'>
+<li>饭前空腹 1 小时</li>
+<li>溃疡严重可以加量、加次数</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>空腹给药才有效，饭后吃等于白吃。</div>
+</div>
+<div class='card drug warn' data-txt='消化道症状 呕吐 / 出血 奥美拉唑  1. 需连续使用 2–3 天，可直接喂 2. 吃氯吡格雷的不能吃奥美拉唑 肾四期毒素影响消化道、流口水不停药 肠溶片不可碾碎（碾碎失效）。长期使用需关注低镁、维生素 b12 吸收下降与肠道菌群改变。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>奥美拉唑 <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：呕吐 / 出血</div>
+<div class='kv'>
+<b>规格</b><div>艾司奥美拉唑镁肠溶片 20mg/片</div>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>0.5–1 mg/kg</div>
+</div>
+<ul class='notes'>
+<li>1. 需连续使用 2–3 天，可直接喂</li>
+<li>2. 吃氯吡格雷的不能吃奥美拉唑</li>
+<li>肾四期毒素影响消化道、流口水不停药</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>肠溶片不可碾碎（碾碎失效）。长期使用需关注低镁、维生素 B12 吸收下降与肠道菌群改变。</div>
+</div>
+<div class='card drug warn' data-txt='消化道症状 便秘 西沙比利（怡瑞 5mg/片）  胃溶胶囊分装，肝功不好可减半使用 促动力药，怀疑肠梗阻时禁用——先确认不是梗阻再用。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>西沙比利（怡瑞 5mg/片） <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：便秘</div>
+<div class='kv'>
+<b>规格</b><div>5 mg/片</div>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>0.5 片/次，2 次/天</div>
+</div>
+<ul class='notes'>
+<li>胃溶胶囊分装，肝功不好可减半使用</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>促动力药，怀疑肠梗阻时禁用——先确认不是梗阻再用。</div>
+</div>
+<div class='card drug' data-txt='消化道症状 便秘 莫沙必利（加斯清 5mg/片）  1. 心脏不好的可优先使用莫沙必利 2. 胃溶胶囊分装 '>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>莫沙必利（加斯清 5mg/片）</p>
+<div class='sub'>子类：便秘</div>
+<div class='kv'>
+<b>规格</b><div>5 mg/片</div>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>同西沙比利</div>
+</div>
+<ul class='notes'>
+<li>1. 心脏不好的可优先使用莫沙必利</li>
+<li>2. 胃溶胶囊分装</li>
+</ul>
+</div>
+<div class='card drug warn' data-txt='消化道症状 便秘 乳果糖   肾猫便秘的一线。目标是大便软成形，拉稀就减量——腹泻会加重脱水，对肾更伤。'>
+<p class='dname'><span class='badge' style='background:#0f8a5f'>A 指南/强推荐</span>乳果糖 <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：便秘</div>
+<div class='kv'>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>可从 3 ml 开始试</div>
+</div>
+<div class='tip'><b>整理者补充：</b>肾猫便秘的一线。目标是大便软成形，拉稀就减量——腹泻会加重脱水，对肾更伤。</div>
+</div>
+<div class='card drug' data-txt='消化道症状 便秘 拜耳 3350（聚乙二醇 3350）  长期便秘建议备 3350 渗透性泻剂，安全性好，但必须配合足量饮水。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>拜耳 3350（聚乙二醇 3350）</p>
+<div class='sub'>子类：便秘</div>
+<div class='kv'>
+<b>给药方式</b><div>口服</div>
+</div>
+<ul class='notes'>
+<li>长期便秘建议备 3350</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>渗透性泻剂，安全性好，但必须配合足量饮水。</div>
+</div>
+<h3 id='cat9'>②.10 口腔症状</h3>
+<div class='card drug' data-txt='口腔症状  碘甘油   口炎/口腔溃疡先查是不是尿毒症性口炎——局部涂抹能缓解，但根源是毒素，需同步降氮与镇痛。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>碘甘油</p>
+<div class='tip'><b>整理者补充：</b>口炎/口腔溃疡先查是不是尿毒症性口炎——局部涂抹能缓解，但根源是毒素，需同步降氮与镇痛。</div>
+</div>
+<div class='card drug' data-txt='口腔症状  康复新液   口炎/口腔溃疡先查是不是尿毒症性口炎——局部涂抹能缓解，但根源是毒素，需同步降氮与镇痛。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>康复新液</p>
+<div class='tip'><b>整理者补充：</b>口炎/口腔溃疡先查是不是尿毒症性口炎——局部涂抹能缓解，但根源是毒素，需同步降氮与镇痛。</div>
+</div>
+<div class='card drug' data-txt='口腔症状  宠齿健   口炎/口腔溃疡先查是不是尿毒症性口炎——局部涂抹能缓解，但根源是毒素，需同步降氮与镇痛。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>宠齿健</p>
+<div class='tip'><b>整理者补充：</b>口炎/口腔溃疡先查是不是尿毒症性口炎——局部涂抹能缓解，但根源是毒素，需同步降氮与镇痛。</div>
+</div>
+<div class='card drug' data-txt='口腔症状  丰姿舒   口炎/口腔溃疡先查是不是尿毒症性口炎——局部涂抹能缓解，但根源是毒素，需同步降氮与镇痛。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>丰姿舒</p>
+<div class='tip'><b>整理者补充：</b>口炎/口腔溃疡先查是不是尿毒症性口炎——局部涂抹能缓解，但根源是毒素，需同步降氮与镇痛。</div>
+</div>
+<div class='card drug' data-txt='口腔症状  可鲁   口炎/口腔溃疡先查是不是尿毒症性口炎——局部涂抹能缓解，但根源是毒素，需同步降氮与镇痛。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>可鲁</p>
+<div class='tip'><b>整理者补充：</b>口炎/口腔溃疡先查是不是尿毒症性口炎——局部涂抹能缓解，但根源是毒素，需同步降氮与镇痛。</div>
+</div>
+<div class='card drug warn' data-txt='口腔症状  3% 双氧水   ⚠ 不推荐在家常规使用：3% 双氧水会灼伤口腔黏膜，误吞可致呕吐、食道炎与气泡性栓塞风险；如需冲洗应稀释并由兽医操作。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>3% 双氧水 <span style='color:#c0392b'>⚠</span></p>
+<div class='tip'><b>整理者补充：</b>⚠ 不推荐在家常规使用：3% 双氧水会灼伤口腔黏膜，误吞可致呕吐、食道炎与气泡性栓塞风险；如需冲洗应稀释并由兽医操作。</div>
+</div>
+<h3 id='cat10'>②.11 食欲</h3>
+<div class='card drug warn' data-txt='食欲  艾口替   原表未写明成分与剂量，疑为卡莫瑞林（capromorelin，elura）类促食欲药。买之前务必核对成分与猫用剂量，别按名字抓药。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>艾口替 <span style='color:#c0392b'>⚠</span></p>
+<div class='tip'><b>整理者补充：</b>原表未写明成分与剂量，疑为卡莫瑞林（capromorelin，Elura）类促食欲药。买之前务必核对成分与猫用剂量，别按名字抓药。</div>
+</div>
+<div class='card drug warn' data-txt='食欲  米氮平  米氮平不好使再换赛庚啶 猫常用约 3.75 mg/只 每 48–72 小时一次（也有按 1.88 mg 的用法），肾病/肝病需减量与延长间隔。<b>指南口径：2 mg/猫 q24h（PO 或经皮）；CKD 分期较高者因肾清除率降低，可改为 q48h。</b>促食欲的同时要处理恶心（马罗匹坦）和口腔疼痛，否则吃了也留不住。'>
+<p class='dname'><span class='badge' style='background:#0f8a5f'>A 指南/强推荐</span>米氮平 <span style='color:#c0392b'>⚠</span></p>
+<div class='kv'>
+<b>给药方式</b><div>抹耳朵（透皮）</div>
+<b>猫用量</b><div>按体重与剂型，遵医嘱</div>
+</div>
+<ul class='notes'>
+<li>米氮平不好使再换赛庚啶</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>猫常用约 3.75 mg/只 每 48–72 小时一次（也有按 1.88 mg 的用法），肾病/肝病需减量与延长间隔。<b>指南口径：2 mg/猫 q24h（PO 或经皮）；CKD 分期较高者因肾清除率降低，可改为 q48h。</b>促食欲的同时要处理恶心（马罗匹坦）和口腔疼痛，否则吃了也留不住。</div>
+</div>
+<div class='card drug' data-txt='食欲  赛庚啶   二线促食欲，注意嗜睡与个体反应差异。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>赛庚啶</p>
+<div class='kv'>
+<b>给药方式</b><div>口服</div>
+</div>
+<div class='tip'><b>整理者补充：</b>二线促食欲，注意嗜睡与个体反应差异。</div>
+</div>
+<h3 id='cat11'>②.12 肝胆与其他</h3>
+<div class='card drug' data-txt='肝胆与其他 胆 优思弗（熊去氧胆酸）  肠溶胶囊 '>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>优思弗（熊去氧胆酸）</p>
+<div class='sub'>子类：胆</div>
+<div class='kv'>
+<b>给药方式</b><div>餐后口服</div>
+<b>猫用量</b><div>10–15 mg/kg/天；多餐按 15 mg/kg 算总量分三次</div>
+</div>
+<ul class='notes'>
+<li>肠溶胶囊</li>
+</ul>
+</div>
+<div class='card drug' data-txt='肝胆与其他 肝胆 思美泰（same）  肠溶胶囊 '>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>思美泰（SAMe）</p>
+<div class='sub'>子类：肝胆</div>
+<div class='kv'>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>1–2 次/天，每次 20 mg/kg</div>
+</div>
+<ul class='notes'>
+<li>肠溶胶囊</li>
+</ul>
+</div>
+<div class='card drug warn' data-txt='肝胆与其他 肝 谷胱甘肽片  本品不得与维生素 b12、甲萘醌、泛酸钙、乳清酸、抗组胺制剂、磺胺药及四环素等混合使用 '>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>谷胱甘肽片 <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：肝</div>
+<div class='kv'>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>以 5.35kg 猫举例：1 片/次，3 次/天</div>
+</div>
+<ul class='notes'>
+<li>本品不得与维生素 B12、甲萘醌、泛酸钙、乳清酸、抗组胺制剂、磺胺药及四环素等混合使用</li>
+</ul>
+</div>
+<div class='card drug warn' data-txt='肝胆与其他 结石 鸡内金生粉  1. 有助于膀胱结晶排出 2. 胆结石可用 3. 肾结石有人试过一周没用，长期未知 具体哪款在群里问 猫肾结石多为草酸钙，不可溶解，靠排石粉不解决；且泌尿/肾脏问题要先区分是结石还是结晶栓，别自行通淋延误。'>
+<p class='dname'><span class='badge' style='background:#7f8c8d'>C 辅助/经验（证据有限）</span>鸡内金生粉 <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：结石</div>
+<div class='kv'>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>1 次/天，2 片/次</div>
+</div>
+<ul class='notes'>
+<li>1. 有助于膀胱结晶排出</li>
+<li>2. 胆结石可用</li>
+<li>3. 肾结石有人试过一周没用，长期未知</li>
+<li>具体哪款在群里问</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>猫肾结石多为草酸钙，不可溶解，靠排石粉不解决；且泌尿/肾脏问题要先区分是结石还是结晶栓，别自行通淋延误。</div>
+</div>
+<div class='card drug warn' data-txt='肝胆与其他 消炎 甲硝唑  自己 buy 味极苦（猫会流涎拒食），高剂量或长期使用有神经毒性（共济失调、抽搐），且经肝代谢。只用于明确指征的厌氧菌/原虫感染，别当常规「消炎药」。'>
+<p class='dname'><span class='badge' style='background:#2166ac'>B 常规用药（有临床共识）</span>甲硝唑 <span style='color:#c0392b'>⚠</span></p>
+<div class='sub'>子类：消炎</div>
+<div class='kv'>
+<b>给药方式</b><div>口服</div>
+<b>猫用量</b><div>10–20 mg/kg</div>
+</div>
+<ul class='notes'>
+<li>自己 buy</li>
+</ul>
+<div class='tip'><b>整理者补充：</b>味极苦（猫会流涎拒食），高剂量或长期使用有神经毒性（共济失调、抽搐），且经肝代谢。只用于明确指征的厌氧菌/原虫感染，别当常规「消炎药」。</div>
+</div>
+</div>
+<h2 id='timing'>③ 服药时机与冲突间隔</h2>
+<table><tr><th style='width:26%'>药物</th><th style='width:22%'>最佳时机</th><th>必须错开 / 注意</th></tr>
+<tr><td><b style='color:#c0392b'>磷结合剂（碳酸镧 / 维福瑞 / 氢氧化铝）</b></td><td>餐中或餐后立刻</td><td>与铁剂、抗生素、抑酸剂（奥美拉唑）、ACEI、激素 隔开 2–3 小时</td></tr>
+<tr><td><b style='color:#c0392b'>活性炭类</b></td><td>空腹 / 睡前</td><td>与一切入口食物和药物 间隔 2 小时</td></tr>
+<tr><td><b style='color:#c0392b'>硫糖铝</b></td><td>餐前空腹 1 小时</td><td>与其他所有药 间隔 ≥2 小时</td></tr>
+<tr><td><b style='color:#d35400'>奥美拉唑</b></td><td>餐前空腹</td><td>与氯吡格雷禁忌合用；与硫糖铝、磷结合剂错开</td></tr>
+<tr><td><b style='color:#c0392b'>骨化三醇</b></td><td>空腹（原表：周三晚 + 周日早空腹）</td><td>禁与含钙磷结合剂、含镁抗酸剂、巴比妥类、皮质类固醇、噻嗪类利尿剂同用</td></tr>
+<tr><td><b style='color:#d35400'>益生菌（肾透 / NOW / VISBIOME 等）</b></td><td>随餐或拌饭</td><td>与抗生素 间隔 2 小时；AZODYL / AZOVAST 需空腹</td></tr>
+<tr><td><b style='color:#d35400'>VB / B12 注射</b></td><td>皮下注射</td><td>不要混进补液袋（会被稀释）</td></tr>
+<tr><td><b style='color:#d35400'>DPO / EPO</b></td><td>皮下注射，固定日期</td><td>避免与 ACEI 类随意叠加（影响疗效）</td></tr>
+<tr><td><b style='color:#7f8c8d'>灵芝孢子油 / 百令</b></td><td>口服</td><td>与抗凝药间隔 2 小时；与其药间隔 1 小时</td></tr>
+<tr><td><b style='color:#7f8c8d'>米氮平</b></td><td>抹耳廓内侧（透皮）</td><td>戴手套，避免自己吸收；24h 内不要重复；<b>CKD 高分期者因肾清除率降低可 q48h</b></td></tr>
+</table>
+<div class='tip'><b>整理者补充：</b>肾猫一天吃七八种东西是常态，建议画一张<b>时间表</b>贴冰箱：空腹档（骨化三醇 / 硫糖铝 / 奥美拉唑 / AZODYL）、随餐档（磷结合剂 / 益生菌 / 铁剂）、间隔档（活性炭、灵芝孢子油）。任何两种不确定的药，默认隔开 2 小时最安全。</div>
+<h2 id='recheck'>④ 复查节奏</h2>
+<table><tr><th style='width:26%'>开始/调整的药物</th><th style='width:44%'>什么时候复查</th><th>看什么指标</th></tr>
+<tr><td><b>替米沙坦 / 贝那普利</b></td><td>社区版：开始后 2 周复查肝肾生化 → 正常则再 2 周 → 正常则 1 个月后复查<br><b>指南版：1–2 周 → 4 周 → 每 3 个月</b></td><td>血压 + 血钾 + 肌酐 + UPC。<b>肌酐升高 &gt;25–30% 可能需调整剂量</b></td></tr>
+<tr><td><b>贝前列素钠 RAPROS</b></td><td>吃 2 周复查指标（可能升肌酐、升氮）</td><td>肌酐、BUN、血压</td></tr>
+<tr><td><b>骨化三醇 / 丰兹欧</b></td><td>用前查离子钙；用药后 1–2 周复查</td><td>离子钙、总钙、磷（钙磷乘积）</td></tr>
+<tr><td><b>贫血治疗（铁 / B12 / DPO / EPO）</b></td><td>2–3 周复查血常规；DPO 调整期每周看 HCT</td><td>RBC、HCT、HGB、网织</td></tr>
+<tr><td><b>磷结合剂</b></td><td>调整剂量后 4 周评估是否达标</td><td>血磷（目标 IRIS 分期对应的范围）</td></tr>
+<tr><td><b>高钾处理（利倍卓）</b></td><td>用药后 48 小时复查血气</td><td>血钾、钠、水肿/便秘情况</td></tr>
+<tr><td><b>氨氯地平</b></td><td>开始/调量后 1–2 周复测血压</td><td>收缩压（目标<b>理想 &lt;140、否则 &lt;160</b> mmHg）</td></tr>
+</table>
+<h2 id='risk'>⑤ 风险红榜（整理者补充）</h2>
+<div class='card drug warn'><p class='dname'>⚠ 奇亚籽「降钙」</p><div>奇亚籽磷含量高（约 800–900 mg/100g），对需要控磷的肾猫是帮倒忙。</div></div>
+<div class='card drug warn'><p class='dname'>⚠ 3% 双氧水涂口腔</p><div>灼伤黏膜、误吞致呕吐/食道炎，家庭环境不建议常规使用。</div></div>
+<div class='card drug warn'><p class='dname'>⚠ 长期含铝磷结合剂</p><div>铝蓄积可致神经症状、小细胞性贫血，尽量短期低剂量。</div></div>
+<div class='card drug warn'><p class='dname'>⚠ 盲目补铁</p><div>不查铁状态就长期口服铁，会便秘、干扰其它药吸收、加重氧化损伤。</div></div>
+<div class='card drug warn'><p class='dname'>⚠ 骨化三醇不看离子钙</p><div>高钙会加速肾脏与软组织钙化，是「越补越坏」的典型。</div></div>
+<div class='card drug warn'><p class='dname'>⚠ 活性炭当主力降氮</p><div>非选择性吸附，会把所有同服药物吸走，还加重便秘与脱水。</div></div>
+<div class='card drug warn'><p class='dname'>⚠ EPO 替代 DPO</p><div>人用 EPO 免疫原性高，可能诱发抗体导致纯红再障（PRCA）。</div></div>
+<div class='card drug warn'><p class='dname'>⚠ 自行叠加降压药</p><div>替米沙坦 + 贝那普利联用会放大高钾与肾灌注下降风险，必须监测。<b>替米沙坦与氨氯地平联用时必须从 ≤1 mg/kg q24h 起</b>（防低血压）。</div></div> <div class='card drug warn'><p class='dname'>⚠ 脱水或 CKD 不稳定时上 RAAS 抑制剂</p><div>指南明确 ARB / ACEI <b>仅用于未脱水且病情稳定的猫</b>，否则可能加重肾灌注不足。</div></div>
+<h2 id='stage'>⑥ 按 IRIS 分期的用药阶梯</h2>
+<div class='card stage'><p class='dname'>IRIS 1–2 期</p><div>血压与蛋白尿是主线：UPC&gt;0.4 考虑替米沙坦 2 mg/kg q24h；血压&gt;160 上氨氯地平 0.125–0.25 mg/kg q24h（<b>目标理想 &lt;140、否则 &lt;160</b>）；低磷饮食起步；补充剂（胺肾/鱼油/益生菌）可选。</div></div>
+<div class='card stage'><p class='dname'>IRIS 3 期</p><div>加入降磷（碳酸镧维福瑞随餐）；监测贫血与血钾；BUN 高可考虑益生菌/吸附剂；开始考虑皮下补液（剂量见《照护手册》4.3/4.4）。</div></div>
+<div class='card stage'><p class='dname'>IRIS 4 期</p><div>通常需规律皮下补液；止吐（赛瑞宁）+ 护胃（奥美拉唑/硫糖铝）+ 促食欲（米氮平）组合；严重贫血评估 DPO；考虑喂食管。</div></div>
+<div class='tip'><b>说明：</b>分期依据 IRIS 2026（肌酐 / SDMA + UPC + 血压）。本工作区已有《猫慢性肾病新手家长照护手册》与 33 篇文献译文，分期标准、补液剂量、无机磷规避等细节可对照查阅。</div>
+<footer>数据来源：<a href='https://www.kdocs.cn/l/cm6fkWYs2FEo'>金山文档《CKD用药清单_by肘肉菲妈》</a>（作者：肘肉菲妈，鸣谢蛋黄妈、nanami 妈等）。本页为本地整理版，仅供个人学习与与兽医沟通时参考，不得作为处方依据。</footer>
+
+<script>
+function filterCards(){
+  var q=document.getElementById('q').value.trim().toLowerCase();
+  var cards=document.querySelectorAll('#drugs .drug');
+  var heads=document.querySelectorAll('#drugs h3');
+  cards.forEach(function(c){
+    c.style.display = (!q || c.dataset.txt.indexOf(q)>-1) ? '' : 'none';
+  });
+  heads.forEach(function(h){
+    var n=h.nextElementSibling, vis=false;
+    while(n && n.tagName!=='H3'){
+      if(n.classList && n.classList.contains('drug') && n.style.display!=='none'){vis=true;break;}
+      n=n.nextElementSibling;
+    }
+    h.style.display = vis ? '' : 'none';
+  });
+}
+</script>
+</div></body></html>

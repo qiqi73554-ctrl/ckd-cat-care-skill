@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+Thumbs.db
+
+# 临时产物与备份
+*.tmp
+*.log
+*.bak
+*~
+
+# 本地环境
+.env
+.venv/
+venv/
+
+# 调试/预览截图（体积大，可重新生成）
+**/_preview/
+**/_preview/**
+**/node_modules/
+**/.cache/

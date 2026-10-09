@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>猫慢性肾病（CKD）新手家长照护手册</title>
+<style>
+:root{
+  --ink:#1f2937; --ink2:#4b5563; --ink3:#6b7280;
+  --bg:#f7f8f6; --card:#ffffff; --line:#e5e7eb; --line2:#d1d5db;
+  --teal:#0f766e; --teal-bg:#e6f4f1; --teal-line:#99d4cb;
+  --blue:#1e40af; --blue-bg:#e8eefc; --blue-line:#a9bdf3;
+  --amber:#92400e; --amber-bg:#fdf3e3; --amber-line:#f0cf9a;
+  --red:#991b1b; --red-bg:#fdeaea; --red-line:#f0aaaa;
+  --green:#166534; --green-bg:#e9f5ec; --green-line:#a5d6b3;
+  --purple:#5b21b6; --purple-bg:#f0eafd;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; padding:0; background:var(--bg); color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:15.5px; line-height:1.85; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:920px; margin:0 auto; padding:0 20px 80px;}
+
+/* ---------- header ---------- */
+header{
+  background:linear-gradient(135deg,#0f766e,#115e59 55%,#134e4a);
+  color:#fff; padding:44px 20px 38px; margin-bottom:26px;
+}
+header .inner{max-width:920px;margin:0 auto;}
+header .kicker{font-size:13px;letter-spacing:.18em;opacity:.8;margin-bottom:12px;font-weight:600;}
+header h1{margin:0 0 12px; font-size:31px; line-height:1.35; font-weight:800; letter-spacing:-.5px;}
+header .sub{font-size:15px; opacity:.92; max-width:660px; line-height:1.8;}
+header .meta{margin-top:20px; display:flex; flex-wrap:wrap; gap:8px;}
+header .meta span{
+  background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.25);
+  padding:4px 12px; border-radius:20px; font-size:12.5px;
+}
+
+/* ---------- disclaimer ---------- */
+.disclaimer{
+  background:var(--amber-bg); border:1px solid var(--amber-line); border-left:5px solid #d97706;
+  border-radius:10px; padding:16px 20px; margin:0 0 28px; font-size:14px; color:var(--amber);
+  line-height:1.8;
+}
+.disclaimer b{color:#78350f;}
+
+/* ---------- toc ---------- */
+.toc{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin-bottom:34px;}
+.toc h2{margin:0 0 14px; font-size:16px; color:var(--teal); letter-spacing:.02em;}
+.toc ol{margin:0; padding-left:0; list-style:none; columns:2; column-gap:34px;}
+.toc li{margin-bottom:8px; break-inside:avoid;}
+.toc a{color:var(--ink2); text-decoration:none; font-size:14.5px; border-bottom:1px dashed var(--line2);}
+.toc a:hover{color:var(--teal); border-color:var(--teal);}
+.toc li .n{display:inline-block; width:22px; color:var(--teal); font-weight:700; font-size:13px;}
+
+/* ---------- section ---------- */
+section{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:30px 34px; margin-bottom:26px;}
+section>h2{
+  margin:0 0 6px; font-size:22px; font-weight:800; color:var(--ink);
+  display:flex; align-items:baseline; gap:11px; letter-spacing:-.3px;
+}
+section>h2 .num{
+  font-size:13px; font-weight:800; color:#fff; background:var(--teal);
+  min-width:26px; height:26px; border-radius:7px; display:inline-flex;
+  align-items:center; justify-content:center; padding:0 7px; flex:none;
+}
+section>.lead{color:var(--ink3); font-size:14.5px; margin:0 0 22px; padding-bottom:16px; border-bottom:1px dashed var(--line2);}
+h3{font-size:17px; font-weight:700; margin:28px 0 10px; color:var(--teal); letter-spacing:.01em;}
+h3:first-of-type{margin-top:8px;}
+h4{font-size:15.5px; font-weight:700; margin:20px 0 8px; color:var(--ink);}
+p{margin:0 0 12px;}
+
+/* ---------- lists ---------- */
+ul,ol{margin:0 0 14px; padding-left:22px;}
+li{margin-bottom:7px;}
+li::marker{color:var(--teal);}
+ul.clean{list-style:none; padding-left:0;}
+ul.clean li{padding-left:22px; position:relative;}
+ul.clean li::before{content:""; position:absolute; left:6px; top:11px; width:6px; height:6px; border-radius:50%; background:var(--teal);}
+
+/* ---------- tables ---------- */
+table{width:100%; border-collapse:collapse; margin:14px 0 18px; font-size:14px;}
+th{background:var(--teal); color:#fff; font-weight:700; text-align:left; padding:10px 12px; font-size:13.5px;}
+td{padding:9px 12px; border-bottom:1px solid var(--line); vertical-align:top;}
+tbody tr:nth-child(even){background:#fafbfa;}
+tbody tr:hover{background:var(--teal-bg);}
+td.num,th.num{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap;}
+table.small{font-size:13.5px;}
+table.small td,table.small th{padding:7px 10px;}
+
+/* ---------- boxes ---------- */
+.box{border-radius:10px; padding:15px 18px; margin:16px 0; font-size:14.5px; line-height:1.8;}
+.box .t{font-weight:800; display:block; margin-bottom:6px; font-size:14.5px;}
+.box p:last-child{margin-bottom:0;}
+.box.tip{background:var(--teal-bg); border:1px solid var(--teal-line); color:#134e4a;}
+.box.tip .t{color:var(--teal);}
+.box.warn{background:var(--amber-bg); border:1px solid var(--amber-line); color:#78350f;}
+.box.warn .t{color:#b45309;}
+.box.danger{background:var(--red-bg); border:1px solid var(--red-line); color:#7f1d1d;}
+.box.danger .t{color:#b91c1c;}
+.box.info{background:var(--blue-bg); border:1px solid var(--blue-line); color:#1e3a8a;}
+.box.info .t{color:var(--blue);}
+.box.good{background:var(--green-bg); border:1px solid var(--green-line); color:#14532d;}
+.box.good .t{color:var(--green);}
+.tag-neg{color:#b91c1c;} .tag-warn{color:#b45309;} .tag-pos{color:var(--green);}
+
+/* ---------- steps ---------- */
+.steps{counter-reset:s; list-style:none; padding:0; margin:16px 0;}
+.steps li{
+  counter-increment:s; position:relative; padding:0 0 16px 44px; margin-bottom:0;
+  border-left:2px solid var(--line); margin-left:13px;
+}
+.steps li:last-child{border-left-color:transparent; padding-bottom:0;}
+.steps li::before{
+  content:counter(s); position:absolute; left:-14px; top:0;
+  width:26px; height:26px; border-radius:50%; background:var(--teal); color:#fff;
+  font-size:13px; font-weight:800; display:flex; align-items:center; justify-content:center;
+}
+.steps li b{display:block; margin-bottom:3px; color:var(--ink);}
+
+/* ---------- checklist ---------- */
+.check{list-style:none; padding:0; margin:14px 0;}
+.check li{
+  display:flex; align-items:flex-start; gap:10px; padding:9px 12px; margin-bottom:6px;
+  background:#fafbfa; border:1px solid var(--line); border-radius:8px; font-size:14.5px;
+}
+.check input[type=checkbox]{
+  width:17px; height:17px; margin-top:4px; flex:none; accent-color:var(--teal); cursor:pointer;
+}
+.check li span{flex:1;}
+.check li .tag{
+  font-size:11.5px; padding:2px 8px; border-radius:5px; background:var(--teal-bg);
+  color:var(--teal); font-weight:700; white-space:nowrap; flex:none;
+}
+.check li .tag.must{background:var(--red-bg); color:var(--red);}
+
+/* ---------- drug card ---------- */
+.drug{
+  border:1px solid var(--line); border-radius:11px; margin-bottom:14px; overflow:hidden;
+}
+.drug .hd{
+  background:linear-gradient(90deg,#f0f7f6,#fafbfa); padding:11px 16px;
+  border-bottom:1px solid var(--line); display:flex; align-items:center;
+  justify-content:space-between; gap:12px; flex-wrap:wrap;
+}
+.drug .hd .name{font-weight:800; font-size:15.5px; color:var(--ink);}
+.drug .hd .name small{font-weight:500; color:var(--ink3); font-size:12.5px; margin-left:7px;}
+.drug .hd .pill{
+  font-size:12px; padding:3px 11px; border-radius:20px; font-weight:700; white-space:nowrap;
+}
+.drug .bd{padding:13px 16px; font-size:14.5px;}
+.drug .bd dl{margin:0; display:grid; grid-template-columns:74px 1fr; gap:6px 12px;}
+.drug .bd dt{color:var(--teal); font-weight:700; font-size:13.5px;}
+.drug .bd dd{margin:0;}
+.pill.p1{background:var(--red-bg); color:var(--red);}
+.pill.p2{background:var(--amber-bg); color:#b45309;}
+.pill.p3{background:var(--blue-bg); color:var(--blue);}
+.pill.p4{background:var(--green-bg); color:var(--green);}
+.pill.p5{background:var(--purple-bg); color:var(--purple);}
+
+/* ---------- misc ---------- */
+.kv{display:grid; grid-template-columns:auto 1fr; gap:4px 14px; font-size:14.5px; margin:10px 0;}
+.kv dt{color:var(--teal); font-weight:700; white-space:nowrap;}
+.kv dd{margin:0;}
+.grid2{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+.grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:14px;}
+.mini{background:#fafbfa; border:1px solid var(--line); border-radius:9px; padding:14px 16px;}
+.mini .h{font-weight:800; font-size:14.5px; margin-bottom:6px; color:var(--ink);}
+.mini .d{font-size:13.5px; color:var(--ink2); line-height:1.75;}
+.big-num{font-size:26px; font-weight:800; color:var(--teal); line-height:1.2; font-variant-numeric:tabular-nums;}
+.big-num small{font-size:13px; font-weight:600; color:var(--ink3); display:block; letter-spacing:0;}
+code{background:#f1f5f4; padding:1px 6px; border-radius:4px; font-size:13.5px; font-family:ui-monospace,Consolas,monospace; color:#0f766e;}
+hr{border:0; border-top:1px dashed var(--line2); margin:26px 0;}
+.src{font-size:12.5px; color:var(--ink3); font-style:normal;}
+.src b{color:var(--teal);}
+footer{text-align:center; color:var(--ink3); font-size:13px; padding:30px 20px 10px; line-height:1.9;}
+
+/* ---------- responsive ---------- */
+@media (max-width:720px){
+  .wrap{padding:0 13px 60px;}
+  section{padding:22px 18px;}
+  .toc ol{columns:1;}
+  .grid2,.grid3{grid-template-columns:1fr;}
+  header h1{font-size:24px;}
+  table{font-size:13px;}
+  th,td{padding:8px 8px;}
+  .drug .bd dl{grid-template-columns:1fr; gap:2px;}
+  .drug .bd dt{margin-top:6px;}
+}
+
+/* ---------- print ---------- */
+@media print{
+  body{background:#fff; font-size:11pt; line-height:1.65;}
+  header{background:#0f766e !important; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  section{break-inside:auto; border:1px solid #ccc; margin-bottom:14px; padding:16px;}
+  section>h2{break-after:avoid;}
+  h3,h4{break-after:avoid;}
+  .box,.drug,table,.steps,.check{break-inside:avoid;}
+  .toc{break-after:page;}
+  .no-print{display:none !important;}
+  th{background:#0f766e !important; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  tbody tr:nth-child(even){background:#f6f7f6 !important; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <div class="kicker">CAT · CKD · CAREGIVER GUIDE</div>
+    <h1>猫慢性肾病（CKD）新手家长照护手册</h1>
+    <div class="sub">
+      从确诊那一刻起，到皮下补液、选粮选罐头、吃药、应对便秘和呕吐的完整操作指南。
+      每一个数字都尽量标注了出处，方便你带着它去和主治医生对齐方案。
+    </div>
+    <div class="meta">
+      <span>依据 IRIS 2026 指南</span>
+      <span>iCatCare 2026 共识</span>
+      <span>ISFM 共识指南</span>
+      <span>49 篇文献整理</span>
+      <span>2026-09 版</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<div class="disclaimer">
+  <b>开篇先说三句实话：</b><br>
+  ① <b>本手册不能替代兽医。</b>文中所有剂量均来自公开指南与文献的常规剂量，实际用药必须由你家猫的主治兽医按体重、分期、血检结果个体化确定并调整。<br>
+  ② <b>慢性肾病不可逆，但高度可管理。</b>目标是让猫活得久，且每一天都舒服——这两件事有时要取舍，优先级是<b>生活质量 &gt; 化验数字</b>。<br>
+  ③ <b>体重是家里最灵敏的仪器。</b>一台婴儿秤（精确到 10g）+ 一个本子，比很多高级检查都更早发现恶化。
+</div>
+
+<nav class="toc no-print">
+  <h2>目录</h2>
+  <ol>
+    <li><a href="#s0"><span class="n">00</span>10 分钟速读版</a></li>
+    <li><a href="#s1"><span class="n">01</span>先搞懂：这是什么病</a></li>
+    <li><a href="#s2"><span class="n">02</span>IRIS 分期：看懂化验单</a></li>
+    <li><a href="#s3"><span class="n">03</span>确诊后第一周做什么</a></li>
+    <li><a href="#s4"><span class="n">04</span>皮下补液：手把手</a></li>
+    <li><a href="#s5"><span class="n">05</span>怎么选猫粮和罐头</a></li>
+    <li><a href="#s6"><span class="n">06</span>药物全解与喂药技巧</a></li>
+    <li><a href="#s7"><span class="n">07</span>便秘：最被低估的痛苦</a></li>
+    <li><a href="#s8"><span class="n">08</span>呕吐、恶心与不吃东西</a></li>
+    <li><a href="#s9"><span class="n">09</span>在家监测与复查节奏</a></li>
+    <li><a href="#s10"><span class="n">10</span>从肾到膀胱：泌尿问题</a></li>
+    <li><a href="#s11"><span class="n">11</span>急症：立刻去医院</a></li>
+    <li><a href="#s12"><span class="n">12</span>生活质量的最后一道题</a></li>
+    <li><a href="#s13"><span class="n">13</span>十个常见误区</a></li>
+    <li><a href="#s14"><span class="n">14</span>附录：术语与来源</a></li>
+  </ol>
+</nav>
+
+<!-- ============ 00 ============ -->
+<section id="s0">
+  <h2><span class="num">00</span>10 分钟速读版</h2>
+  <p class="lead">如果现在没时间读完，记住下面 6 条，就够你撑过第一个月。</p>
+
+  <div class="grid3">
+    <div class="mini">
+      <div class="big-num">吃<small>低磷肾脏粮</small></div>
+      <div class="d">目前<b>唯一被证实能延长生命</b>的干预。磷是第一优先级，不是蛋白质。肾脏粮占热量 50% 以上就已经有生存获益。</div>
+    </div>
+    <div class="mini">
+      <div class="big-num">水<small>比药更重要</small></div>
+      <div class="d">慢性脱水会让所有指标变难看、让猫难受。湿粮 &gt; 干粮；必要时在家皮下补液，一次 75–150 mL，每 1–3 天一次。<br><span class="src">一般从 <b>IRIS 3 期</b>开始考虑，1–2 期不需要（详见 <a href="#s4">第 4 章</a>）。</span></div>
+    </div>
+    <div class="mini">
+      <div class="big-num">秤<small>每周固定称体重</small></div>
+      <div class="d">体重下降往往早于任何症状。研究显示猫在确诊前 12 个月中位已掉 8.9% 体重。<b>掉 5% 就该复诊。</b></div>
+    </div>
+  </div>
+
+  <h4>四条"立刻改"的事</h4>
+  <ol>
+    <li><b>停掉所有非甾体抗炎药（NSAID，如美洛昔康）</b>和一切可能伤肾的药——这一条写在 IRIS 每一期的第一条。</li>
+    <li><b>家里到处放水碗 + 循环饮水机</b>，把水碗垫高一点，多摆几个。别只放一个。</li>
+    <li><b>换成湿粮为主</b>：罐头、鲜食水分 70%+，干粮只有 8–10%。同样的水，吃进去比喝进去容易得多。</li>
+    <li><b>开始记录</b>：每天吃了多少、吐了几次、拉了几次、精神如何；每周称一次体重。这个本子以后会救命。</li>
+  </ol>
+
+  <div class="box warn">
+    <span class="t">最容易做错的一件事</span>
+    <p>看到肌酐高就慌着"限蛋白"。这是上世纪的思路了。<b>猫是严格肉食动物，蛋白质不足会快速掉肌肉、恶化预后。</b>真正要盯的是<b>磷</b>。现代肾脏处方粮已经是"适度蛋白 + 低磷"的配方，不要自己再去额外压蛋白。</p>
+  </div>
+
+  <div class="box danger">
+    <span class="t">绝对禁止（会致命）</span>
+    <p>❌ 含<b>磷酸钠</b>的灌肠剂（如 Fleet 类人用开塞露）——猫用可致急性高磷血症、低钙抽搐、死亡。<br>
+    ❌ 美洛昔康等<b>非甾体抗炎药</b>（除非兽医在稳定期、充分知情同意下短期使用）。<br>
+    ❌ 长期喂<b>高无机磷</b>的自制/生骨肉（见 05 章那项 4 周就伤肾的研究）。</p>
+  </div>
+</section>
+
+<!-- ============ 01 ============ -->
+  <div class="box info" style="margin-top:20px">
+    <span class="t">别忘了另一端：膀胱</span>
+    <p>肾和膀胱是同一条管道的两端。<b>CKD 猫尿路感染患病率 15–30%</b>，而真正需要抗生素的细菌感染在年轻猫里只有约 <b>2%</b>。<br>
+    日常能同时护住两端的只有三件事：<b>湿粮 + 多个水源、猫砂盆按"猫数 + 1"配、别自己给抗生素</b>。<br>
+    <b>尿不出来是急症，尤其公猫，24–48 小时可致命。</b>详见 <a href="#s10" style="color:inherit;text-decoration:underline">第 10 章 从肾到膀胱：泌尿问题</a>。</p>
+  </div>
+
+<section id="s1">
+  <h2><span class="num">01</span>先搞懂：这到底是个什么病</h2>
+  <p class="lead">慢性肾病（Chronic Kidney Disease, CKD）= 肾脏结构和功能持续（≥3 个月）不可逆地丢失。</p>
+
+  <h3>肾脏到底在干什么</h3>
+  <p>你可以把肾单位想象成一堆微型过滤器。它们负责四件事：<b>过滤代谢废物</b>（尿素、肌酐这类"垃圾"）、<b>调节水电解质</b>（钠钾钙磷）、<b>维持血压</b>、以及<b>分泌促红素</b>（命令骨髓造血）。</p>
+  <p>猫的肾单位<b>死了不会再生</b>。坏到一定程度，剩下的肾单位会"加班"硬撑——这就是为什么早期几乎没症状：血检看着还行，其实已经损失了大约 <b>2/3</b> 的功能才勉强露出马脚。</p>
+  <p>CKD 的麻烦在于，它不只是一个"肾"的病，而是会<b>连锁拖垮全身</b>：废物蓄积 → 恶心呕吐 → 不吃 → 掉肌肉 → 更没力气；排水能力下降 → 慢性脱水 → 肾血流更差 → 恶性循环。<b>你后面做的每一件事，本质上都是在打断这些循环。</b></p>
+
+  <h3>有多常见</h3>
+  <div class="kv">
+    <dt>老年猫</dt><dd>12 岁以上猫的患病率报告在 <b>28%–81%</b> 之间（不同研究口径差异大）。</dd>
+    <dt>死因占比</dt><dd>英国一项 5 岁以上猫调查中，肾脏病致死占 <b>13.6%</b>，死亡中位年龄 <b>15 岁</b>。</dd>
+    <dt>隐匿性</dt><dd>外表健康的老年猫里做筛查，约 <b>8%</b> 已处于亚临床 CKD（IRIS 2 期及以上）。</dd>
+  </div>
+  <p class="src"><b>来源：</b>iCatCare 2026 共识指南。所以它不罕见，也不是"你家猫特别倒霉"——这是猫这个物种的老年常态。</p>
+
+  <h3>关于"能活多久"，一句诚实的话</h3>
+  <p>这个问题没有标准答案，个体差异极大：<b>有的猫确诊后还能好好活好几年，有的几个月内就恶化。</b>决定因素不是某一个数字，而是分期 + 蛋白尿 + 血磷 + 血压 + 是否稳定这些变量叠加。</p>
+  <p>有一组常被引用、但需要正确理解的数据（Boyd 等，群组为已就诊的 CKD 猫）：</p>
+  <table class="small">
+    <thead><tr><th>临床节点</th><th class="num">自该节点起的中位生存期</th></tr></thead>
+    <tbody>
+      <tr><td>CKD 诊断</td><td class="num">771 天</td></tr>
+      <tr><td>开始体重下降</td><td class="num">401 天</td></tr>
+      <tr><td>开始皮下补液</td><td class="num">142 天</td></tr>
+      <tr><td>贫血（HCT &lt;25%）</td><td class="num">100 天</td></tr>
+    </tbody>
+  </table>
+  <div class="box info">
+    <span class="t">这表该怎么看</span>
+    <p>它<b>不是</b>"一补液就只剩 142 天"的意思。它说明的是：<b>需要开始补液，本身标志着疾病已进入较晚阶段</b>。很多猫补液之后精神、食欲明显变好，活过这个中位数的非常多。数字是群体统计，你家猫是个体。</p>
+    <p class="src" style="margin-top:8px"><b>来源：</b>Boyd 等，经 G4 综述引用。</p>
+  </div>
+</section>
+
+<!-- ============ 02 ============ -->
+<section id="s2">
+  <h2><span class="num">02</span>IRIS 分期：看懂化验单</h2>
+  <p class="lead">全世界兽医都在用 IRIS 这套语言。你听懂了，才能和医生真正对话。</p>
+
+  <h3>第一步：按血肌酐 + SDMA 分期</h3>
+  <table>
+    <thead>
+      <tr><th>分期</th><th class="num">肌酐 μmol/l</th><th class="num">肌酐 mg/dl</th><th class="num">SDMA μg/dl</th><th>通常意味着</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><b>1 期</b></td><td class="num">&lt;140</td><td class="num">&lt;1.6</td><td class="num">&lt;18</td><td>尚未氮质血症，靠 SDMA／其他证据发现</td></tr>
+      <tr><td><b>2 期</b></td><td class="num">140–250</td><td class="num">1.6–2.8</td><td class="num">18–25</td><td>轻度氮质血症，症状轻微或无</td></tr>
+      <tr><td><b>3 期</b></td><td class="num">251–440</td><td class="num">2.9–5.0</td><td class="num">26–38</td><td>中重度，肾外症状开始明显</td></tr>
+      <tr><td><b>4 期</b></td><td class="num">&gt;440</td><td class="num">&gt;5.0</td><td class="num">&gt;38</td><td>晚期，尿毒症风险高</td></tr>
+    </tbody>
+  </table>
+  <p class="src"><b>来源：</b>IRIS 2026 分期指南（猫）。注意各实验室单位与参考区间不同，以报告单标注为准。</p>
+
+  <div class="box tip">
+    <span class="t">肌酐和 SDMA 打架时听谁的</span>
+    <p>IRIS 2026 给了明确规则：<br>
+    · 肌酐在 1.6–2.8（按肌酐算 2 期）但 <b>SDMA 持续 &gt;25</b> → 按 <b>3 期</b>治；<br>
+    · 肌酐在 2.9–5.0（按肌酐算 3 期）但 <b>SDMA 持续 &gt;38</b> → 按 <b>4 期</b>治；<br>
+    · 肌肉严重流失的猫，肌酐会假性偏低，此时<b>用 SDMA 分期更准</b>。</p>
+  </div>
+
+  <div class="box info">
+    <span class="t">关于 SDMA，别神化它</span>
+    <p>SDMA 平均可比肌酐<b>提前约 17 个月</b>升高（Hall 2014），是很好的早期筛查工具。但它<b>不是确诊依据</b>：Brans 2021 未能证实它优于肌酐（特异度 75–76% vs 94–96%），Mack 2021 发现 SDMA 在 15–19 时只有 53% 会持续升高。<b>单次的、轻度升高的 SDMA，需要 2–4 周后复查确认</b>，不要一次就给猫"判死刑"。</p>
+<div class="info"><b>2026 新数据：SDMA 到底有多准（Hardy 2026，n=27）</b><br>研究用放射性碘治疗甲亢的猫做模型（治疗后 GFR 变化可预测），直接对比两个指标：<b>SDMA&gt;14 µg/dl 敏感性 83%、特异性只有 50%</b>；SDMA≥18 为 50%/71%；肌酐≥175 µmol/l 为 50%/<b>85%</b>。两者<b>不一致率 10%–75%</b>（用 &gt;14 界值时最高）。<br>特别实用的一条：两个指标的<b>个体内变异相近</b>，同一个猫连续两次结果变化超过 <b>15%</b> 才可能真有临床意义——这就是"看趋势、不看单点"的量化依据。<span class="src">（2026 新增证据 · 详见《猫肾病2026新证据速览》）</span></div>
+
+  </div>
+
+  <h3>第二步：两个亚分期（决定要不要加药）</h3>
+  <div class="grid2">
+    <div>
+      <h4>按蛋白尿（UPC / UP/C）</h4>
+      <table class="small">
+        <thead><tr><th class="num">猫 UPC</th><th>判定</th></tr></thead>
+        <tbody>
+          <tr><td class="num">&lt;0.2</td><td>非蛋白尿</td></tr>
+          <tr><td class="num">0.2–0.4</td><td>边缘性蛋白尿</td></tr>
+          <tr><td class="num">&gt;0.4</td><td>蛋白尿</td></tr>
+        </tbody>
+      </table>
+      <p class="src">要求：至少 2 份、间隔 ≥2 周尿样；且排除尿路感染/出血/炎症。</p>
+    </div>
+    <div>
+      <h4>按收缩压（SBP）</h4>
+      <table class="small">
+        <thead><tr><th class="num">SBP mm Hg</th><th>靶器官损伤风险</th></tr></thead>
+        <tbody>
+          <tr><td class="num">&lt;140</td><td>正常血压 · 极低</td></tr>
+          <tr><td class="num">140–159</td><td>高血压前期 · 低</td></tr>
+          <tr><td class="num">160–179</td><td>高血压 · 中</td></tr>
+          <tr><td class="num">≥180</td><td>重度高血压 · 高</td></tr>
+        </tbody>
+      </table>
+      <p class="src">猫在医院容易紧张导致"白大褂高血压"，需多次、不同日测量。</p>
+    </div>
+  </div>
+  <div class="box good">
+    <span class="t">治疗目标血压</span>
+    <p>iCatCare 2026：<b>理想 &lt;140 mm Hg，否则至少 &lt;160 mm Hg。</b>IRIS 2026：<b>&lt;160 mm Hg</b>，且要<b>平稳地</b>降——骤降会导致低血压和肾灌注不足，反而更糟。</p>
+  </div>
+
+  <h3>第三步：血磷目标（后面选粮全靠它）</h3>
+  <table>
+    <thead><tr><th>IRIS 分期</th><th class="num">目标血磷 mmol/l</th><th class="num">mg/dl</th><th>说明</th></tr></thead>
+    <tbody>
+      <tr><td>1 期</td><td class="num">—</td><td class="num">—</td><td>暂无特定目标，但避免高磷摄入</td></tr>
+      <tr><td>2 期</td><td class="num">0.81–1.45</td><td class="num">2.5–4.5</td><td>IRIS 目标上限 <b>1.5 mmol/l（4.5 mg/dl）</b></td></tr>
+      <tr><td>3 期</td><td class="num">0.81–1.63</td><td class="num">2.5–5.0</td><td>更现实的目标 <b>&lt;1.6 mmol/l（5.0 mg/dl）</b></td></tr>
+      <tr><td>4 期</td><td class="num">0.81–1.94</td><td class="num">2.5–6.0</td><td>更现实的目标 <b>&lt;1.9 mmol/l（6.0 mg/dl）</b></td></tr>
+    </tbody>
+  </table>
+  <div class="box danger">
+    <span class="t">磷不是越低越好！</span>
+    <p>IRIS 明确写了：<b>不要低于 0.9 mmol/l（2.7 mg/dl）</b>。而且早期（1–2 期）血磷本来就正常的猫，一上来就喂高度限磷粮，反而可能出现<b>高钙血症</b>（Schauf 2021，JVIM）。<br>
+    IRIS 的管理原则是：<b>总钙 &gt;12 mg/dl（3 mmol/l）就要换成限磷较少的饮食。</b>所以"限磷"必须<b>在血检监测下</b>做，不是越狠越好。</p>
+  </div>
+</section>
+
+<!-- ============ 03 ============ -->
+<section id="s3">
+  <h2><span class="num">03</span>确诊后第一周：该做的 8 件事</h2>
+  <p class="lead">这一周决定了后面一两年的基调。别急着一上来全改，先把基线数据拿全。</p>
+
+  <h3>A. 把该查的查全（缺一项都可能漏掉可逆的原因）</h3>
+  <ul class="check">
+    <li><input type="checkbox"><span><b>血检全套</b>：肌酐、SDMA、BUN/尿素、磷、总钙（最好查离子钙）、钾、钠、氯、总 CO₂/碳酸氢盐、白蛋白、HCT/PCV</span><span class="tag must">必做</span></li>
+    <li><input type="checkbox"><span><b>尿检</b>：尿比重 USG、尿蛋白/肌酐比 UPC、尿沉渣、<b>尿培养</b>（猫的尿路感染常常"沉默"，却能加速肾损伤）</span><span class="tag must">必做</span></li>
+    <li><input type="checkbox"><span><b>血压</b>：收缩压 SBP，多次测量；同时做<b>眼底检查</b>（看有没有高血压造成的视网膜出血/脱离）</span><span class="tag must">必做</span></li>
+    <li><input type="checkbox"><span><b>影像</b>：腹部超声或 X 光——目的是<b>排除可治疗的原因</b>：输尿管梗阻、肾结石、肾盂肾炎、肾积水、肿瘤、多囊肾</span><span class="tag must">必做</span></li>
+    <li><input type="checkbox"><span><b>甲功 T4</b>：甲亢既能"伪装"成 CKD，也常和 CKD 并存；甲亢治疗后会"暴露"出被掩盖的肾病</span><span class="tag">7岁以上必做</span></li>
+    <li><input type="checkbox"><span><b>FGF-23</b>（可选）：血磷已在目标范围时，&gt;400 pg/ml 提示仍可从限磷中获益；&gt;700 pg/ml 提示需进一步限磷</span><span class="tag">加分项</span></li>
+    <li><input type="checkbox"><span><b>FIV / FeLV 检测</b>：排除感染性病因</span><span class="tag">加分项</span></li>
+  </ul>
+  <p class="src">以上为依据 IRIS 2026 治疗建议与 iCatCare 2026 诊断流程整理。</p>
+
+  <div class="box warn">
+    <span class="t">IRIS 每一期都把这条写在第一条</span>
+    <p><b>① 停掉所有可能具有肾毒性的药物；② 识别并治疗肾前性／肾后性因素；③ 用 X 光或超声排除可治疗的情况（肾盂肾炎、输尿管梗阻等）。</b><br>
+    很多"突然恶化"其实是可逆原因叠加：一次脱水、一次尿路感染、一颗输尿管结石。<b>先排除这些，再谈长期管理。</b></p>
+  </div>
+
+  <h3>B. 建立基线与家庭环境</h3>
+  <ul class="check">
+    <li><input type="checkbox"><span>买一台<b>精确到 10g 的婴儿秤或宠物秤</b>，今天就把体重、体况评分（BCS）、肌肉评分（MCS）记下来</span><span class="tag must">必做</span></li>
+    <li><input type="checkbox"><span>开一个<b>记录本</b>（纸质或手机备忘录）：每日进食量、饮水、呕吐次数、排便次数与性状、精神状态</span><span class="tag must">必做</span></li>
+    <li><input type="checkbox"><span>家里放<b>至少 3–4 个水碗</b>，分布在不同房间；加一台循环饮水机；水碗垫高、换成宽口浅碗（避免胡须疲劳）</span><span class="tag">必做</span></li>
+    <li><input type="checkbox"><span>把家里所有<b>含磷高的零食、奶制品、骨粉、营养膏</b>收起来；和全家/同住人统一口径，禁止偷偷喂</span><span class="tag">必做</span></li>
+    <li><input type="checkbox"><span>猫砂盆数量 = 猫数 + 1，位置安静好到达；换成<b>结团砂</b>以便观察尿团大小和排便</span><span class="tag">建议</span></li>
+    <li><input type="checkbox"><span>把化验单、用药清单、体重曲线<b>单独存一个文件夹</b>，复诊时直接带去</span><span class="tag">建议</span></li>
+  </ul>
+
+  <div class="box tip">
+    <span class="t">重要：别在"这个时候"换新粮</span>
+    <p>iCatCare 2026 明确提醒：<b>绝不要在猫生病期间、或在医院做检查期间引入新饮食</b>——它会产生<b>食物厌恶</b>，把这种味道和"难受"绑定，以后长期拒食。<br>
+    正确做法：<b>等猫在家稳定、精神状态不错的时候</b>，用 1–2 周逐步过渡（见 05 章）。</p>
+  </div>
+</section>
+
+<!-- ============ 04 ============ -->
+<section id="s4">
+  <h2><span class="num">04</span>皮下补液：手把手教你做</h2>
+  <p class="lead">这是新手家长最容易害怕、但学会之后最有用的一项技能。9 成以上的猫都能在家顺利做。</p>
+
+  <h3>4.1 为什么要补</h3>
+  <p>肾单位少了，猫的肾脏<b>留不住水</b>——尿变多、变稀，喝的水赶不上排的，于是长期处于<b>慢性脱水</b>状态。脱水会：</p>
+  <ul>
+    <li>让肾血流下降 → GFR 下降 → 肌酐、尿素更高（<b>看起来像"恶化"，其实部分是缺水</b>）</li>
+    <li>让猫恶心、没精神、不吃东西</li>
+    <li>造成<b>便秘</b>（大便干硬）和皮肤弹性变差</li>
+  </ul>
+  <p>补液相当于<b>从体外帮它把这一课补上</b>。ISFM 的说法是：这通常用于<b>3–4 期</b>的猫，但要个体判断；<b>并非所有 CKD 猫都需要</b>，早期、水合良好的猫不需要提前上。</p>
+
+  <div class="box info">
+    <span class="t">先做减法，再加补液</span>
+    <p>iCatCare 2026 的顺序很明确：<b>先试"鼓励多喝水 + 全湿粮 + 食物里加水"，仍然持续脱水，才考虑在家皮下补液。</b>不要跳步。</p>
+  </div>
+
+  <h3>4.2 用什么液体</h3>
+  <table>
+    <thead><tr><th>液体</th><th>特点</th><th>适用</th></tr></thead>
+    <tbody>
+      <tr><td><b>乳酸林格液（LRS／哈特曼液）</b></td><td>最常用、最方便、平衡电解质</td><td>首选。猫对其他晶体液通常也耐受良好</td></tr>
+      <tr><td>半强度乳酸林格液 / 0.45% 盐水</td><td><b>钠负荷更低</b></td><td>有高血压、心脏问题、需长期大量补液的猫</td></tr>
+      <tr><td><b>Normosol-M / 5% 葡萄糖 + 0.18% NaCl</b></td><td>钠 30–40 mmol/l（低钠），可加钾约 13 mmol/l</td><td>IRIS 2026 推荐的"维持液"理想选择</td></tr>
+      <tr><td>加氯化钾 KCl</td><td>低钾猫可在液体中补充</td><td>常规 <b>每 1000 mL 液体加 20–30 mEq KCl</b>（必须兽医处方）</td></tr>
+    </tbody>
+  </table>
+  <div class="box tip">
+    <span class="t">关于钠负荷，一个值得知道的数字</span>
+    <p>每 100 mL 乳酸林格液约含 13 mEq 钠，<b>大约是健康猫 24 小时钠维持需求的 8 倍</b>。所以长期每天大量补 LRS，理论上会加重钠负荷。<br>
+    <b>现实结论：</b>猫通常耐受良好、不出现临床并发症；但如果你家猫<b>同时有高血压或心脏病</b>，主动和兽医讨论换成低钠维持液。</p>
+    <p class="src" style="margin-top:6px"><b>来源：</b>ISFM 共识指南；iCatCare 2026。</p>
+  </div>
+
+    <h3>4.3 什么时候开始补液：分期 + 症状双判断</h3>
+  <p>几乎每个新手都会问同一句："我家 2 期，要不要开始扎针？"答案不是只看分期数字，而是<b>两条线同时看</b>：<b>分期决定风险基线，是否真的持续脱水决定要不要上。</b></p>
+
+  <table class="small">
+    <thead><tr><th>IRIS 分期</th><th class="num">肌酐 μmol/l（mg/dl）</th><th class="num">SDMA μg/dl</th><th>要不要在家常规补液</th><th>指南口径与触发条件</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><b>1 期</b></td><td class="num">&lt;140（&lt;1.6）</td><td class="num">&lt;18</td>
+        <td><b class="tag-neg">不需要</b></td>
+        <td>只需<b>确保随时有清洁饮水</b>。仅当"因任何原因生病导致体液流失"（呕吐、腹泻、不吃不喝、中暑）时，由兽医用等渗多离子溶液（如乳酸林格液）<b>静脉或皮下</b>纠正脱水。<span class="src">IRIS 2026 · 1 期治疗建议</span></td>
+      </tr>
+      <tr>
+        <td><b>2 期</b></td><td class="num">140–250（1.6–2.8）</td><td class="num">18–25</td>
+        <td><b class="tag-neg">通常不需要</b></td>
+        <td>同 1 期：随时新鲜饮水 + 生病失液时及时纠正脱水。此期的重点是<b>换肾脏粮、控磷、查血压和尿蛋白</b>，而不是补液。<span class="src">IRIS 2026 · 2 期治疗建议</span></td>
+      </tr>
+      <tr>
+        <td><b>3 期</b></td><td class="num">251–440（2.9–5.0）</td><td class="num">26–38</td>
+        <td><b class="tag-warn">开始考虑</b></td>
+        <td>IRIS 3 期第 5 条：<b>"根据需要通过肠外途径给予适当的维持液体以维持水分"</b>——即"部分 3 期猫需要，不是全部"。ISFM：通常用于<b>3–4 期</b>，但应按个体判断。<span class="src">IRIS 2026 · 3 期；ISFM 共识指南</span></td>
+      </tr>
+      <tr>
+        <td><b>4 期</b></td><td class="num">&gt;440（&gt;5.0）</td><td class="num">&gt;38</td>
+        <td><b class="tag-pos">通常需要</b></td>
+        <td>同 3 期，并额外要求<b>"加强预防脱水的努力"</b>。若长期每天都要补液，IRIS 建议<b>考虑喂食管</b>（经皮胃造口管）——它既补水又喂食，比反复扎针更符合生理。<span class="src">IRIS 2026 · 4 期第 5、7 条</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="box info">
+    <span class="t">比分期更早的信号：它是不是真的脱水了？</span>
+    <p>iCatCare 2026 的顺序是：<b>先试"鼓励多喝水 + 全湿粮 + 食物里加水"，仍然持续脱水，才考虑在家皮下补液。</b>不要跳步。<br>
+    在家可以这样粗判（<b>任何一条持续存在，都值得让兽医评估一次</b>）：</p>
+    <ul style="margin:8px 0 0 18px">
+      <li><b>皮肤回弹变慢</b>：轻揪后颈或肩胛间皮肤松开，回弹超过 1–2 秒。<span class="src">注意：老年猫、消瘦猫皮肤本身就松，这一条只能做参考，不能单独下结论。</span></li>
+      <li><b>牙龈发黏</b>：摸上去不滑润，像摸干嘴唇</li>
+      <li><b>眼睛略凹陷</b>、第三眼睑更容易露出</li>
+      <li><b>大便干硬、反复便秘</b>——这是慢性脱水最常见的信号之一</li>
+      <li><b>体重短期内掉得快</b>：脱水和肌肉流失都会掉体重，要区分</li>
+      <li><b>尿素/肌酐突然升高，但猫状态并没有同步变差</b>——可能只是缺水，补水后数值常回落</li>
+    </ul>
+  </div>
+
+  <div class="box warn">
+    <span class="t">这几种情况别在家皮下补液，直接去医院</span>
+    <p>· 猫<b>虚脱、站不稳、四肢冰凉、呼吸急促</b>——这已经是循环不稳。皮下补液吸收很慢，休克时外周循环差，<b>根本吸收不了</b>，必须静脉补液。<br>
+    · 已有<b>心脏病、胸水/腹水、严重低蛋白、未控制的感染</b>——补液量要由兽医精确计算，不能照搬常规量。<br>
+    · 完全<b>不吃不喝超过 24 小时</b>、或呕吐严重——先处理原发病，不是加大补液量。</p>
+  </div>
+
+  <h3>4.4 分期用量详解：给多少、多久一次</h3>
+  <p class="lead">下面这张表是本节的核心。它以 <b>4 kg 猫</b>为基准，把指南给出的区间（ISFM：<b>每 1–3 天 75–150 mL</b>；iCatCare 2026：<b>每 1–3 天 75–100 mL</b>）按分期程度做了实用化拆分。</p>
+
+  <table>
+    <thead><tr><th>分期 / 情形</th><th>建议频率</th><th class="num">单次量<br>（4 kg 猫）</th><th class="num">折合<br>ml/kg/次</th><th>液体选择</th><th>监测重点</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><b>1–2 期</b></td><td>不常规补</td><td class="num">—</td><td class="num">—</td>
+        <td>仅急性失液时由兽医给等渗液（乳酸林格液）</td>
+        <td>体重、饮水量、尿比重</td>
+      </tr>
+      <tr>
+        <td><b>2 期末 / 刚进 3 期</b><br><span class="src">试探性开始</span></td><td>每周 2–3 次</td><td class="num">50–75 mL</td><td class="num">约 12–19</td>
+        <td>乳酸林格液</td>
+        <td>补水后精神/食欲是否变好；鼓包是否在 12 小时内消</td>
+      </tr>
+      <tr>
+        <td><b>3 期</b><br><span class="src">稳定维持期</span></td><td>每 2–3 天</td><td class="num">75–100 mL</td><td class="num">约 19–25</td>
+        <td>乳酸林格液；有高血压/心脏病 → 换低钠液</td>
+        <td>血压、体重、皮肤回弹、大便软硬</td>
+      </tr>
+      <tr>
+        <td><b>3 期末 / 4 期</b></td><td>每 1–2 天</td><td class="num">100–150 mL</td><td class="num">约 25–37</td>
+        <td>低钠维持液（钠 30–40 mmol/l），低钾者加 KCl</td>
+        <td>呼吸、四肢/腹下水肿、电解质、心功能</td>
+      </tr>
+      <tr>
+        <td><b>4 期 · 丢失量大 / 尿毒期</b></td><td>每天，必要时一天两次</td><td class="num">100–150 mL<br><span class="src">分两处给</span></td><td class="num">约 25–37</td>
+        <td>同上；<b>优先考虑改用喂食管</b></td>
+        <td>同上 + 生活质量评分（见第 12 章）</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="box tip">
+    <span class="t">关于这张表，必须说清楚的三件事</span>
+    <p>① 指南原文只给了 <b>75–150 mL / 每 1–3 天</b>（ISFM）和 <b>75–100 mL / 每 1–3 天</b>（iCatCare 2026）这两个区间，<b>没有按分期逐档给出精确数字</b>。上表是把这个区间按病情程度做的实用化拆分，方便你和兽医讨论时有个起点。<br>
+    ② <b>最终剂量由主治兽医确定</b>，依据体重、脱水程度、心脏与血压状况、尿量、电解质。<b>不要照着表自己加量。</b><br>
+    ③ 单次量偏大时（&gt;100–120 mL），兽医常会建议<b>分两处</b>（左右肩胛间各一半）给——吸收更快，猫也舒服得多。</p>
+  </div>
+
+  <h4 style="margin:22px 0 8px;font-size:15px;color:var(--ink)">按体重速查：单次给多少</h4>
+  <table class="small">
+    <thead><tr><th>体重</th><th class="num">起始量<br>（约 15 ml/kg）</th><th class="num">常规量<br>（约 25 ml/kg）</th><th class="num">偏大量<br>（约 35–40 ml/kg）</th><th>备注</th></tr></thead>
+    <tbody>
+      <tr><td>3 kg</td><td class="num">50 mL</td><td class="num">75 mL</td><td class="num">100–120 mL</td><td>小型猫，单次别超 100 mL</td></tr>
+      <tr><td>4 kg</td><td class="num">60 mL</td><td class="num">100 mL</td><td class="num">140–150 mL</td><td>最常见体型，隔天 100 mL 是典型方案</td></tr>
+      <tr><td>5 kg</td><td class="num">75 mL</td><td class="num">125 mL</td><td class="num">175–200 mL</td><td>超过 120 mL 建议分两处</td></tr>
+      <tr><td>6 kg</td><td class="num">90 mL</td><td class="num">150 mL</td><td class="num">200 mL</td><td>建议分两处</td></tr>
+    </tbody>
+  </table>
+  <p class="src" style="margin-top:8px"><b>换算口径：</b>ml/kg 由指南的 75–150 mL 区间反推（按 3–6 kg 常见体重），用于估算，<b>不是指南直接给出的剂量</b>。</p>
+
+  <div class="grid2" style="margin-top:18px">
+    <div class="mini">
+      <div class="h">频率怎么定</div>
+      <div class="d">· 常见：<b>每 1–3 天</b>一次<br>· 严重的可每天<br>· 刚起步可每周 2–3 次<br><br><b>判断标准不是日历，是猫的状态</b>：皮肤回弹、精神、食欲、大便软硬。补够了，猫常常明显"变年轻"。</div>
+    </div>
+    <div class="mini">
+      <div class="h">补液只是"补缺口"</div>
+      <div class="d">猫每日维持需水约 <b>50 ml/kg/24h</b>（ISFM）。4 kg 猫 ≈ 200 mL/天。<br>湿粮含水 70–80%，<b>吃 200 g 湿粮就已摄入约 150 mL 水</b>。<br><br>所以皮下补液是<b>补齐缺口</b>，不是替代喝水。</div>
+    </div>
+  </div>
+
+  <h4 style="margin:22px 0 8px;font-size:15px;color:var(--ink)">急性脱水时怎么算量（住院 / 医院静脉补液用）</h4>
+  <p>这一条是<b>给失代偿、需要住院的猫用的</b>，不是家庭皮下补液的常规算法，但知道它有好处——你能看懂医生在做什么。</p>
+  <div class="box info">
+    <span class="t">ISFM 脱水纠正公式</span>
+    <p><b>缺水量（mL）= 体重（kg）× 脱水百分数 × 10</b><br>
+    再加上<b>维持量 50 ml/kg/24h</b>，总量在 <b>24–48 小时内</b>给完（部分猫可耐受更快）。<br>
+    复水后继续给维持液，<b>但必须密切监测避免过量</b>；氮质血症稳定后，通常 <b>2–3 天内逐步减量</b>再出院。</p>
+    <p class="src" style="margin-top:6px"><b>举例（4 kg 猫，估计脱水 7%）：</b>4 × 7 × 10 = <b>280 mL</b> 缺口，加维持 4 × 50 = <b>200 mL</b>，<br>24 小时总量约 <b>480 mL</b>（≈ 20 mL/小时）。<b>这是静脉补液的量级，不要套用到皮下。</b></p>
+  </div>
+
+  <h4 style="margin:22px 0 8px;font-size:15px;color:var(--ink)">剂量怎么调：4 步滴定法</h4>
+  <ol class="steps">
+    <li><b>从区间下限起步</b><br>比如 4 kg 的 3 期猫，从 <b>60–75 mL、每周 3 次</b>开始，而不是一上来就 150 mL 每天。<b>宁少勿多</b>，加量永远比减量容易。</li>
+    <li><b>连续观察 3–5 天</b><br>记录四件事：皮肤回弹、精神与食欲、大便软硬、体重。最好顺手记在家庭记录表上，比凭印象准。</li>
+    <li><b>一次只改一个变量</b><br>若仍脱水（回弹慢、便秘、尿素偏高）→ <b>或</b>每次加 25 mL，<b>或</b>频次加一次，<b>不要同时改</b>。改完再观察 3–5 天。</li>
+    <li><b>出现过量信号就往下调</b><br>鼓包 <b>超过 12–24 小时不消</b>、针眼持续渗液、腹下/四肢水肿、呼吸变快变费力、体重短期异常上升 → <b>减量或拉长间隔，并联系兽医。</b></li>
+  </ol>
+
+  <div class="box danger">
+    <span class="t">补液不是越多越好</span>
+    <p>ISFM 明确警告要<b>"确保有临床益处并避免过度补液"</b>。过量信号同上。尤其提醒：<br>
+    · <b>每 100 mL 乳酸林格液约含 13 mEq 钠，约为健康猫 24 小时钠维持需求的 8 倍</b>——长期大量补，钠负荷会累积。<br>
+    · 有<b>高血压、心脏杂音、既往心衰</b>的猫，一定要主动和兽医讨论换成低钠维持液（钠 30–40 mmol/l，必要时加钾约 13 mmol/l）。<br>
+    · 出现<b>呼吸费力、咳嗽、精神突然变差</b>——警惕肺水肿，<b>立即就医</b>。</p>
+  </div>
+
+  <div class="box good">
+    <span class="t">什么时候该从"扎针"升级到"喂食管"</span>
+    <p>如果你家猫已经<b>每天都需要补液</b>，或者补液这件事本身让它（和你）很痛苦，iCatCare 和 IRIS 都建议认真考虑<b>食管造口管 / 胃造口管</b>：<br>
+    · 它<b>既能补水也能喂饭、还能给药</b>，符合生理途径，猫的应激反而更小<br>
+    · 主人负担大幅下降——不用天天扎针、天天喂药搏斗<br>
+    · 这是<b>提升生活质量</b>的选项，不是"最后手段"或"放弃治疗"<br>
+    很多家长事后都说：<b>早该装了。</b></p>
+    <p class="src" style="margin-top:6px"><b>来源：</b>IRIS 2026 · 4 期第 7 条；iCatCare 2026；ISFM 共识指南。</p>
+  </div>
+
+<h3>4.5 需要准备什么</h3>
+  <table class="small">
+    <thead><tr><th>物品</th><th>说明</th></tr></thead>
+    <tbody>
+      <tr><td>输液袋（500 mL 或 250 mL）</td><td>兽医处方购买；<b>常温下避光保存，不要冷冻</b></td></tr>
+      <tr><td>一次性输液器</td><td>每袋配一套，<b>每袋一般用不超过 1–2 周</b></td></tr>
+      <tr><td><b>蝴蝶针</b>（头皮针）</td><td>常用 <b>20G 或 21G</b>（越细越不疼但越慢，18–19G 更快但更疼）。让兽医按你家猫的耐受度推荐</td></tr>
+      <tr><td>加热方式</td><td>温水浴（40℃ 左右）、恒温加热垫、或提前放被窝捂。<b>加温到接近体温（37–38℃）能大幅提高猫的耐受度</b></td></tr>
+      <tr><td>悬挂装置</td><td>门框挂钩、衣架、输液架。<b>袋子要挂高，靠重力滴</b></td></tr>
+      <tr><td>消毒棉片 + 零食 + 毛巾</td><td>碘伏或酒精棉；零食在扎针时给；毛巾用来包裹保定</td></tr>
+      <tr><td>锐器盒</td><td>用过的针头必须进专用容器，不要直接丢垃圾桶</td></tr>
+    </tbody>
+  </table>
+
+  <h3>4.6 操作步骤（第一次请让护士在旁边看着你做一遍）</h3>
+  <ol class="steps">
+    <li><b>准备（提前 20 分钟）</b><br>把输液袋泡在 40℃ 温水中加热到接近体温。滴在手腕内侧试试——<b>应该是温的、不烫</b>。冷液体是猫抗拒的头号原因。</li>
+    <li><b>装好管路并排气</b><br>挂高袋子（比猫高 60–80 cm）。打开调节器让液体充满管路，<b>排净空气</b>，然后关紧。</li>
+    <li><b>选部位</b><br>最常用：<b>肩胛骨之间（颈背部"皮松"的地方）</b>。备用：两侧胸壁、两侧腰腹。每次<b>轮换位置</b>，避免同一处反复刺激。</li>
+    <li><b>保定</b><br>让猫趴着或侧卧，最舒服的是<b>它正在吃东西的时候</b>。给零食、慢声说话。不强行按压——猫越挣扎，后面越难。</li>
+    <li><b>消毒</b><br>酒精或碘伏棉片擦一下进针点，等几秒干。</li>
+    <li><b>进针</b><br>用手指捏起皮肤做个"帐篷"，<b>针尖斜面向上，与皮肤平行（几乎贴着）刺入皮下</b>——是"<b>插进皮下疏松层</b>"，不是"扎进肌肉"。深度约 1–2 cm。<br><span class="src">判断对的标志：针头在皮下能<b>轻松左右摆动</b>，且回抽无血。</span></li>
+    <li><b>固定 + 开滴</b><br>用胶带把蝴蝶针的"翅膀"贴在皮肤上固定住。打开调节器，<b>先慢几滴观察</b>猫的反应，没问题再全开。正常速度约 <b>5–10 分钟滴完 100 mL</b>。</li>
+    <li><b>全程陪伴</b><br>不要走开。一边摸一边喂零食。猫如果想走，别硬拉，等它安静再继续。<b>千万不要在猫挣扎时硬拽针头。</b></li>
+    <li><b>拔针与善后</b><br>滴完先关调节器，撕开胶带，<b>顺着进针方向平着抽出</b>，用棉片轻压几秒（不用揉）。夸它、给最爱的零食。把针头丢进锐器盒。<br><b>皮下会鼓起一个大包，像驼峰一样——这是正常的</b>，通常 4–12 小时吸收消失。</li>
+  </ol>
+
+  <div class="box good">
+    <span class="t">提高成功率的 8 个老手技巧</span>
+    <ul style="margin-bottom:0">
+      <li><b>加温</b>是第一生产力。冷液体的猫，几乎都会反抗。</li>
+      <li><b>在它吃饭时扎</b>——注意力被食物占住，很多猫全程无感。</li>
+      <li>先用<b>钝头/细针</b>（21G）起步，比 18G 舒服很多，只是慢一点。</li>
+      <li>进针前用指甲或棉签<b>轻压进针点几秒</b>做"预麻醉"，降低痛感。</li>
+      <li>固定一个<b>固定地点、固定时间、固定流程</b>。猫对可预测的流程适应极快。</li>
+      <li>用<b>大毛巾包裹</b>（"猫卷"）比徒手保定更省力，猫也更有安全感。</li>
+      <li>如果猫实在抗拒，<b>先让它在医院由护士做几次</b>，或请护士上门教一次。</li>
+      <li>实在做不了也没关系——<b>不是所有猫都适合</b>。可以改为定期去医院补，或考虑<b>喂食管</b>（ISFM 认为长期维持水分，喂食管反而更符合生理）。</li>
+    </ul>
+  </div>
+
+  <h3>4.7 常见问题速查</h3>
+  <table class="small">
+    <thead><tr><th>现象</th><th>怎么回事</th><th>怎么办</th></tr></thead>
+    <tbody>
+      <tr><td>鼓包半天不消</td><td>量偏多，或吸收慢</td><td>下次减量；&gt;24h 不消要告知兽医</td></tr>
+      <tr><td>液体从针眼往外漏</td><td>进针太浅或针头移位</td><td>重新扎；检查针是否完全在皮下</td></tr>
+      <tr><td>回抽有血</td><td>扎到血管了</td><td><b>拔出来换位置重扎</b>，别推液</td></tr>
+      <tr><td>猫疼得叫/挣扎</td><td>液体太冷、针太粗、或扎到肌肉</td><td>加温、换细针、重新平行进针</td></tr>
+      <tr><td>皮肤发红、硬结、有分泌物</td><td>可能感染</td><td><b>就医</b>，暂停该部位</td></tr>
+      <tr><td>滴得很慢/不滴</td><td>袋子挂太低、管路打折、针堵塞</td><td>挂高、检查管路、轻调针头位置</td></tr>
+      <tr><td>补完猫反而喘/精神差</td><td>可能过量或心功能问题</td><td><b>立刻联系兽医</b></td></tr>
+      <tr><td>液体里有絮状物/变色</td><td>污染</td><td><b>整袋丢弃，不要用</b></td></tr>
+      <tr><td>我家猫 2 期，能不能提前补液"预防"？</td><td>指南不支持</td><td><b>不建议。</b>IRIS 2026 对 1–2 期只要求"随时有清洁饮水 + 生病失液时纠正"；此期重点是肾脏粮、控磷、血压与尿蛋白。提前补液只会增加钠负荷和猫的应激</td></tr>
+      <tr><td>补完尿素降了、肌酐没降，是不是没用？</td><td>正常现象</td><td><b>尿素受水合状态影响大，肌酐更反映 GFR。</b>补水能改善前者，后者不会因为补水而"治好"。判断补液有没有用，<b>看猫的状态（精神、食欲、大便），不是单看肌酐</b></td></tr>
+      <tr><td>剂量要一直不变吗？</td><td>要跟着分期走</td><td>随分期进展、脱水程度、心脏与血压状况<b>定期复评</b>。从 3 期进到 4 期、或出现心杂音/水肿时，方案要重新定</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box warn">
+    <span class="t">无菌操作底线</span>
+    <p>① 每次<b>换新针头</b>，绝不重复使用；② 穿刺前<b>洗手</b>；③ 袋子开口消毒后再插输液器；④ 一袋液体开封后<b>建议 1–2 周内用完</b>，超期丢弃；⑤ 液体<b>浑浊、有絮状物、漏气一律不用</b>。</p>
+  </div>
+</section>
+
+<!-- ============ 05 ============ -->
+<section id="s5">
+  <h2><span class="num">05</span>怎么选猫粮和罐头</h2>
+  <p class="lead">这一章是整本手册里最能"延长寿命"的部分。请慢读。</p>
+
+  <h3>5.1 优先级：磷 &gt; 热量 &gt; 水分 &gt; 蛋白 &gt; 其他</h3>
+  <p>先纠正一个流传很广的错误认知：<b>肾病不是"低蛋白病"，是"高磷病"。</b></p>
+  <div class="box good">
+    <span class="t">一句话证据</span>
+    <p>iCatCare 2026 原文：<b>"延缓 CKD 进展并延长生存期的主要关注营养素是膳食磷（包括有机磷和无机磷）。"</b><br>
+    数字对比：<b>肾脏粮约 80–130 mg 磷/100 kcal</b>；<b>非肾脏粮可高达 400–600 mg/100 kcal</b>。<br>
+    风险量化：血清磷<b>每升高 0.32 mmol/l（1 mg/dl），死亡风险增加 11.8%</b>。</p>
+  </div>
+  <p>而蛋白质：猫是<b>严格肉食动物</b>，蛋白质需求本身就高。过度限蛋白 → 掉肌肉 → 体重和体力崩塌 → 预后反而更差。<b>iCatCare 明确说：如果猫热量摄入不足，选择蛋白略高的饮食反而更可取。</b></p>
+
+  <h3>5.2 关键中的关键：磷的"来源"比"总量"更重要</h3>
+  <div class="box danger">
+    <span class="t">这个研究，每一个想给猫做自制/生骨肉的人都必须看</span>
+    <p><b>Dobenecker 2018（JFMS）：</b>给<b>健康的成年猫</b>喂约 5 倍需要量的<b>高无机磷</b>日粮、钙磷比 0.4:1，<b>只喂了 29 天</b>：</p>
+    <ul style="margin-bottom:8px">
+      <li>内生肌酐清除率：<b>3.12 → 2.39 mL/kg/min</b>（P = 0.01）——肾功能真的掉了</li>
+      <li><b>13 只里有 9 只</b>出现葡萄糖尿和微量白蛋白尿</li>
+    </ul>
+    <p>这是"<b>健康猫也能在几周内被喂出肾损伤</b>"的直接实证。而且伤人的不是肉里的天然磷，是<b>添加的无机磷盐</b>。</p>
+  </div>
+  <p>配套证据（Stockman 2021、Coltherd 2019）：无机磷添加<b>超过约 0.5 g/1000 kcal</b> 就会出现明显的<b>餐后高磷血症</b>。同样是"总磷 1%"，<b>来自动物骨肉的有机磷</b>和<b>来自磷酸钠/磷酸钾的无机磷</b>，对肾脏完全不是一回事——无机磷几乎 100% 被吸收。</p>
+  <div class="box tip">
+    <span class="t">成分表里怎么认出"无机磷"</span>
+    <p>看到这些词，就是添加了无机磷盐：<b>磷酸、磷酸二氢钠/钾、磷酸氢二钠/钾、磷酸三钙、焦磷酸盐、三聚磷酸钠、六偏磷酸钠</b>（英文：phosphoric acid、sodium/potassium phosphate、dicalcium phosphate、pyrophosphate、tripolyphosphate）。<br>
+    它们常见于：<b>罐头/鲜食里用来保水嫩化</b>、干粮表面喷涂、以及廉价肉粉。<b>越靠成分表前面，添加量越大。</b></p>
+  </div>
+
+    <h3>5.3 无机磷完整清单：成分表里到底要躲哪些词</h3>
+  <p>先把概念钉死，不然后面全是糊涂账：</p>
+  <div class="grid2">
+    <div class="mini">
+      <div class="h">有机磷（天然磷）</div>
+      <div class="d">来自<b>肌肉、内脏、骨头、植物种子</b>。它和蛋白质、有机分子结合在一起，<b>吸收慢、不完全</b>。<br><br>
+      <b>关键实证：</b>把日粮里的有机磷从 2.1 提到 4 g/1000 kcal，猫餐后血磷峰值<b>完全没变</b>（P = 1.000）。</div>
+    </div>
+    <div class="mini">
+      <div class="h">无机磷（添加磷）</div>
+      <div class="d">生产加工时<b>额外加进去的磷酸盐</b>。多为<b>水溶性盐类</b>，进肚后迅速解离，<b>几乎 100% 被吸收</b>。<br><br>
+      <b>关键实证：</b>添加量超过 <b>0.5 g/1000 kcal</b>，猫血浆磷就显著升高，且<b>剂量越高升得越猛</b>。</div>
+    </div>
+  </div>
+
+  <div class="box danger">
+    <span class="t">两个数字，把这件事钉在墙上</span>
+    <p>① <b>阈值 0.5 g/1000 kcal</b>：低于它，餐后血磷平稳；高于它，血磷开始飙升。<span class="src">Coltherd 2019, Br J Nutr（WALTHAM 系列餐后动力学研究）</span><br>
+    ② <b>剂量依赖</b>：无机磷 0.5 / 0.75 / 1.0 / 1.5 g/1000 kcal → 血浆磷峰值 <b>1.32 / 1.50 / 1.63 mmol/l</b>，PTH 峰值放大 <b>1.33 / 1.73 / 1.83 / 2.50 倍</b>。<br>
+    ③ 对照：<b>天然磷完全不引发这个反应</b>。Finco 的回收实验更直白——无机磷饮食的尿磷回收率 <b>34.9%</b>，全有机磷饮食只有 <b>14.7%</b>。</p>
+    <p class="src" style="margin-top:6px"><b>来源：</b>Coltherd 2019（N8 全文译文）；Dobenecker 2018（PM1）；Steffen &amp; Dobenecker 2023。</p>
+  </div>
+
+  <h4 style="margin:22px 0 8px;font-size:15px;color:var(--ink)">研究中实际用到的无机磷（这就是"无机磷有哪些"的答案）</h4>
+  <table class="small">
+    <thead><tr><th>名称</th><th>英文 / 化学式</th><th>说明</th></tr></thead>
+    <tbody>
+      <tr><td><b>磷酸二氢钠</b>（SDHP）</td><td>Sodium dihydrogen phosphate<br>NaH₂PO₄</td><td>研究里用得最多的一种，餐后血磷反应最强</td></tr>
+      <tr><td><b>三聚磷酸钠</b>（STPP）</td><td>Sodium tripolyphosphate<br>Na₅P₃O₁₀</td><td>商业粮、罐头里最常见的保水剂</td></tr>
+      <tr><td>单磷酸盐混合物</td><td>Monophosphates</td><td>Dobenecker 2018 用的：5/6 来自磷酸钙，其余磷酸钠</td></tr>
+    </tbody>
+  </table>
+
+  <h4 style="margin:22px 0 8px;font-size:15px;color:var(--ink)">成分表完整清单：看到这些词就是添加了无机磷</h4>
+  <table class="small">
+    <thead><tr><th>中文名</th><th>英文名</th><th>主要作用</th></tr></thead>
+    <tbody>
+      <tr><td><b>磷酸</b></td><td>Phosphoric acid</td><td>酸化、pH 调节</td></tr>
+      <tr><td><b>磷酸二氢钠 / 钾</b></td><td>Sodium / potassium dihydrogen phosphate<br>Monosodium phosphate, monopotassium phosphate</td><td>保水、乳化、pH 稳定</td></tr>
+      <tr><td><b>磷酸氢二钠 / 钾</b></td><td>Disodium / dipotassium phosphate</td><td>乳化、膨松</td></tr>
+      <tr><td><b>磷酸三钠 / 三钾</b></td><td>Trisodium / tripotassium phosphate</td><td>保水、乳化</td></tr>
+      <tr><td><b>三聚磷酸钠</b></td><td>Sodium tripolyphosphate (STPP)</td><td><b>罐头、鲜食保水嫩化——最常见</b></td></tr>
+      <tr><td><b>焦磷酸钠 / 焦磷酸二氢二钠</b></td><td>Sodium pyrophosphate<br>Disodium diphosphate</td><td>保水、乳化</td></tr>
+      <tr><td><b>六偏磷酸钠</b></td><td>Sodium hexametaphosphate</td><td>保水；有时也用于牙石控制</td></tr>
+      <tr><td><b>磷酸钙 / 磷酸二钙 / 磷酸三钙</b></td><td>Calcium phosphate<br>Dicalcium / tricalcium phosphate</td><td>钙磷补充（溶解度相对低，但仍属无机）</td></tr>
+      <tr><td>磷酸镁 / 磷酸铵</td><td>Magnesium / ammonium phosphate</td><td>较少见</td></tr>
+      <tr><td>统称写法</td><td>"Phosphates" / "磷酸盐"</td><td>部分标签只写统称，<b>具体种类和量看不出来</b></td></tr>
+    </tbody>
+  </table>
+
+  <div class="box info">
+    <span class="t">它们为什么被加进去？不是为了营养，是为了工艺</span>
+    <p>研究原文列了五大功能：<b>pH 稳定、乳化、膨松、保水、杀菌</b>。<br>
+    落到实际产品上：<b>罐头/鲜食用它保水嫩化</b>（切开多汁、口感嫩），<b>干粮用它做表面喷涂和膨松</b>。<br>
+    理解这一点很重要——<b>它不是"配方需要"，是"卖相和成本需要"</b>。所以能避开就该避开。</p>
+  </div>
+
+  <div class="box warn">
+    <span class="t">目前的建议上限（供你和兽医讨论时用）</span>
+    <p>Stockman &amp; Villaverde（JAVMA 2021）与 Stockman（JFMS 2024）提出的<b>暂定</b>标准：成猫食品<b>总磷 ≤4.0 g/1000 kcal</b>、<b>无机磷添加 ≤1.0 g/1000 kcal</b>、<b>钙磷比 1:1–2:1</b>。<br>
+    <b>两个必须知道的现实：</b><br>
+    ① 实测阈值（0.5）比建议上限（1.0）更严格，建议上限是给行业留了余量的折中值。<b>对已经肾病的猫，按更严的那个来。</b><br>
+    ② <b>目前欧美法规对总磷或无机磷都没有最高限量规定。</b>FEDIAF 只规定钙磷比应在 1–2 之间，并在脚注里写明"猫采食高无机磷日粮时，肾功能参数会出现变化"——说明监管层已经知道这事，但还没设限。</p>
+  </div>
+
+  <h3>5.4 日常饮食怎么规避：5 步实操</h3>
+  <p class="lead">先说结论，免得你白忙：<b>喂商业粮的话，完全避开无机磷基本做不到。</b>所以目标是"尽量低"，不是"归零"。</p>
+
+  <ol class="steps">
+    <li><b>看位置，不看"有没有"</b><br>成分表按重量降序。<b>任何"磷酸"字样越靠前，添加量越大。</b><br>
+    <span class="src">⚠️ 陷阱：厂家有时把总磷拆成两种磷酸盐分别添加，每一种都排在后面，<b>加总量其实不小</b>。看到两种以上磷酸盐要特别警惕。</span></li>
+
+    <li><b>用 mg/100kcal 统一口径，别看百分比</b><br>干湿粮水分差太多，只有换算成 <b>mg/100kcal</b> 才能公平比较（换算见 5.5）。<br>目标档位：肾脏粮 <b>80–130 mg/100kcal</b>，普通粮常达 <b>400–600</b>。</li>
+
+    <li><b>钙磷比必须 ≥1，最好 1.1–1.5</b><br>IRIS（Quimby &amp; Ross）明确写了：<b>在钙不足（钙磷比 &lt;1）的情况下喂高生物利用度磷酸盐，已被证实会让原本健康的猫出现肾损伤。</b><br>
+    <span class="src">FEDIAF 允许范围是 1–2。钙磷比 &lt;1 的粮，不管总磷多低都不要选。</span></li>
+
+    <li><b>湿粮要优先，但湿粮不是免死金牌</b><br>湿粮胜在水分，但<b>罐头恰恰是最常加三聚磷酸钠保水的品类</b>；干粮则是表面喷涂。<br><b>所以形态不是判断依据，成分表才是。</b></li>
+
+    <li><b>零食、冻干、猫条、营养品也要查</b><br>很多人精挑细选主粮，结果每天两根猫条把磷吃进去。<br>
+    <b>隐形磷大户：</b>鸡肉干/鱼肉干等加工肉零食、猫条/布丁、芝士类、化毛膏、部分冻干、以及你自己的火腿肠和加工奶酪。</li>
+  </ol>
+
+  <div class="grid2" style="margin-top:18px">
+    <div class="mini">
+      <div class="h">✅ 优先选</div>
+      <div class="d">· 明确标出磷 mg/100kcal，且 <b>≤130</b><br>
+      · 成分表里<b>没有</b>任何"磷酸"字样（磷全来自肉/骨/内脏本身）<br>
+      · 钙磷比 <b>≥1.1</b><br>
+      · 同档位下选<b>湿粮</b><br>
+      · 厂家能提供<b>无机磷/添加磷</b>数据</div>
+    </div>
+    <div class="mini">
+      <div class="h">🚫 尽量避开</div>
+      <div class="d">· 成分表<b>前 1/3</b> 出现任何"磷酸"<br>
+      · 同时出现 <b>2 种以上</b>磷酸盐<br>
+      · 钙磷比 <b>&lt;1</b><br>
+      · 完全不标磷含量、钙也标得含糊（无从判断）<br>
+      · 加工肉零食、含磷酸的人类食品</div>
+    </div>
+  </div>
+
+  <div class="box tip">
+    <span class="t">直接问厂家：一段可以照抄的提问模板</span>
+    <p>越来越多厂家愿意给数据（尤其处方粮品牌）。你可以这样问客服或品牌方：<br>
+    <i>"请问这款产品的<b>总磷含量（mg/100kcal 或 g/1000 kcal）是多少？其中无机磷（添加磷酸盐）贡献多少？钙磷比是多少？</b>"</i><br>
+    能答上来这三问的品牌，通常配方透明度更高。<b>答不上来也不代表不好，但你就只能靠成分表猜了。</b></p>
+  </div>
+
+  <div class="box warn">
+    <span class="t">想做自制 / 生骨肉的人，特别注意一个反向陷阱</span>
+    <p>自制最大的好处是<b>你可以不加磷酸盐</b>——磷来源这一点上确实最优。但别高兴太早：<br>
+    <b>纯肉的钙磷比极低（大约 1:15–1:20），磷高得离谱、钙几乎没有。</b>这正好踩中 IRIS 警告的"钙磷比 &lt;1 + 高可利用磷"组合。<br>
+    <b>所以自制必须额外加钙源</b>（碳酸钙、骨粉等），把钙磷比拉到 1.1–1.5。这部分的完整配方原则见 <b>5.8</b>。</p>
+  </div>
+
+  <h3>5.5 怎么读标签：三步实战</h3>
+  <ol class="steps">
+    <li><b>找到"磷"或"钙"的保证分析值</b><br>多数国产/进口包装只标钙和磷的百分比（如"磷 0.6%"）。这是<b>原样基础（as fed）</b>，湿粮水分 75%，数字会被稀释得看起来很低——<b>不能直接和干粮比</b>。</li>
+    <li><b>换算成干物质基（DM）</b><br><code>干物质磷% = 原样磷% ÷ (1 − 水分%)</code><br>例：某罐头标磷 0.25%、水分 78% → 0.25 ÷ (1−0.78) = <b>1.14% DM</b>。<br>湿粮干物质磷 <b>0.6–0.9% DM</b> 算低磷；&gt;1.2% DM 就偏高了。</li>
+    <li><b>最准的算法：mg 磷 / 100 kcal</b><br>这是唯一能公平比较干粮、罐头、鲜食的口径（iCatCare 就是用它）：<br><code>mg/100kcal = 每 100g 含磷 mg ÷ 每 100g 热量 kcal × 100</code><br>很多品牌官网或客服会直接给这个数，<b>直接问客服要"磷 mg/100kcal"</b>比自己算省事。</li>
+  </ol>
+
+  <div class="box info">
+    <span class="t">参考档位（mg 磷 / 100 kcal）</span>
+    <table class="small" style="margin:8px 0 0">
+      <thead><tr><th>档位</th><th class="num">磷 mg/100kcal</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>🏆 优选（兽医肾脏处方粮）</td><td class="num">80–130</td><td>iCatCare 给出的肾脏粮典型区间</td></tr>
+        <tr><td>✅ 可接受</td><td class="num">130–200</td><td>部分"早期肾脏粮"或低磷主食罐</td></tr>
+        <tr><td>⚠️ 偏高</td><td class="num">200–300</td><td>优质成猫主食罐常见区间，早期可考虑</td></tr>
+        <tr><td>❌ 避免</td><td class="num">400–600</td><td>普通成猫粮/零食的典型水平</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>5.6 湿粮 vs 干粮</h3>
+  <table>
+    <thead><tr><th></th><th>湿粮（罐头/鲜食/餐包）</th><th>干粮（膨化粮）</th></tr></thead>
+    <tbody>
+      <tr><td><b>水分</b></td><td>70–80%，<b>大幅增加总摄水量</b></td><td>8–10%</td></tr>
+      <tr><td><b>热量密度</b></td><td>低。<b>猫要吃更大体积才能吃饱</b>，一些猫因此难以维持体重</td><td>高。<b>约为湿粮的 4 倍/克</b>，容易吃够热量</td></tr>
+      <tr><td><b>适口性</b></td><td>通常更好（气味强）</td><td>部分猫更习惯</td></tr>
+      <tr><td><b>建议</b></td><td colspan="2"><b>首选湿粮</b>。但如果猫吃湿粮吃不够热量、持续掉体重，<b>不要硬扛</b>——混合喂养，甚至以干粮为主都可以。<b>吃进去的热量 &gt; 形式。</b></td></tr>
+    </tbody>
+  </table>
+  <div class="box tip">
+    <span class="t">"早期肾脏粮"和"晚期肾脏粮"差别在哪</span>
+    <p>iCatCare 2026：<b>早期肾病粮通常蛋白略高、磷略高、钙磷比（Ca:P）略低</b>；晚期肾病粮磷更低、蛋白更低。<br>
+    但选哪个不只看分期——<b>如果猫热量摄入不足，选蛋白略高的（早期型）更合适</b>。很多"早期型"磷也稍高，这正是为了避免过度限磷导致高钙血症。<b>这个决定交给兽医，别自己拍。</b></p>
+  </div>
+
+  <h3>5.7 换粮：别急，用 1–2 周</h3>
+  <ul class="clean">
+    <li>在<b>猫健康稳定、在家、心情好的时候</b>开始换。绝不在生病、住院、或刚从医院回来时换。</li>
+    <li>过渡期 <b>7–14 天</b>：新粮从 10–25% 起，每 2–3 天提高一档。</li>
+    <li><b>新旧分开摆两个碗</b>比混在一起更好——猫通常不喜欢新旧混在一起。</li>
+    <li>多准备<b>几个品牌、几种质地</b>（肉泥/肉块/慕斯/肉汤），CKD 猫食欲波动大，<b>有备选才有退路</b>。</li>
+    <li>小技巧：<b>温热到接近体温</b>（微波炉 3–5 秒或温水浴，务必搅匀试温）、撒一点<b>冻干碎/木天蓼/啤酒酵母粉</b>提香、加温水做成肉汤。</li>
+  </ul>
+
+  <div class="box good">
+    <span class="t">吃不全没关系，50% 就有效</span>
+    <p>iCatCare 2026 原文：<b>"应鼓励照护者即使肾脏饮食只占摄入热量的一部分，也持续喂食肾脏饮食。一种肾脏饮食占 50% 或更多的饮食可以对生存产生有益影响。"</b><br>
+    所以别因为"它不肯全吃处方粮"就放弃。<b>哪怕一天只吃一顿处方罐头，也在获益。</b></p>
+  </div>
+
+  <h3>5.8 想吃自制 / 生骨肉 / 冻干？先看完这段</h3>
+  <div class="box danger">
+    <span class="t">风险提示（不是吓你，是真的会出事）</span>
+    <p>前面那项研究已经说明：<b>钙磷比失衡 + 高无机磷，4 周就能在健康猫身上造成可测量的肾损伤。</b>而绝大部分网传自制食谱的问题恰恰是：<br>
+    · <b>纯肉无骨</b> → 钙极低、磷高、钙磷比严重倒置（有的低到 0.1:1）<br>
+    · <b>为了"补钙"乱加碳酸钙/骨粉</b> → 要么不够，要么过量<br>
+    · <b>用含磷酸盐的添加剂/骨粉</b> → 直接踩雷<br>
+    · <b>蛋白和热量算错</b> → 掉肌肉<br><br>
+    <b>如果一定要做，请找有资质的兽医营养师（如 ACVN 认证）定制配方，并按配方精确执行。</b>不要照抄网上任何一份"低磷食谱"，包括群里流传的那些。</p>
+  </div>
+  <p><b>商业化生骨肉/冻干主食</b>：选购标准和上面一样——问厂家要<b>磷 mg/100 kcal 和钙磷比</b>，看成分表有无<b>无机磷添加</b>，看是否有 AAFCO/FEDIAF 的"完整均衡主食"标识（而非"零食/补充"）。拿不到数据的品牌，直接放弃。</p>
+
+  <h3>5.9 其他营养点</h3>
+  <div class="kv">
+    <dt>Omega-3（EPA）</dt><dd>肾脏粮常额外添加。<b>一项研究中 EPA 含量最高的肾脏粮，延长存活期的效果最好。</b>若喂非处方粮，可与兽医讨论补充鱼油（注意氧化问题与剂量）。</dd>
+    <dt>钾</dt><dd>低钾在 CKD 猫很常见，会加重无力、便秘、掉肌肉。很多肾脏粮已强化钾；血钾低时需额外补（见 06 章）。</dd>
+    <dt>B 族维生素</dt><dd>水溶性、随多尿流失，肾脏粮通常已强化。</dd>
+    <dt>碱化成分</dt><dd>代谢性酸中毒会加速肌肉分解，肾脏粮常含碱化剂（柠檬酸钾等）。</dd>
+    <dt>抗氧化剂</dt><dd>常见添加，证据强度弱于磷，但无害。</dd>
+    <dt>钠</dt><dd>建议<b>适度减少</b>——IRIS 把"降低膳食钠"列为高血压管理的第一步。<b>高盐零食、人食、奶酪、火腿一律停掉。</b></dd>
+  </div>
+</section>
+
+<!-- ============ 06 ============ -->
+<section id="s6">
+  <h2><span class="num">06</span>药物全解与喂药技巧</h2>
+  <p class="lead">⚠️ 以下均为文献与指南中的<b>常规剂量</b>，仅供你与兽医沟通时参考。<b>实际用药必须由主治兽医确定。</b></p>
+
+  <h3>6.1 一图速查表</h3>
+  <table class="small">
+    <thead>
+      <tr><th>药物</th><th>干什么用</th><th>常规剂量（猫）</th><th>关键提醒</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><b>磷结合剂</b><br><small>碳酸镧 / 氢氧化铝 / 碳酸钙 / 醋酸钙</small></td><td>在肠道"抓住"食物里的磷，随粪便排出</td><td><b>30–60 mg/kg/天</b>，分次，<b>随每餐混入食物</b></td><td>必须与食物同服才有效；含铝的会加重便秘；含钙的高钙血症禁用</td></tr>
+      <tr><td><b>氨氯地平</b><br><small>Amlodipine</small></td><td>降血压</td><td><b>0.125–0.25 mg/kg，PO，q24h</b>；可加倍至 0.25–0.5 mg/kg</td><td>猫最常用降压药。起始/加量后 <b>1–2 周</b>复测血压</td></tr>
+      <tr><td><b>替米沙坦</b><br><small>Telmisartan</small></td><td>降血压 / 降蛋白尿</td><td>降压 <b>2 mg/kg, PO, q24h</b>；蛋白尿 <b>1 mg/kg, PO, q24h</b></td><td>说明书不建议超 2 mg/kg。<b>脱水时禁用</b></td></tr>
+      <tr><td><b>贝那普利</b><br><small>Benazepril</small></td><td>降蛋白尿（ACEI）</td><td>蛋白尿 <b>0.25–0.5 mg/kg, PO, q12h</b></td><td>IRIS 亦列 0.5–1 mg/kg q24h。<b>肌酐升 &gt;25–30% 需复评</b></td></tr>
+      <tr><td><b>马罗匹坦</b><br><small>Maropitant</small></td><td>止吐、抗恶心</td><td><b>1 mg/kg, PO/SC/IV, q24h</b></td><td>证据：口服 2 周能减少呕吐，<b>但不会增重/增进食欲</b>。SC 注射有痛感</td></tr>
+      <tr><td><b>昂丹司琼</b><br><small>Ondansetron</small></td><td>止吐、抗恶心</td><td><b>0.1–1 mg/kg, IV(慢)/IM/SC/PO, q6–12h</b></td><td>口服走剂量范围高端；副作用含便秘</td></tr>
+      <tr><td><b>米氮平</b><br><small>Mirtazapine</small></td><td><b>增进食欲 + 止吐</b></td><td><b>1.88–2 mg/猫，PO 或透皮（耳廓），q48h</b></td><td>CKD 猫肾清除下降，<b>高分期用 q48h</b>。证据（3 周）：<b>减少呕吐 + 增进食欲 + 增重</b></td></tr>
+      <tr><td><b>卡普莫雷林</b><br><small>Capromorelin</small></td><td>增进食欲（生长素受体激动剂）</td><td>按说明书</td><td>可能一过性心动过缓/低血压；<b>血流动力学不稳者不用</b></td></tr>
+      <tr><td><b>补钾</b><br><small>葡萄糖酸钾 / 柠檬酸钾</small></td><td>纠正低钾</td><td><b>1–2 mmol/kg/天</b>，按疗效调整</td><td>低钾会致无力、颈部下垂、便秘、掉肌肉</td></tr>
+      <tr><td><b>碳酸氢钠</b><br><small>或柠檬酸钾（若同时低钾）</small></td><td>纠正代谢性酸中毒</td><td>当<b>血碳酸氢盐/总 CO₂ &lt;16 mmol/l</b> 才开始；目标维持 <b>16–24 mmol/l</b></td><td>需先让猫在选定饮食上稳定后再补</td></tr>
+      <tr><td><b>奥美拉唑</b><br><small>Omeprazole</small></td><td>怀疑/证实消化道出血时（黑便、缺铁）</td><td><b>1 mg/kg, PO, q12h</b></td><td>4 期猫中"少见"情况下考虑，不常规用</td></tr>
+      <tr><td><b>达贝泊汀</b><br><small>Darbepoetin alfa</small></td><td>治疗肾性贫血（ESA）</td><td><b>0.75–1 µg/kg, SC, 每周</b> 至 PCV 达参考下限（约 30%）后改 <b>每 2 周</b>维持</td><td><b>诱导期每次注射前测血压 + PCV</b>；维持期每 1–3 个月复查。约 25–40% 可能产生抗 EPO 抗体（纯红再障）</td></tr>
+      <tr><td><b>莫立司他</b><br><small>Molidustat, HIF-PHI</small></td><td>口服治疗肾性贫血</td><td>研究中为 <b>5 mg/kg, PO, q24h</b></td><td>2026 版 IRIS 已将其与达贝泊汀、输血并列。<b>地区可及性差异大</b>，需向兽医确认</td></tr>
+      <tr><td><b>铁剂</b><br><small>口服 / 右旋糖酐铁 IM</small></td><td>配合 ESA 治疗（ESA 会快速耗铁）</td><td>口服<b>元素铁 10–20 mg/猫/天</b>；或右旋糖酐铁 <b>IM 每 3–4 周</b></td><td>口服硫酸亚铁吸收差且苦，猫常拒食；IM 常是更好选择</td></tr>
+    </tbody>
+  </table>
+<div class="box"><b>莫立司他（molidustat）完整方案 —— 2026 版 IRIS / 26_04</b><table><tr><th style="width:22%">项目</th><th>方案</th></tr><tr><td>何时启动</td><td>持续 PCV&lt;25%，或 PCV 呈下降趋势（尤其已接近/低于 <b>25–28%</b>）</td></tr><tr><td>剂量</td><td><b>5 mg/kg 口服，每日一次，28 天为一个疗程</b></td></tr><tr><td>目标</td><td>PCV 维持 <b>30–40%</b>。低于 30% 仍有贫血症状；高于 40% 担心红细胞增多症（血黏稠度升高、血栓风险）</td></tr><tr><td>监测</td><td>起初<b>每 2 周</b>测一次 PCV，据反应调整或暂停</td></tr><tr><td>注意</td><td>首项猫研究（n=15）中红细胞增多症未成为问题；地区可及性差异大，需向兽医确认</td></tr></table><span class="src">（2026 新增证据 · 详见《猫肾病2026新证据速览》）</span></div>
+
+  <p class="src"><b>主要来源：</b>IRIS 2026 猫 CKD 治疗建议、iCatCare 2026 共识指南表 6、ISFM 共识指南。</p>
+
+  <h3>6.2 逐个细说</h3>
+
+  <div class="drug">
+    <div class="hd"><div class="name">磷结合剂 <small>Phosphate binders</small></div><div class="pill p1">最常用 · 但最容易用错</div></div>
+    <div class="bd">
+      <dl>
+        <dt>怎么起效</dt><dd>在肠道里和食物中的磷结合，让它<b>拉出去而不是吸收进来</b>。</dd>
+        <dt>核心规则</dt><dd><b>必须和食物同时到达肠道才有用。</b>所以——① 随餐给，<b>充分混进每一餐</b>；② 按每天喂几次，把<b>总量分成几份</b>；③ 空腹给 = 白给。</dd>
+        <dt>剂量</dt><dd>起始 <b>30–60 mg/kg/天，分次随餐</b>，之后<b>按血磷疗效调整</b>，以毒性迹象为上限。</dd>
+        <dt>选哪种</dt><dd>· <b>碳酸镧</b>：效力强、不含钙不含铝、适口性相对好，但贵<br>· <b>氢氧化铝</b>：便宜有效，<b>但会加重便秘</b>（CKD 猫本来就便秘）；猫尚未见铝中毒报告，但小细胞性贫血/无力/神经症状时要换药<br>· <b>碳酸钙/醋酸钙</b>：便宜，<b>但高钙血症的猫禁用</b>——这很重要，因为早期过度限磷的猫本就容易高钙</dd>
+        <dt>监测</dt><dd>开始后<b>每 4–6 周</b>查血钙血磷，稳定后<b>每 12 周</b>。总钙 &gt;12 mg/dl（3 mmol/l）→ 减少限磷强度。</dd>
+        <dt>副作用</dt><dd>便秘（含铝）、高钙（含钙）、恶心、拒食（拌进去后味道变了）。</dd>
+      </dl>
+    </div>
+  </div>
+
+  <div class="drug">
+    <div class="hd"><div class="name">降压药 <small>氨氯地平 / 替米沙坦</small></div><div class="pill p2">靶器官保护</div></div>
+    <div class="bd">
+      <dl>
+        <dt>目标</dt><dd>SBP <b>&lt;160 mm Hg</b>（iCatCare：理想 &lt;140）。<b>平稳下降</b>，不能猛降。</dd>
+        <dt>顺序</dt><dd>IRIS 建议循序渐进：① 减少膳食钠 → ② 氨氯地平 <b>0.125–0.25 mg/kg q24h</b> 或替米沙坦 <b>2 mg/kg q24h</b> → ③ 氨氯地平可加倍至 <b>0.25–0.5 mg/kg q24h</b>。</dd>
+        <dt>⚠️ 铁律</dt><dd><b>脱水/血容量不足的猫，禁用 CCB 和 RAAS 抑制剂。</b>必须先纠正脱水再用，否则 GFR 会急剧下降。这条 IRIS 反复强调了四次。</dd>
+        <dt>复查</dt><dd>开始或调量后 <b>1–2 周</b>复测血压。肌酐升幅 &lt;45 µmol/l（0.5 mg/dl）或 SDMA 升 &lt;2.0 µg/dl 属于可接受范围；<b>超过则提示药物不良反应</b>。</dd>
+        <dt>为什么要治</dt><dd>高血压会攻击<b>眼睛（视网膜脱离、突然失明）、脑（抽搐）、心脏、肾脏本身</b>。眼部损伤部分可逆，高血压脑病症状可逆——但要早。</dd>
+      </dl>
+    </div>
+  </div>
+
+  <div class="drug">
+    <div class="hd"><div class="name">抗蛋白尿 <small>贝那普利 / 替米沙坦</small></div><div class="pill p3">UPC &gt;0.4 才启动</div></div>
+    <div class="bd">
+      <dl>
+        <dt>谁需要</dt><dd>IRIS：<b>UPC &gt;0.4</b> 开始治疗；<b>0.2–0.4（边缘）</b>密切监测，若持续存在可考虑治疗（尚无证据表明能延缓进展，但 CKD 进展与边缘蛋白尿相关）。</dd>
+        <dt>剂量</dt><dd>贝那普利 <b>0.25–0.5 mg/kg PO q12h</b>；替米沙坦 <b>1 mg/kg PO q24h</b>。</dd>
+        <dt>监测表</dt><dd>用药后 <b>1–2 周</b>：临床症状、SBP、肌酐、钾 → 评估耐受；<b>4 周</b>：临床、SBP、UPC → 评估疗效；之后<b>每 3 个月</b>。肌酐升 <b>&gt;25–30%</b> 需审查并调整剂量。</dd>
+        <dt>⚠️</dt><dd>任何<b>临床脱水或有低血容量表现</b>的猫禁用 RAAS 抑制剂。</dd>
+      </dl>
+    </div>
+  </div>
+
+  <div class="drug">
+    <div class="hd"><div class="name">止吐 / 促食欲 <small>马罗匹坦 / 昂丹司琼 / 米氮平</small></div><div class="pill p4">生活质量关键药</div></div>
+    <div class="bd">
+      <dl>
+        <dt>恶心是核心</dt><dd>CKD 猫"不吃"往往不是挑食，是<b>恶心</b>。尿毒症毒素刺激呕吐中枢。所以处理食欲问题，第一步是抗恶心，不是换粮。</dd>
+        <dt>米氮平是首选</dt><dd>在 IRIS 2–3 期猫的安慰剂对照试验中：<b>米氮平（口服或透皮，3 周）既减少呕吐，又增加食欲和体重</b>；而马罗匹坦只减少呕吐，<b>不增重、不增进食欲</b>。剂量 <b>1.88–2 mg/猫 q48h</b>（高分期因清除下降用 q48h）。临床常用透皮（抹在耳廓内侧，交替耳朵）以减少喂药压力。</dd>
+        <dt>马罗匹坦</dt><dd><b>1 mg/kg q24h</b>（PO/SC/IV）。有 2 mg/kg 的长期用法在临床中被使用，按兽医判断。SC 注射有痛感。</dd>
+        <dt>米氮平副作用</dt><dd>发声增多、躁动、黏人；高剂量可能血压变化。<b>CKD 猫 q48h 而非 q24h</b>。</dd>
+        <dt>更严重的</dt><dd>如药物+营养管理均无效，或长期需要补液 → iCatCare 建议<b>考虑喂食管</b>（食管造口管/胃造口管），它既能补水也能喂饭，<b>比反复扎针更符合生理</b>，长远看猫也更舒服。</dd>
+      </dl>
+    </div>
+  </div>
+
+  <div class="drug">
+    <div class="hd"><div class="name">贫血治疗 <small>达贝泊汀 / 莫立司他 / 输血 / 补铁</small></div><div class="pill p5">IRIS 2026 更新重点</div></div>
+    <div class="bd">
+      <dl>
+        <dt>何时开始（2026 新口径）</dt><dd>· 因 CKD 贫血且 <b>HCT &lt;25%</b> → 治疗<br>· <b>HCT 25–28% 且持续</b> → 也治疗<br>· 2 期猫若水分充足时 HCT 已 &lt;25%，<b>先查其他原因</b>，查不到再归因 CKD</dd>
+        <dt>达贝泊汀</dt><dd><b>0.75–1 µg/kg SC 每周</b>，直到 PCV 达参考下限（约 <b>30%</b>），之后<b>每 2 周一次</b>维持。诱导期<b>每次注射前测血压和 PCV</b>。<br>⚠️ 副反应含高血压（40–50%）、癫痫（2–10%）、<b>抗 EPO 抗体导致的纯红再障（25–40%）</b>——一旦发生，所有 ESA 都失效。</dd>
+        <dt>莫立司他</dt><dd>口服 HIF-PH 抑制剂，IRIS 2026 已正式列为选项之一。研究中 <b>5 mg/kg PO q24h</b>，<b>第 21 天 HCT 从 23.6% 升至 27.3%</b>（P&lt;0.001）。国内可及性需向兽医确认。</dd>
+        <dt>补铁</dt><dd>ESA 治疗会快速消耗铁，不补等于白治。口服元素铁 <b>10–20 mg/猫/天</b>，但吸收差、味苦；<b>右旋糖酐铁 IM 每 3–4 周</b>常是更好选择。</dd>
+        <dt>输血</dt><dd>严重贫血、症状明显时的桥接手段。</dd>
+      </dl>
+    </div>
+  </div>
+
+  <h3>6.3 绝对避免 / 慎用的东西</h3>
+  <div class="box danger">
+    <span class="t">黑名单</span>
+    <ul style="margin-bottom:0">
+      <li><b>非甾体抗炎药（NSAID）</b>：美洛昔康、卡洛芬、氟尼辛等。禁用场景包括<b>不稳定/进展期 CKD、脱水、低血容量、低血压、体况差、IRIS 4 期</b>。<br><span class="src">若因骨关节炎等必须使用：仅限 IRIS 1–2 期、<b>稳定期</b>（至少 2 个月体重与肌酐变化很小）、水合良好、正常吃喝、控制好高血压/高磷/尿路感染，且<b>充分知情同意</b>。可用替代：Solensia（frunevetmab，每月皮下注射，用于骨关节炎镇痛）。</span></li>
+      <li><b>氨基糖苷类抗生素</b>（庆大霉素、阿米卡星等）：明确肾毒性。</li>
+      <li><b>含磷酸钠的灌肠剂</b>（人用开塞露/Fleet）：可致猫严重高磷血症、低钙、抽搐、死亡。</li>
+      <li><b>高磷食物</b>：奶酪、奶制品、骨头、骨粉、鱼干、虾干、动物内脏（尤其肝脑）、大部分猫零食条。</li>
+      <li><b>人用感冒药/止痛药</b>（对乙酰氨基酚对猫是剧毒，任何剂量）。</li>
+      <li><b>含马兜铃酸的中草药、来路不明的"补肾"保健品</b>。</li>
+      <li><b>主要经肾排泄的药物</b>（3–4 期）：需按治疗指数调整剂量，避免蓄积。<b>任何新药都要提醒医生"它有 CKD"。</b></li>
+    </ul>
+  </div>
+
+  <h3>6.4 喂药实操</h3>
+  <ol>
+    <li><b>先问一句"能不能做成别的剂型"</b>：很多药可以找<b> compounding 药房</b>做成<b>透皮凝胶（抹耳廓）</b>、<b>风味咀嚼片</b>或<b>液体</b>。米氮平就有透皮剂型，能省掉每天一场搏斗。</li>
+    <li><b>喂药器（给丸器）优于手喂</b>：把药送到舌根后部，立刻<b>轻吹鼻子或轻抚喉咙</b>诱发吞咽，然后<b>跟一小口水/针筒给水</b>（干吞药片可能卡在食管造成溃疡）。</li>
+    <li><b>胶囊/掩味</b>：苦味药可装入空胶囊；或用<b>喂药零食（pill pocket）</b>——注意选低磷款。</li>
+    <li><b>别把药藏在一大碗饭里</b>：猫可能吃一半就停，剂量不准；而且一旦识破，<b>连这碗饭都不吃了</b>。用小份"药+最爱零食"单独给，吃完再给正餐。</li>
+    <li><b>固定顺序和时间</b>：建立流程，比如"药 → 立刻给最爱的冻干 → 夸奖"。</li>
+    <li><b>保定用毛巾卷</b>：比徒手安全，猫也不容易记恨你。</li>
+    <li><b>磷结合剂别忘</b>：它是<b>唯一必须跟饭走</b>的药。如果猫只吃一半饭，那这顿的结合剂也减半——不然容易低磷。</li>
+    <li><b>做一张给药时间表</b>贴冰箱：药名/剂量/时间/是否已给。多种药时，这张表能防止漏服和重复。</li>
+  </ol>
+  <div class="box warn">
+    <span class="t">照护者负担是真的</span>
+    <p>iCatCare 2026 专门提到：<b>多种药物并用很常见，可能影响 CKD 猫的生活质量，并增加"照护者负担"。</b><br>
+    如果喂药已经让猫见你就躲、让你每天崩溃，<b>主动和兽医谈减药</b>。有些药可以停、可以改成透皮、可以换长效剂型。<b>保住你们的关系，比凑齐每一种药更重要。</b></p>
+  </div>
+</section>
+
+<!-- ============ 07 ============ -->
+<section id="s7">
+  <h2><span class="num">07</span>便秘：最被低估的痛苦</h2>
+<div class="info"><b>为什么便秘值得单独占一章（2026 生活质量研究）</b><br>猫 CKD 健康相关生活质量（HRQoL）研究把<b>便秘明确列为"可干预因素"</b>——处理便秘不只是通便，它能直接改善猫的情绪健康评分。同一研究还发现：贫血患病率随分期上升，<b>晚期可达 53–65%</b>，且贫血猫的情绪健康评分显著下降；人的数据里，患者贫血还对应着显著更高的照护者负担。<span class="src">（2026 新增证据 · 详见《猫肾病2026新证据速览》）</span></div>
+
+  <p class="lead">CKD 猫的便秘比狗常见得多。它不致命，但会让猫持续难受、更不吃、更恶心——常常是"状态突然变差"的隐藏原因。</p>
+
+  <h3>7.1 为什么 CKD 猫特别容易便秘</h3>
+  <div class="grid2">
+    <div class="mini"><div class="h">① 慢性脱水（头号原因）</div><div class="d">身体缺水时，结肠会把粪便里的水分<b>拼命回吸</b>，大便变得又干又硬、排不出来。</div></div>
+    <div class="mini"><div class="h">② 低钾血症</div><div class="d">钾低了肠道平滑肌就没力气蠕动。<b>低钾 → 肠子不动 + 全身无力 → 更不想动</b>，形成闭环。</div></div>
+    <div class="mini"><div class="h">③ 含铝磷结合剂</div><div class="d">氢氧化铝是<b>明确会加重便秘</b>的。如果猫吃了结合剂后开始便秘，告诉兽医，可能需要换种类。</div></div>
+    <div class="mini"><div class="h">④ 疼痛与环境</div><div class="d">老年猫常有<b>退行性关节病（DJD）</b>，蹲猫砂盆疼 → 憋着不去。猫砂盆太远、太高、太脏、数量不够，也一样。</div></div>
+  </div>
+
+  <div class="box tip">
+    <span class="t">它能反过来当报警器</span>
+    <p>iCatCare 2026 特别指出：<b>排便频率下降是脱水的重要指标。</b>鼓励用结团猫砂，方便你数尿团、看便便。<br>
+    <b>便便变少、变干、变硬 → 先看水合状态和血钾，而不是先加药。</b></p>
+  </div>
+
+  <h3>7.2 分级处理：按顺序来，别跳步</h3>
+
+  <h4>第 0 步：先纠正"因"，再谈药（iCatCare 明令优先）</h4>
+  <ol>
+    <li><b>评估并改善水合状态</b>——加湿粮、加水、必要时上皮下补液（这是根本）。</li>
+    <li><b>测血钾，低了就补</b>（1–2 mmol/kg/天，葡萄糖酸钾或柠檬酸钾）。</li>
+    <li>纠正了这两项，<b>再</b>开始用通便药。<b>水合没纠正就上纤维，可能适得其反</b>——纤维需要水才能起作用，缺水时加纤维只会堵得更厉害。</li>
+  </ol>
+
+  <h4>第 1 层：渗透性泻剂（首选）</h4>
+  <div class="box good">
+    <span class="t">聚乙二醇 3350（PEG 3350，如 Miralax）</span>
+    <p><b>剂量：每次 1/8 – 1/4 茶匙，每 12–24 小时一次</b>，混在少量水或湿粮里。<br>
+    优点：粉末状、<b>耐受性好、猫接受度高</b>。iCatCare 明确说它"<b>比乳果糖更有效</b>"——乳果糖需要肠道菌群发酵，容易产气腹胀，而且很多猫不爱那个甜味、难以喂服。<br>
+    <b>按"便便性状"调剂量</b>：目标是软而成形（像牙膏），不是腹泻。稀了就减，硬了就加。</p>
+    <p class="src" style="margin-top:6px"><b>来源：</b>iCatCare 2026；Tam 2011（PEG3350 在猫的安全性与适口性）。</p>
+  </div>
+  <p><b>乳果糖</b>：备选方案，<code>0.5 mL/kg PO q8–12h</code> 起，调至软便。缺点：产气、腹胀、适口性差、部分猫拒食。</p>
+
+  <h4>第 2 层：纤维（膨松剂）</h4>
+  <table class="small">
+    <thead><tr><th>种类</th><th>起始剂量</th><th>注意</th></tr></thead>
+    <tbody>
+      <tr><td><b>洋车前子壳（车前子 / psyllium）</b></td><td><b>1/4 茶匙 / 天</b>，或分次 q12h</td><td>必须配足水分</td></tr>
+      <tr><td><b>罐装南瓜泥（纯南瓜，非派馅）</b></td><td><b>1/2 – 1 茶匙 / 天</b>，或分次 q12h</td><td>适口性好，猫常主动吃</td></tr>
+    </tbody>
+  </table>
+  <p class="src"><b>前提：</b>猫水合状态正常，且愿意把它混在食物里吃下去。</p>
+
+  <h4>第 3 层：促动力药（二线，需处方）</h4>
+  <p><b>西沙必利（Cisapride）1 mg/kg，PO，q8h</b>——最常用的促动力药，体外证实对正常和异常的猫结肠平滑肌收缩有积极作用。<br>
+  <span class="src">iCatCare 定位：<b>"第二层"</b>。因为猫 CKD 患者本身的结肠蠕动受累程度尚未被充分评估。仅在渗透性泻剂 + 纤维效果不足时使用。</span></p>
+
+  <h4>第 4 层：环境与疼痛（别漏）</h4>
+  <ul class="clean">
+    <li>猫砂盆数量 = <b>猫数 + 1</b>，放在安静、易到达、不用爬楼梯的地方</li>
+    <li>老年猫用<b>低边/一侧开口</b>的盆（关节炎猫跨不进高边盆）</li>
+    <li>猫砂换成它偏好的质地（多数偏好细砂）；保持极干净</li>
+    <li><b>评估并治疗关节疼痛</b>——这是很多"顽固便秘"的真相。可讨论 Solensia 等方案</li>
+    <li>适度活动、腹部轻柔按摩（顺时针），但别强行</li>
+  </ul>
+
+  <div class="box danger">
+    <span class="t">绝对禁止：含磷酸钠的灌肠剂</span>
+    <p>人用的 Fleet 类<b>磷酸钠灌肠剂/开塞露对猫可能致命</b>——会迅速造成严重高磷血症、低钙血症、抽搐、心律紊乱、死亡。<br>
+    需要灌肠时<b>必须由兽医操作</b>，使用的是温盐水或专用制剂。<b>不要自己在药店买给人用的开塞露。</b></p>
+  </div>
+
+  <h3>7.3 什么时候必须去医院</h3>
+  <ul class="clean">
+    <li><b>超过 3–4 天没有排便</b>，且通便药无效</li>
+    <li>反复做排便姿势但<b>拉不出来</b>，或只拉出少量液体/血</li>
+    <li>出现<b>呕吐</b>（尤其是粪臭味呕吐物）</li>
+    <li>肚子胀大、<b>一碰就疼</b>、精神沉郁、完全不吃</li>
+    <li>已经确诊<b>巨结肠</b>（megacolon），或便秘反复发作</li>
+  </ul>
+  <p>兽医可能需要：腹部 X 光评估结肠积粪量、必要时麻醉下手动掏便 + 灌肠、住院补液纠正脱水与电解质。<b>拖到巨结肠就可能需要手术了。</b></p>
+
+  <div class="box info">
+    <span class="t">顺带一提：便秘也会加重尿毒症</span>
+    <p>iCatCare 2026 把"<b>便秘管理</b>"列在了"减少尿毒素生成的策略"里（和饮食管理、益生元/吸附剂并列）。<br>
+    原因：粪便在肠道停留越久，肠道细菌产生的<b>吲哚/对甲酚</b>类尿毒素前体就吸收越多（这些正是硫酸吲哚酚的来源）。<b>所以通便不只是"舒服一点"，它本身就是在减负。</b></p>
+  </div>
+</section>
+
+<!-- ============ 08 ============ -->
+<section id="s8">
+  <h2><span class="num">08</span>呕吐、恶心与不吃东西</h2>
+  <p class="lead">这是家长最容易崩溃的部分，也是最容易处理错的部分。核心一句话：<b>它多半不是"挑食"，是"想吐"。</b></p>
+
+  <h3>8.1 先分辨：是恶心还是真的吐</h3>
+  <p>猫的恶心信号常常很隐蔽，学会看这些：</p>
+  <div class="kv">
+    <dt>流口水 / 舔嘴唇</dt><dd>最常见的恶心表现，很多人误以为是"嘴馋"</dd>
+    <dt>走到饭碗前闻一闻就走开</dt><dd>想吃但吃不下——典型的恶心，不是挑食</dd>
+    <dt>吧唧嘴、干呕</dt><dd>胃酸反流</dd>
+    <dt>躲起来、精神差</dt><dd>持续性不适</dd>
+    <dt>吐白色泡沫</dt><dd>空腹胃酸刺激</dd>
+    <dt>吐黄水</dt><dd>胆汁，常见于长时间空腹</dd>
+    <dt>口腔溃疡、口臭（尿臭味）</dt><dd><b>尿毒症口炎，很痛</b>，提示氮质血症较重，需尽快就医</dd>
+  </div>
+
+  <h3>8.2 处理顺序</h3>
+  <ol class="steps">
+    <li><b>先排除可逆诱因</b><br>脱水、低钾、酸中毒、便秘、贫血、尿路感染、血压——<b>这些都得先处理</b>。iCatCare 原文：一旦发现食欲减退，应"处理任何可能导致食欲不振的 CKD 并发症，如脱水、便秘、低钾血症、酸中毒或贫血"。</li>
+    <li><b>抗恶心/止吐</b><br>首选<b>米氮平</b>（1.88–2 mg/猫 q48h，口服或透皮），它<b>同时改善食欲</b>。马罗匹坦（1 mg/kg q24h）止吐但不增进食欲。昂丹司琼（0.1–1 mg/kg q6–12h）可作为联合/替代。<br>⚠️ 呕吐的<b>第一天先别急着止吐</b>——吐有时是身体在排掉有害物。持续或频繁的呕吐才需要药。</li>
+    <li><b>护胃（有指征才用）</b><br>奥美拉唑 1 mg/kg PO q12h，用于<b>怀疑或证实消化道出血</b>（黑便、缺铁、呕吐物带咖啡渣样物）。IRIS 在 4 期明确写了"少见情况下考虑"。</li>
+    <li><b>让食物变得无法拒绝</b><br>加热到体温、加温水做成汤、撒冻干碎/啤酒酵母/木天蓼、用手喂、换质地（慕斯 vs 肉块）、换蛋白来源（鸡→兔→鸭→鱼）。<br><b>少量多餐</b>：一天 5–6 顿小份，比两大碗更不容易引发恶心。</li>
+    <li><b>算一算它到底吃了多少</b><br>不要凭感觉。用厨房秤称：<b>每天实际摄入 kcal ÷ 每日所需 kcal</b>。<br><code>静息能量需求 RER = 70 × 体重(kg)^0.75</code>；多数家猫维持需要 ≈ <b>RER × 1.2–1.4</b>。<br><span class="src">4 kg 猫：RER ≈ 198 kcal，维持约 240–280 kcal/天。对照罐头罐身标注的 kcal/罐，你就能知道它到底吃了几成。</span></li>
+    <li><b>超过 24–48 小时几乎不吃 → 就医</b><br>猫<b>完全不吃超过 3 天有脂肪肝（肝脂质沉积症）风险</b>，这是会致命的第二重打击。<b>不要拖。</b></li>
+    <li><b>长期方案：喂食管</b><br>如果药物+营养管理都无效，或长期需要补液——iCatCare 和 ISFM 都建议<b>考虑食管造口管/胃造口管</b>。<br><span class="src">听起来吓人，实际上：<b>它既能补水也能喂饭，比反复扎针更符合生理，猫的应激反而更小</b>，主人负担也大幅下降。这是"提升生活质量"的选项，不是"最后手段"。</span></li>
+  </ol>
+
+  <div class="box warn">
+    <span class="t">如果吃进去的需要量超过 2.0 × RER</span>
+    <p>iCatCare 提醒：如果猫咪需要的能量<b>超过 2.0 倍 RER</b> 才维持体重，应该<b>进一步检查合并疾病</b>——最常见是<b>甲状腺功能亢进</b>，其次是慢性肠病、外分泌胰腺功能不全。</p>
+  </div>
+</section>
+
+<!-- ============ 09 ============ -->
+<section id="s9">
+  <h2><span class="num">09</span>在家监测与复查节奏</h2>
+  <p class="lead">你是每天见它的人。<b>你的记录，是兽医最重要的信息来源。</b></p>
+
+  <h3>9.1 每天记什么（1 分钟）</h3>
+  <table class="small">
+    <thead><tr><th>项目</th><th>怎么记</th><th>警戒线</th></tr></thead>
+    <tbody>
+      <tr><td><b>进食量</b></td><td>吃了几成（或称克数）</td><td><b>连续 2 天 &lt;50%</b> 或 <b>24h 完全不吃</b></td></tr>
+      <tr><td><b>饮水</b></td><td>目测 / 量杯记录</td><td>突然暴增或完全不喝</td></tr>
+      <tr><td><b>呕吐</b></td><td>次数 + 内容物（毛球？食物？黄水？泡沫？）</td><td><b>一天 ≥2 次</b> 或连续多天</td></tr>
+      <tr><td><b>排便</b></td><td>次数 + 性状（干硬/正常/软/稀）+ 颜色</td><td><b>&gt;3 天无便</b>；黑便；带血</td></tr>
+      <tr><td><b>排尿</b></td><td>尿团数量与大小（结团砂才能数）</td><td><b>尿团变小/变少</b>，或<b>蹲很久尿不出来</b></td></tr>
+      <tr><td><b>精神 / 活动</b></td><td>1–5 分打个分</td><td>持续躲藏、不理人、叫不出</td></tr>
+      <tr><td><b>呼吸</b></td><td>静息时数（正常 15–30 次/分）</td><td><b>&gt;40 次/分</b> 或张口呼吸</td></tr>
+      <tr><td><b>给药</b></td><td>打勾，防漏服重复</td><td>—</td></tr>
+    </tbody>
+  </table>
+
+  <h3>9.2 每周必做：称体重</h3>
+  <div class="box good">
+    <span class="t">这是全手册最重要的一件事</span>
+    <p>· 固定<b>同一台秤、同一时间</b>（建议早上喂食前）。精确到 <b>10 g</b>。<br>
+    · 同时摸一摸<b>体况评分 BCS</b>（1–9 分）和<b>肌肉评分 MCS</b>（脊柱、肩胛、后腿肌肉量）。<br>
+    · <b>1 个月内掉 &gt;5% 体重 → 复诊</b>。<b>掉 &gt;10% → 尽快复诊。</b><br>
+    · 参考：500 多只猫的大型研究显示，CKD 猫在<b>确诊前 12 个月中位已掉 8.9% 体重</b>，而且体重下降在确诊<b>前 3 年</b>就已开始、确诊后加速。<br><br>
+    <b>体重是比肌酐更早的警报器。</b>很多"突然恶化"其实在体重曲线上早就画出来了。</p>
+  </div>
+
+  <h3>9.3 复查频率</h3>
+  <table>
+    <thead><tr><th>情况</th><th>频率</th><th>查什么</th></tr></thead>
+    <tbody>
+      <tr><td><b>新诊断 / 病情进展中</b></td><td><b>每 2–4 周</b>（按分期和严重程度）</td><td>病史、体重、体格、水合、血压、血检</td></tr>
+      <tr><td><b>病情稳定</b></td><td><b>每 3–6 个月</b></td><td>详细病史 + 体格 + 全套实验室（同初诊）</td></tr>
+      <tr><td>7 岁以上猫（未确诊）</td><td>每 <b>6 个月</b>体检；&gt;10 岁建议<b>每年 2 次</b></td><td>体重、BCS、血压；每年至少一次血检+尿检</td></tr>
+      <tr><td>开始/调整降压药</td><td><b>1–2 周</b>后</td><td>SBP、临床症状</td></tr>
+      <tr><td>开始 RAAS 抑制剂（贝那普利/替米沙坦）</td><td><b>1–2 周</b>（耐受）→ <b>4 周</b>（疗效）→ 每 <b>3 个月</b></td><td>肌酐、钾、SBP、UPC</td></tr>
+      <tr><td>磷结合剂 / 换肾脏粮</td><td><b>4–6 周</b>至稳定，之后<b>每 12 周</b></td><td>血磷、血钙</td></tr>
+      <tr><td>达贝泊汀诱导期</td><td><b>每次注射前</b></td><td>血压 + PCV/HCT</td></tr>
+      <tr><td>达贝泊汀维持期</td><td>每 <b>1–3 个月</b></td><td>SBP + PCV</td></tr>
+    </tbody>
+  </table>
+  <div class="box tip">
+    <span class="t">诊断后头 3 个月的监测特别值钱</span>
+    <p>iCatCare 2026：<b>"在诊断后头 3 个月的监测能够帮助预测进展"</b>——连续监测<b>肌酐、磷和体重</b>，可以区分出"进展型"和"稳定型"。进展型猫生存期显著更短（&gt;60% 在诊断 365 天内死亡）。<br>
+    <b>所以确诊后前 3 个月，请务必勤一点复查</b>，这是你唯一能"看清它是什么类型"的窗口。</p>
+  </div>
+  <div class="box info">
+    <span class="t">预算有限时怎么办</span>
+    <p>iCatCare 明确给了务实的建议：<b>在 CKD 晚期（3–4 期），即使缺乏详细的实验室数据，控制临床症状（食欲、恶心、水合状态）也可能非常有效。</b><br>
+    换句话说：<b>钱要花在刀刃上</b>——实在紧张时，优先保证"它不脱水、不恶心、能吃"，比反复做全套血检更能改善它的日子。</p>
+  </div>
+</section>
+
+<!-- ============ 10 ============ -->
+<!-- ============ 10 ============ -->
+<section id="s10">
+  <h2><span class="num">10</span>从肾到膀胱：泌尿问题全攻略</h2>
+  <p class="lead">很多人是"因为肾病才发现膀胱也有问题"，或者反过来。它们不是两个器官，是同一条管道的两端——而且这条管道上的麻烦，有几个共同的源头。</p>
+
+  <h3>10.1 肾和膀胱，到底是怎么连在一起的</h3>
+  <p>先说清楚四条真实存在的链路，你就明白为什么肾病猫必须盯膀胱：</p>
+
+  <div class="grid2">
+    <div class="mini">
+      <div class="h">① 尿变稀 → 天然抗菌力下降</div>
+      <div class="d">猫尿之所以不容易感染，靠的是<b>高渗透压</b>（尿很浓）。健康猫细菌性 UTI 发生率<b>不到 1%</b>。<br>
+      CKD 猫浓缩能力下降，尿变稀，这道天然屏障就弱了。<br>
+      <span class="src">⚠️ 但下面 10.2 有个重要修正，别急着按这条去用药。</span></div>
+    </div>
+    <div class="mini">
+      <div class="h">② 尿量暴涨 → 猫砂盆压力</div>
+      <div class="d">多尿意味着猫砂盆<b>脏得更快</b>。猫是爱干净的动物，盆一脏就可能<b>憋尿</b>——尿在膀胱里停留时间变长，感染和结晶的风险都往上走。<br>
+      <b>这一条是纯粹的管理问题，也是你能立刻改善的一条。</b></div>
+    </div>
+    <div class="mini">
+      <div class="h">③ 喝得多，却仍是慢性脱水</div>
+      <div class="d">喝得多不等于水合好。CKD 猫常处于慢性脱水，身体会优先保水，<b>尿量的调节是被动的</b>。<br>
+      所以"它明明喝很多，怎么还出问题"——答案在这里。</div>
+    </div>
+    <div class="mini">
+      <div class="h">④ 磷钙紊乱 → 结石与软组织矿化</div>
+      <div class="d">钙磷乘积升高、继发甲旁亢 → 钙往软组织里沉积。<br>
+      <b>直接证据：</b>一组猫吃无机磷 1.5 g/1000 kcal、钙磷比 0.9 的日粮<b>超过 28 周</b>，血生化平均看不出异常，但<b>部分猫超声发现新形成的肾结石和肾结构改变</b>。<br>
+      <span class="src">血检正常 ≠ 肾没事。这是"磷 → 结石"最要命的一条。</span></div>
+    </div>
+  </div>
+
+  <h3>10.2 CKD 猫的尿路感染：数字，以及一个必须修正的说法</h3>
+  <table class="small">
+    <thead><tr><th>数据</th><th>数值</th><th>出处</th></tr></thead>
+    <tbody>
+      <tr><td>CKD 猫细菌性 UTI 患病率</td><td><b>15–30%</b>（另有 614 只猫 8 年回顾研究为 <b>16.9%</b>）</td><td>ISFM 共识指南</td></tr>
+      <tr><td>其中是<b>亚临床</b>的比例（没有症状）</td><td><b>&gt;70%</b></td><td>ISFM 共识指南</td></tr>
+      <tr><td>但尿沉渣有变化的比例</td><td><b>&gt;85%</b>（&gt;5 WBC/hpf、&gt;5 RBC/hpf 或镜下菌尿）</td><td>ISFM 共识指南</td></tr>
+      <tr><td>致病菌构成</td><td>大肠杆菌 <b>60–75%</b>；其余为肠球菌、链球菌、葡萄球菌、肠杆菌、假单胞菌、克雷伯菌</td><td>ISFM 共识指南</td></tr>
+      <tr><td>高风险猫</td><td><b>老年母猫</b></td><td>ISFM 共识指南</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box danger">
+    <span class="t">⚠️ 修正一个流传很广的说法：尿比重低 ≠ 要培养、要用药</span>
+    <p>很多地方会告诉你"CKD 猫尿稀，所以容易感染，要定期培养"。<b>这个推论没有被证实。</b><br>
+    那项 614 只猫的研究结论是：<b>在控制疾病因素后，尿比重下降与尿培养阳性之间没有关联。</b>作者的原文结论是——<b>"仅凭等渗尿就做尿培养，看起来没有必要。"</b><br>
+    <b>真正提示感染的是：</b>尿沉渣里的<b>脓尿、细菌、血尿</b>——这三项才与培养阳性显著相关。</p>
+    <p class="src" style="margin-top:6px"><b>来源：</b>Risk factors for feline urinary tract infections（614 只猫，8 年回顾）。</p>
+  </div>
+
+  <h4 style="margin:20px 0 8px;font-size:15px;color:var(--ink)">什么时候才需要治疗（ISFM 专家组口径）</h4>
+  <p>培养阳性<b>且</b>符合以下任一条，才考虑治疗：</p>
+  <ul>
+    <li>有<b>下泌尿道症状</b>（排尿困难、血尿、乱尿、频繁舔）</li>
+    <li>有<b>全身症状</b>（发热、中性粒细胞增多、核左移、腹痛）</li>
+    <li>有<b>脓尿</b>（&gt;5 WBC/hpf）</li>
+    <li><b>肾功能出现无法解释的恶化</b></li>
+  </ul>
+  <div class="box info">
+    <span class="t">亚临床菌尿：目前倾向"先观察，不急着治"</span>
+    <p>ISFM 的原话是"是否应该治疗亚临床 UTI 仍有争议，但在初次诊断时，<b>监测可能比干预更合适</b>"。理由很实在：<br>
+    · 治疗后<b>复发/再燃很常见</b><br>
+    · 亚临床 UTI 的存在<b>与疾病严重程度、表观存活率都无关</b><br>
+    · 不必要的治疗会<b>催生耐药菌</b><br>
+    <b>这不代表不管，而是说：别一看到培养阳性就上抗生素。</b></p>
+  </div>
+
+  <h4 style="margin:20px 0 8px;font-size:15px;color:var(--ink)">要做培养的话，注意两件事</h4>
+  <ul>
+    <li>取样方式：<b>膀胱穿刺</b>（不是接中段尿，不是猫砂里的尿）</li>
+    <li><b>尿培养不要用硼酸管</b>——会影响结果</li>
+  </ul>
+  <p><b>经验用药：</b>阿莫西林 <b>11–15 mg/kg，口服，每 8 小时</b>，或增效阿莫西林。疗程 <b>2–4 周</b>；<b>停药 7 天后复查培养</b>确认。</p>
+
+  <div class="box warn">
+    <span class="t">CKD 猫选抗生素：有几类要避开</span>
+    <table class="small" style="margin-top:8px;background:transparent">
+      <thead><tr><th>分类</th><th>药物</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>✅ 可能安全</td><td>氯霉素；青霉素类（含克拉维酸）</td><td>治疗指数宽或经肾外途径排泄，<b>通常无需调剂量</b></td></tr>
+        <tr><td>⚠️ 需调剂量</td><td>头孢菌素类（多数）；氟喹诺酮类；磺胺类（±甲氧苄啶）</td><td><b>IRIS 3–4 期要减量</b></td></tr>
+        <tr><td>🚫 尽量避免</td><td>萘啶酸；呋喃妥因；四环素类（<b>多西环素除外</b>）</td><td>药物或代谢物蓄积，不良反应风险升高</td></tr>
+        <tr><td>☠️ 肾毒性，禁用</td><td><b>氨基糖苷类</b>；多粘菌素</td><td>会加重 CKD</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:8px"><b>单独提醒：</b><b>恩诺沙星在 CKD 猫避免使用</b>——标准治疗剂量下<b>视网膜病变风险增加</b>。这一点在很多基层处方里仍被忽略。</p>
+    <p class="src" style="margin-top:6px"><b>来源：</b>ISFM 猫 CKD 共识指南 Table 10。</p>
+  </div>
+
+  <h3>10.3 猫特发性膀胱炎（FIC）：最常见的"膀胱炎"，但不是感染</h3>
+  <p>我们口语里说的"膀胱炎"，其实是一个症状集合。医学上叫 <b>FLUTD（猫下泌尿道疾病）</b>，它包括了结石、感染、解剖异常、行为问题、肿瘤等等。而<b>其中超过一半找不到明确病因</b>——这部分被归为 <b>FIC（猫特发性膀胱炎）</b>。</p>
+
+  <div class="grid2">
+    <div class="mini">
+      <div class="h">三个关键数字</div>
+      <div class="d">· FLUTD 在初级诊疗中约占 <b>1.5%</b> 的猫<br>
+      · <b>超过一半</b>查不出病因 → FIC<br>
+      · 真正有细菌感染的<b>只有约 2%</b>（年轻猫）<br><br>
+      <b>所以抗生素大多数时候根本不需要。</b></div>
+    </div>
+    <div class="mini">
+      <div class="h">两个必须知道的病程特点</div>
+      <div class="d">· 症状通常 <b>7 天内自行缓解，不管治不治</b><br>
+      · 但 <b>一年内复发率高达 65%</b>；约 <b>15%</b> 会转成慢性<br><br>
+      <span class="src">因为"会自己好"，所以任何药看起来都"有效"——判断疗效时别被这个骗了。</span></div>
+    </div>
+  </div>
+
+  <p><b>症状：</b>排尿困难或疼痛、尿频（每次一点点）、尿血、在猫砂盆外乱尿、<b>过度舔肚子或生殖器</b>（有时舔到脱毛）、性格改变（躲起来、易怒、不爱玩）。</p>
+
+  <div class="box info">
+    <span class="t">它是怎么来的：不是"感染"，是"压力 + 膀胱壁缺陷"</span>
+    <p>目前认为 FIC 是<b>易感猫 + 压力环境</b>共同作用的结果，涉及：<br>
+    · <b>压力</b>：很多猫的发作能追溯到一次明确的应激事件<br>
+    · <b>异常的应激反应</b>：这些猫处理压力的方式本身就和别的猫不一样（与遗传和早期经历有关）<br>
+    · <b>膀胱黏膜层缺陷</b>：保护膀胱壁的黏液层有问题 → 下层细胞受损、溃疡、炎症<br>
+    · <b>神经源性炎症</b>：膀胱壁的神经被直接刺激，或被大脑（压力信号）激活<br>
+    <b>它和人的"间质性膀胱炎 / 膀胱疼痛综合征"非常像。</b></p>
+  </div>
+
+  <h4 style="margin:20px 0 8px;font-size:15px;color:var(--ink)">谁容易中招</h4>
+  <ul>
+    <li><b>猫的因素：</b>公猫、已绝育、<b>超重</b>、纯种、中年（高发于 4–7 岁）、胆小或焦虑体质</li>
+    <li><b>品种：</b>波斯猫风险<b>更高</b>；暹罗猫风险<b>更低</b></li>
+    <li><b>环境因素：</b>纯室内饲养、<b>猫砂盆数量不足</b>、住在公寓、<b>多猫家庭</b>、使用<b>非结块猫砂</b>、缺少高处休息区、活动量低、家庭内有社交冲突、频繁换粮</li>
+  </ul>
+
+  <h3>10.4 真正有效的办法：MEMO 多模式环境改造</h3>
+  <p>先说一句实话：<b>长期研究显示，几乎没有哪种药对 FIC 真正有持续效果。</b>真正有强证据的是环境和饮食。</p>
+  <div class="box good">
+    <span class="t">MEMO 的效果，是有数据的</span>
+    <p>一项关键研究中，MEMO 使临床发作<b>显著减少（P &lt; 0.0001）</b>，<b>75% 的猫在 10 个月随访期内完全没有再发作</b>。<br>
+    这不是"听起来有道理"，是<b>对照得出的结果</b>。</p>
+  </div>
+
+  <h4 style="margin:20px 0 8px;font-size:15px;color:var(--ink)">MEMO 具体做什么（照着做就行）</h4>
+  <ol class="steps">
+    <li><b>猫砂盆：数量 = 猫的数量 + 1</b><br>这是最重要的一条。用<b>结块砂</b>（研究显示用非结块砂的猫风险更高），放在<b>安静、猫不会被围观</b>的位置，<b>远离食盆水盆</b>。每天至少铲一次。</li>
+    <li><b>资源分散，不要全堆在一起</b><br>多个水源、多个喂食点，分散在不同房间。<b>核心原则：一只猫不需要"抢"或"排队"就能拿到任何资源。</b></li>
+    <li><b>增加垂直空间和躲藏点</b><br>猫爬架、柜顶、纸箱、高处跳台。<b>能往高处走是猫最有安全感的事之一。</b>缺少高处休息区是明确的风险因素。</li>
+    <li><b>环境丰容</b><br>猫抓柱、玩具、互动游戏、认知挑战（漏食球等）。<b>能表达捕猎行为</b>对猫的心理健康很关键。</li>
+    <li><b>减少社交冲突</b><br>多猫家庭要特别注意。<b>给攻击性强的猫戴铃铛</b>，能给胆小的猫预警——这是个便宜但有效的办法。</li>
+    <li><b>费洛蒙</b><br>合成猫面部费洛蒙（如 Feliway）对焦虑相关行为有帮助，无创、全屋生效，可以作为多模式方案的一部分。</li>
+  </ol>
+
+  <div class="box tip">
+    <span class="t">饮食：湿粮，还是湿粮</span>
+    <p>推荐<b>湿粮优先</b>，理由很直接：水分高 → <b>尿被稀释</b> → 尿液里刺激性物质浓度下降 → 结晶风险降低 → 同时<b>排尿更频繁</b>，把膀胱里的碎屑冲出去。<br>
+    治疗性日粮方面，有产品在配方中加入 <b>EPA + DHA</b>（调节炎症介质），或 <b>α-酪蛋白水解肽 + L-色氨酸</b>（辅助减压）。这类属于<b>处方</b>，需兽医决定。</p>
+  </div>
+
+  <div class="box warn">
+    <span class="t">药物：不是首选，而且"多药"本身就是压力</span>
+    <p>· <b>急性发作期给镇痛是合理的</b>——这个病确实很痛，猫会叫<br>
+    · 短期可用<b>加巴喷丁、曲唑酮</b>（也有抗焦虑作用）<br>
+    · <b>哌唑嗪</b>（松弛尿道）曾被广泛用于防梗阻，但<b>研究未能证实有益</b><br>
+    · <b>类固醇无效</b>，且副作用明显，不推荐<br>
+    · <b>抗生素：只有确认感染才用。</b>约 2% 的概率，别凭经验给<br>
+    · ISFM/iCatCare 都强调：<b>只有环境和饮食调整无效时，才考虑长期用药</b>。而且——<b>每天给猫喂药本身就是压力源</b>，可能抵消药效。</p>
+  </div>
+
+  <h3>10.5 结石：鸟粪石 vs 草酸钙（这一节和肾关系最大）</h3>
+  <p>尿石症可影响高达 <b>25%</b> 的 LUTD 猫。猫的尿石主要有两类，处理思路<b>完全相反</b>。</p>
+
+  <table>
+    <thead><tr><th></th><th>鸟粪石（Struvite）</th><th>草酸钙（Calcium oxalate）</th></tr></thead>
+    <tbody>
+      <tr><td><b>占比</b></td><td>约 <b>45%</b> 的猫尿石</td><td>约一半猫尿石，且是<b>大多数肾结石</b>的成分</td></tr>
+      <tr><td><b>能否溶解</b></td><td>✅ <b>可以</b>，靠处方溶解粮</td><td>❌ <b>不能</b>，只能取出（手术/其他方式）</td></tr>
+      <tr><td><b>好发年龄</b></td><td>年轻到中年，<b>风险随年龄下降</b></td><td>老年猫（8–12 岁）多见</td></tr>
+      <tr><td><b>与尿 pH 的关系</b></td><td>碱性尿易形成。<b>尿 pH 6.5–6.9 vs 6.0–6.2，风险约 2 倍</b></td><td>酸性尿易形成。<b>pH 6–6.2 的日粮比 pH 6.5–6.9 的日粮风险高 3 倍</b></td></tr>
+      <tr><td><b>与感染的关系</b></td><td>大多数在<b>无菌尿</b>中形成（猫的特点）</td><td>与感染无关</td></tr>
+      <tr><td><b>关键风险因素</b></td><td>尿浓缩、碱性尿、镁/铵/磷酸盐浓度高</td><td><b>高钙血症</b>、低钠或低钾日粮、极致酸化日粮</td></tr>
+      <tr><td><b>溶解/处理</b></td><td>处方溶解粮，<b>2–4 周</b>溶解；<b>每 2 周 X 光复查</b>；期间<b>只吃处方粮，任何零食都不行</b></td><td>取出后预防复发：<b>目标中性尿 pH 6.6–7.5</b> + <b>降低尿比重</b>（加水、湿粮）</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box info">
+    <span class="t">一个有意思的历史：结石类型这 30 年换了主次</span>
+    <p>1981 年，明尼苏达尿石中心收到的猫尿石里<b>超过 80% 是鸟粪石</b>，草酸钙不到 10%。<br>
+    到 2013 年，<b>草酸钙升到 41%</b>。<br>
+    主流解释是：<b>限镁酸化粮的大规模普及</b>把鸟粪石压下去了，却把草酸钙推了上来。<b>把尿一味酸化不是免费的收益。</b></p>
+  </div>
+
+  <div class="box danger">
+    <span class="t">⚠️ 对肾病猫最重要的一句话：不要自己给它吃泌尿处方粮</span>
+    <p>这里有一个真实的、必须说清楚的<b>医学张力</b>：</p>
+    <ul style="margin:8px 0">
+      <li>泌尿粮防鸟粪石靠<b>酸化尿液</b>，但过度酸化会<b>促进草酸钙</b></li>
+      <li>代谢性酸中毒会<b>动员骨钙</b> → 高钙尿 → 进一步推高草酸钙风险</li>
+      <li>部分泌尿粮为了<b>促饮水会提高钠</b>——而 CKD 猫常伴高血压，需要<b>限钠</b></li>
+      <li>CKD 猫本来就容易<b>高钙</b>（尤其是吃超低磷粮时），而高钙正是草酸钙结石的明确风险因素</li>
+      <li>泌尿粮的<b>磷含量未必按肾脏标准控制</b></li>
+    </ul>
+    <p><b>已经有品牌在生产商说明里，直接把"慢性肾病（CKD）"和"心功能不全"列为该泌尿处方粮的禁忌症。</b>这不是危言耸听。<br>
+    <b>正确做法：</b>如果猫同时有泌尿和肾脏问题，<b>让兽医在"防结石"和"控磷/控血压/控钠"之间权衡</b>，可能需要在两者间取折中，或者分阶段处理。<b>这是必须由专业判断取舍的场景，不要自己叠加处方粮。</b></p>
+  </div>
+
+  <h3>10.6 尿不出来 = 急症，立刻去医院</h3>
+  <div class="box danger">
+    <span class="t">公猫尤其危险：24–48 小时可致命</span>
+    <p>公猫的尿道<b>更长更窄</b>，容易被<b>尿道栓子</b>（结晶 + 蛋白基质混合形成的"塞子"）或结石堵死。<br>
+    <b>认这些信号：</b><br>
+    · 反复进出猫砂盆、蹲很久、<b>只滴几滴或完全尿不出</b><br>
+    · 排尿时<b>叫</b><br>
+    · 频繁舔生殖器<br>
+    · 后期：呕吐、精神差、躲起来、肚子硬<br><br>
+    <b>梗阻会导致高钾血症和肾后性氮质血症，24–48 小时内可致命。</b><br>
+    <b>不要观察、不要等到明天、不要先喂药。直接去急诊。</b></p>
+    <p class="src" style="margin-top:6px">另见 <a href="#s11" style="color:inherit;text-decoration:underline">第 11 章 急症识别</a>。</p>
+  </div>
+
+  <h3>10.7 在家能做的 6 件事</h3>
+  <ol class="steps">
+    <li><b>湿粮 + 多个水源</b><br>对肾和对膀胱，<b>这是同一个解法</b>。一份投入，两边受益。</li>
+    <li><b>猫砂盆：数量 = 猫数 + 1</b><br>每天铲，放安静处，用结块砂。这是 MEMO 里证据最强的一条。</li>
+    <li><b>每天记录尿团的数量和大小</b><br>肾和膀胱出问题，<b>最早的信号都在这里</b>。突然变大（尿稀）或变小（尿少/梗阻）都值得警觉。</li>
+    <li><b>别自己给抗生素</b><br>真正的细菌感染只有约 2%（年轻猫）。乱用会催生耐药，也让后续诊断更困难。</li>
+    <li><b>复查时主动要求做尿检 + 尿沉渣</b><br>有症状或脓尿（&gt;5 WBC/hpf）时，才进一步做膀胱穿刺培养。<b>不要一上来就培养。</b></li>
+    <li><b>控制体重</b><br>肥胖是 FIC 的明确风险因素，也是很多老年猫问题的放大器。</li>
+  </ol>
+
+  <div class="box tip">
+    <span class="t">一句话总结这一章</span>
+    <p>肾和膀胱的问题，<b>有三个共同的解法</b>：<b>多喝水（湿粮）、管好猫砂盆、别乱用药</b>。<br>
+    也有一个<b>共同的反面</b>：<b>磷和钙的代谢紊乱同时伤两端</b>——这也是为什么控磷不只是为了"肾指标好看"。</p>
+  </div>
+</section>
+
+<section id="s11">
+  <h2><span class="num">11</span>急症：什么时候立刻去医院</h2>
+  <p class="lead">CKD 猫的"突然恶化"里，有一部分是<b>可逆的</b>——但前提是你要在正确的窗口内送到医院。</p>
+
+  <div class="box danger">
+    <span class="t">🚨 立刻去（不要等，不要观察）</span>
+    <ul style="margin-bottom:0">
+      <li><b>尿不出来</b>：反复进砂盆、蹲很久、只滴几滴、叫痛、肚子硬。<br><span class="src"><b>⚠️ CKD 猫多尿，很容易掩盖"尿闭"。</b>尤其<b>公猫</b>——尿道阻塞 24 小时内可致命，会迅速高钾、心律紊乱。<b>只要看到"想尿尿不出"，一律按急症处理。</b></span></li>
+      <li><b>抽搐 / 癫痫发作</b>：可能是高血压脑病、严重低钙、或尿毒症脑病。</li>
+      <li><b>突然失明、瞳孔散大、眼睛出血</b>：高血压造成的视网膜脱离/出血。<b>及时降压有可能挽回部分视力，晚了就永久。</b></li>
+      <li><b>呼吸急促（&gt;40 次/分）、张口呼吸、端坐伸颈</b>：可能是肺水肿/胸水/酸中毒代偿。</li>
+      <li><b>完全不吃超过 24–48 小时</b>（猫 &gt;3 天不食有脂肪肝风险）。</li>
+      <li><b>持续呕吐</b>，连水都留不住 → 迅速脱水、电解质崩溃。</li>
+      <li><b>口腔溃疡剧痛、明显尿臭口气</b>：尿毒症口炎，需要住院处理。</li>
+      <li><b>极度虚弱、站不起来、体温过低、意识模糊</b>。</li>
+      <li><b>皮下补液后呼吸变快/变费力</b>：可能液体过量。</li>
+    </ul>
+  </div>
+
+  <h3>"尿毒症危象"长什么样</h3>
+  <p>这是 CKD 猫最典型的急性失代偿：本来还凑合的猫，<b>几天内突然不吃、狂吐、极度萎靡、口腔溃疡、可能抽搐</b>。常常有<b>诱因</b>：一次脱水、一次感染、一次便秘、一次用药、或者一次麻醉/手术。</p>
+  <p><b>处理：</b>住院 + 静脉补液（而不是皮下）+ 止吐 + 纠正电解质和酸碱 + 查找诱因。<b>很多猫经过住院能重新"拉回来"回到稳定状态</b>——这不是终末期，别放弃太早。</p>
+
+  <h3>你可以提前做的一件事</h3>
+  <div class="box tip">
+    <span class="t">把医院的急诊电话存进手机</span>
+    <p>记下：<b>① 主治医院电话与急诊时间；② 最近的 24 小时急诊医院地址与电话；③ 你家到医院的交通方式（夜里怎么去）。</b><br>
+    再准备一个<b>"急诊包"</b>：猫的所有化验单复印件、用药清单、最近的体重记录、航空箱（<b>平时就敞开放着，让它不害怕</b>）。<br>
+    深夜突发时，你不需要再翻箱倒柜。</p>
+  </div>
+</section>
+
+<!-- ============ 11 ============ -->
+<section id="s12">
+  <h2><span class="num">12</span>生活质量的最后一道题</h2>
+  <p class="lead">这部分不好读，但它是你能为它做的最后、也最深的一件事。</p>
+
+  <h3>12.1 用 HHHHHMM 量表打分</h3>
+  <p>国际通用的动物生命质量评估工具。每周给它打一次分，<b>每项 0–10 分</b>：</p>
+  <table>
+    <thead><tr><th>维度</th><th>问自己</th></tr></thead>
+    <tbody>
+      <tr><td><b>Hurt</b> 疼痛</td><td>它疼吗？能控制吗？（口腔溃疡、关节痛、腹痛都算）</td></tr>
+      <tr><td><b>Hunger</b> 饥饿</td><td>它还愿意吃吗？需要我强喂/喂食管才能维持吗？</td></tr>
+      <tr><td><b>Hydration</b> 水合</td><td>脱水能靠补液控制住吗？还是补了也很快又干？</td></tr>
+      <tr><td><b>Hygiene</b> 卫生</td><td>还能自己梳理吗？毛发和屁股干净吗？会不会一直躺在排泄物里？</td></tr>
+      <tr><td><b>Happiness</b> 快乐</td><td>还会呼噜、蹭人、晒太阳、对感兴趣的东西有反应吗？</td></tr>
+      <tr><td><b>Mobility</b> 活动</td><td>还能自己去砂盆、去水碗、跳上喜欢的地方吗？</td></tr>
+      <tr><td><b>More good days than bad</b> 好日子多于坏日子</td><td><b>这一项是一票否决项。</b>最近一周，好日子多还是坏日子多？</td></tr>
+    </tbody>
+  </table>
+  <div class="box warn">
+    <span class="t">怎么判断</span>
+    <p><b>总分 &gt;35 分</b>通常认为生活质量还可以继续维持。<b>持续下滑、且"坏日子 &gt; 好日子"</b>，就该严肃地和兽医讨论下一步了。</p>
+    <p><b>不要用一个"特别好的下午"否决掉一整周的下滑</b>——也正是因为猫会有"回光返照"式的好状态，<b>记录</b>才比记忆可靠。</p>
+  </div>
+
+  <h3>12.2 关于安乐，几句实话</h3>
+  <ul class="clean">
+    <li><b>提前一周比提前一天更仁慈。</b>不是"再等等看会不会好"，而是"在它还有好日子的时候，让它走得体面"。</li>
+    <li><b>和兽医提前谈</b>：把你的底线写下来（比如"不能再自己走路"、"连续 3 天不吃"、"天天吐"），到时候不至于在情绪崩溃中做决定。</li>
+    <li>可以选择<b>居家安乐</b>——在它熟悉的地方、你抱着它。很多医院提供这个服务，<b>提前问</b>。</li>
+    <li><b>你不需要为"选择放手"感到愧疚。</b>阻止痛苦和延续生命不是一回事。</li>
+  </ul>
+
+  <h3>12.3 也照顾一下你自己</h3>
+  <div class="box info">
+    <span class="t">照护者负担（Caregiver Burden）是真实的医学议题</span>
+    <p>iCatCare 2026 把这五个字正式写进了指南。每天喂药、补液、清理、观察、担心——<b>这种慢性压力会实实在在地损害你的健康和判断力</b>。</p>
+    <ul style="margin-bottom:0">
+      <li><b>允许自己累，允许自己烦。</b>这不代表你不爱它。</li>
+      <li><b>主动和兽医谈"减负"</b>：能不能减药？能不能换透皮剂型？能不能上喂食管减少扎针？<b>降低护理强度是被指南认可的正当目标。</b></li>
+      <li>找一个能听你说话的人或群。<b>不要一个人扛。</b></li>
+      <li>如果某天实在做不下去了，<b>那一次补液跳过也不会怎样</b>。不要为了完美执行而把自己耗干。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 12 ============ -->
+<section id="s13">
+  <h2><span class="num">13</span>十个常见误区</h2>
+  <p class="lead">每一条都是真的、常见的、并且会造成实际伤害的。</p>
+  <table>
+    <thead><tr><th>误区</th><th>真相</th></tr></thead>
+    <tbody>
+      <tr><td>❌ 肌酐正常就没事</td><td>✅ 损失约 2/3 肾功能后肌酐才开始明显升高。看<b>肌酐 + SDMA + 尿比重（USG）+ 趋势</b>。CKD 猫 USG 通常 &lt;1.035。</td></tr>
+      <tr><td>❌ SDMA 高 = 一定肾衰</td><td>✅ 单次轻度升高需要 2–4 周后复查确认。SDMA 15–19 时只有 53% 会持续升高；它的特异度并不比肌酐高。</td></tr>
+      <tr><td>❌ 肾病要严格控制蛋白</td><td>✅ <b>要控的是磷。</b>过度限蛋白 → 掉肌肉 → 预后更差。iCatCare：热量不足时，选蛋白略高的反而更好。</td></tr>
+      <tr><td>❌ 磷越低越好</td><td>✅ IRIS 明确<b>不要低于 0.9 mmol/l（2.7 mg/dl）</b>；早期过度限磷可致<b>高钙血症</b>（Schauf 2021）。总钙 &gt;12 mg/dl 要放宽限磷。</td></tr>
+      <tr><td>❌ 补液越多越好、越早越好</td><td>✅ 早期水合良好的猫不需要。过量会造成水肿、心衰，且每 100 mL 林格液含钠约 13 mEq（≈ 猫 24h 需求的 8 倍）。</td></tr>
+      <tr><td>❌ 猫不喝水就强行灌</td><td>✅ 有<b>误吸性肺炎</b>风险。改用：湿粮、食物加水、多水碗、饮水机、必要时皮下补液。</td></tr>
+      <tr><td>❌ 处方粮不吃就算了，随便吃</td><td>✅ 肾脏粮占热量 <b>50% 以上</b>就已有生存获益。多试几个品牌和质地，别一次拒绝就放弃。</td></tr>
+      <tr><td>❌ 在猫生病/住院时换粮</td><td>✅ 会形成<b>食物厌恶</b>，把新粮的味道和"难受"绑定，导致长期拒食。<b>等它稳定了再换。</b></td></tr>
+      <tr><td>❌ 保健品 / 益生菌能治肾病</td><td>✅ 目前<b>唯一被证实能延长生命的干预是吃肾脏粮</b>（中位存活 633 vs 264 天）。益生菌/吸附剂可能有辅助作用，但别指望它替代饮食和补液。</td></tr>
+      <tr><td>❌ 指标涨了 = 一定在进展</td><td>✅ <b>先查可逆原因</b>：脱水、尿路感染、输尿管梗阻、肾盂肾炎、甲亢、NSAID 暴露、便秘、高血压失控。IRIS 把"排除可治疗情况"写在每一期的第一条。</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ============ 13 ============ -->
+<section id="s14">
+  <h2><span class="num">14</span>附录：术语、速查与来源</h2>
+
+  <h3>14.1 术语表</h3>
+  <table class="small">
+    <thead><tr><th>缩写</th><th>中文</th><th>一句话解释</th></tr></thead>
+    <tbody>
+      <tr><td><b>CKD</b></td><td>慢性肾脏病</td><td>肾功能持续（≥3个月）不可逆下降</td></tr>
+      <tr><td><b>IRIS</b></td><td>国际肾脏兴趣协会</td><td>制定 CKD 分期标准的机构</td></tr>
+      <tr><td><b>SDMA</b></td><td>对称二甲基精氨酸</td><td>早期肾损伤标志物，受肌肉量影响小，平均比肌酐提前约 17 个月升高</td></tr>
+      <tr><td><b>USG</b></td><td>尿比重</td><td>尿浓缩能力。CKD 猫通常 &lt;1.035</td></tr>
+      <tr><td><b>UPC / UP/C</b></td><td>尿蛋白肌酐比</td><td>定量尿蛋白。猫：&lt;0.2 正常，&gt;0.4 蛋白尿</td></tr>
+      <tr><td><b>SBP</b></td><td>收缩压</td><td>目标 &lt;160（理想 &lt;140）mm Hg</td></tr>
+      <tr><td><b>HCT / PCV</b></td><td>红细胞压积 / 血细胞比容</td><td>贫血指标。猫 &lt;25% 开始治疗，25–28% 持续性也治</td></tr>
+      <tr><td><b>BUN / 尿素</b></td><td>血尿素氮</td><td>受饮食和脱水影响大，不如肌酐可靠</td></tr>
+      <tr><td><b>FGF-23</b></td><td>成纤维细胞生长因子 23</td><td>磷调节激素，比血磷更早升高。&gt;400 pg/ml 提示该限磷</td></tr>
+      <tr><td><b>CKD-MBD</b></td><td>慢性肾病-矿物质骨病</td><td>钙磷、PTH、FGF-23 紊乱导致的骨与软组织病变</td></tr>
+      <tr><td><b>RAAS</b></td><td>肾素-血管紧张素-醛固酮系统</td><td>贝那普利/替米沙坦作用于此。<b>脱水时禁用</b></td></tr>
+      <tr><td><b>ACEI / ARB</b></td><td>血管紧张素转换酶抑制剂 / 受体拮抗剂</td><td>降蛋白尿药</td></tr>
+      <tr><td><b>ESA</b></td><td>促红细胞生成刺激剂</td><td>达贝泊汀等</td></tr>
+      <tr><td><b>BCS / MCS</b></td><td>体况评分 / 肌肉状况评分</td><td>1–9 分 / 肌肉量评估，和体重一起看</td></tr>
+      <tr><td><b>RER / MER</b></td><td>静息 / 维持能量需求</td><td><code>RER = 70 × kg^0.75</code>；MER ≈ RER × 1.2–1.4</td></tr>
+      <tr><td><b>DM</b></td><td>干物质</td><td>去除水分后的营养口径，用于公平比较湿粮干粮</td></tr>
+      <tr><td><b>DJD</b></td><td>退行性关节病</td><td>老年猫常见，"不愿去砂盆"的隐藏原因</td></tr>
+    </tbody>
+  </table>
+
+  <h3>14.2 一张纸速查：我家猫的方案</h3>
+  <table class="small">
+    <thead><tr><th>项目</th><th>填写</th></tr></thead>
+    <tbody>
+      <tr><td>IRIS 分期 / 亚分期</td><td>______ 期 · UPC ______ · SBP ______</td></tr>
+      <tr><td>基线体重 / 现在体重</td><td>______ kg / ______ kg（日期 ______）</td></tr>
+      <tr><td>血磷目标</td><td>&lt; ______ mmol/l（______ mg/dl）</td></tr>
+      <tr><td>饮食</td><td>________________（磷 ______ mg/100kcal）· 每日 ______ kcal</td></tr>
+      <tr><td>补液</td><td>液体 ______ · 每次 ______ mL · 每 ______ 天 · 部位 ______</td></tr>
+      <tr><td>药物与剂量</td><td>1. __________ 2. __________ 3. __________</td></tr>
+      <tr><td>下次复查</td><td>日期 ______ · 查 ______</td></tr>
+      <tr><td>主治医生 / 急诊电话</td><td>________________ / ________________</td></tr>
+    </tbody>
+  </table>
+
+  <h3>14.3 主要依据</h3>
+  <ul class="clean">
+    <li><b>IRIS 2026 CKD 分期指南（官方）</b> — 分期阈值、SDMA 与肌酐差异规则、血压亚分期</li>
+    <li><b>IRIS 2026 猫 CKD 治疗建议（官方）</b> — 各期治疗、磷目标、磷结合剂剂量、补钾、贫血阈值、高血压管理</li>
+    <li><b>IRIS CKD 口袋指南 2026（官方）</b></li>
+    <li><b>iCatCare 2026 猫 CKD 诊断与管理共识指南</b> — 饮食干预、便秘分级处理、药物剂量表、监测频率、照护者负担</li>
+    <li><b>ISFM 猫慢性肾脏病共识指南</b> — 皮下补液 75–150 mL / 1–3 天（通常用于 3–4 期）、液体选择、脱水纠正公式（体重 kg × 脱水% × 10 + 维持 50 ml/kg/24h）、过度补液风险</li>
+    <li><b>IRIS 2026 猫 CKD 治疗建议（1–4 期分项）</b> — 各期液体条款：1–2 期仅随时饮水 + 失液时纠正；3 期起"根据需要给予维持液体"；4 期"加强预防脱水 + 考虑喂食管"；维持液理想配方（钠 30–40 mmol/l + 钾约 13 mmol/l）</li>
+    <li><b>iCatCare 2026 共识指南</b> — 家庭补液 75–100 mL / 1–3 天、先饮水干预后补液的次序、KCl 添加 20–30 mEq/L、喂食管指征</li>
+    <li><b>Dobenecker 2018 (JFMS)</b> — 健康猫 4 周高无机磷日粮致肾功能下降</li>
+    <li><b>Schauf 2021 (JVIM)</b> — 早期过度限磷致高钙血症</li>
+    <li><b>Stockman 2021 / Coltherd 2019</b> — 无机磷来源与餐后高磷血症</li>
+    <li><b>Elliott 2000 / Ross 2006</b> — 肾脏粮延长生存（中位 633 vs 264 天）</li>
+    <li><b>Hall 2014 / Brans 2021 / Mack 2021</b> — SDMA 的价值与局限</li>
+    <li><b>Boyd 等</b> — 各临床节点的中位生存期</li>
+    <li><b>A3 (Molidustat RCT)</b> — HIF-PH 抑制剂治疗猫 CKD 贫血</li>
+    <li><b>S1 (Maropitant 长期研究)</b> — CKD 猫呕吐控制</li>
+    <li><b>Coltherd 2019 (Br J Nutr, WALTHAM 系列)</b> — 无机磷阈值 0.5 g/1000 kcal、剂量反应、有机磷无影响、钙磷比 &lt;1 延长升高；尿磷回收率 34.9% vs 14.7%</li>
+    <li><b>Steffen &amp; Dobenecker 2023</b> — 磷酸 + 可溶性磷酸钠致健康猫 FGF-23、血磷、钙磷乘积升高</li>
+    <li><b>Stockman &amp; Villaverde 2021 (JAVMA) / Stockman 2024 (JFMS)</b> — 总磷 ≤4 g/1000 kcal、无机磷 ≤1 g/1000 kcal、钙磷比 1:1–2:1 的暂定建议；FEDIAF 现行规定说明</li>
+    <li><b>Quimby &amp; Ross, IRIS 2024</b> — 无机磷生物利用度高于有机磷；钙磷比 &lt;1 时高可利用磷致既往健康猫肾损伤</li>
+    <li><b>Alexander 等（高无机磷长期喂养研究）</b> — 无机磷 1.5 g/1000 kcal、Ca:P 0.9、超过 28 周，血生化无异常但部分猫出现肾结石与肾结构改变</li>
+    <li><b>ISFM 共识指南 · CKD 猫 UTI 管理（Table 10）</b> — 患病率 15–30%、&gt;70% 亚临床、大肠杆菌 60–75%、治疗指征、阿莫西林 11–15 mg/kg q8h × 2–4 周、抗菌药选择分级、恩诺沙星避免</li>
+    <li><b>Risk factors for feline UTI（614 只猫，8 年回顾）</b> — CKD 猫培养阳性 16.9%；<b>尿比重下降与培养阳性无关</b>，仅凭等渗尿培养无必要</li>
+    <li><b>iCatCare · FIC 专文 / MEMO 相关研究</b> — FLUTD 约 1.5%、&gt;50% 为 FIC、仅约 2% 真感染、7 天自限、一年复发 65%、MEMO 后 75% 零发作（P&lt;0.0001）</li>
+    <li><b>明尼苏达尿石中心数据 / MSD 兽医手册 / Today's Veterinary Practice</b> — 鸟粪石与草酸钙的占比变迁（1981 年 80% → 2013 年草酸钙 41%）、pH 与风险的量化关系、溶解与预防方案</li>
+  </ul>
+  <p class="src" style="margin-top:14px">本手册配套的 <b>49 篇文献总表</b>、<b>33 篇中文全文译文</b>与 <b>论文 PDF 原文</b>均存放于同一文件夹内的 <code>猫肾病核心文献汇总.xlsx</code>、<code>中文译文索引.html</code> 与 <code>论文PDF索引.html</code>。</p>
+</section>
+
+<footer>
+  猫慢性肾病（CKD）新手家长照护手册 · 2026-09 版<br>
+  内容依据 IRIS 2026、iCatCare 2026、ISFM 共识指南及相关同行评议文献整理<br>
+  <b>本手册为科普与照护参考，不能替代兽医诊断与处方。任何用药调整请先咨询你家猫的主治兽医。</b>
+</footer>
+
+</div>
+</body>
+</html>
