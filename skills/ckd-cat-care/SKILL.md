@@ -99,7 +99,7 @@ agent_created: true
 
 用法：
 ```bash
-python scripts/renal_eval.py --data "蛋白 32% 脂肪 18% 纤维 2% 灰分 6% 钙 0.9% 磷 0.7% 水分 8%"
+python scripts/renal_eval.py "蛋白 32% 脂肪 18% 纤维 2% 灰分 6% 钙 0.9% 磷 0.7% 水分 8%"
 python scripts/iris_stage.py --creatinine 2.4 --sdma 22 --upc 0.3 --sbp 165
 python scripts/calcitriol.py --weight 5.48
 ```
